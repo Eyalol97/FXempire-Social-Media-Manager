@@ -32,8 +32,12 @@ jobs:
           path: public/data.json
       - name: Commit output (Vercel redeploys the board from this commit)
         run: |
+          # Put this run's output on top of the latest main, so code pushed during the run is never rejected or overwritten
+          mkdir -p /tmp/out && cp public/data.json /tmp/out/ && cp -r runs /tmp/out/
+          git fetch origin main && git reset --hard origin/main
+          cp /tmp/out/data.json public/data.json && mkdir -p runs && cp -r /tmp/out/runs/. runs/
           git config user.name "content-bot"
           git config user.email "content-bot@users.noreply.github.com"
           git add public/data.json runs/
           git commit -m "Content run $(date -u +%Y-%m-%dT%H:%MZ)" || echo "No changes"
-          git push
+          git push origin HEAD:main

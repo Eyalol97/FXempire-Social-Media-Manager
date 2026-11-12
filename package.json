@@ -4,6 +4,6 @@
   "type": "module",
   "scripts": {
     "run": "node src/run.js",
-    "test": "node src/run.js --fixture fixtures/snapshot.json --mock-llm"
+    "test": "node src/run.js --fixture fixtures/snapshot.json --mock-llm --out fixtures/test-output.json"
   }
 }

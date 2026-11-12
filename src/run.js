@@ -15,6 +15,7 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const fixture = args.includes('--fixture') ? args[args.indexOf('--fixture') + 1] : null;
 const mock = args.includes('--mock-llm');
+const outFile = args.includes('--out') ? args[args.indexOf('--out') + 1] : 'public/data.json';
 const cfg = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8'));
 const model = process.env.GEMINI_MODEL || cfg.llm.model;
 const prompt = name => fs.readFileSync(path.join(ROOT, 'prompts', name), 'utf8');
@@ -149,9 +150,9 @@ async function main() {
     skipped: skipped.map(s => ({ name: s.event.name, country: s.event.country, at: s.event.allDay || !s.event.category ? s.event.date.slice(0, 10) + ' (all day)' : label(cfg.timezone, Date.parse(s.event.date)), rule: s.rule, score: s.score ?? null })),
     drafts, schedule, log: runLog
   };
-  fs.mkdirSync(path.join(ROOT, 'public'), { recursive: true });
-  fs.writeFileSync(path.join(ROOT, 'public', 'data.json'), JSON.stringify(data, null, 1));
-  log(`Wrote public/data.json: ${drafts.length} drafts, ${schedule.length} slots`);
+  fs.mkdirSync(path.dirname(path.join(ROOT, outFile)), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, outFile), JSON.stringify(data, null, 1));
+  log(`Wrote ${outFile}: ${drafts.length} drafts, ${schedule.length} slots`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
