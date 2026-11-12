@@ -1,0 +1,9 @@
+{
+  "name": "fxe-social",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "node src/run.js",
+    "test": "node src/run.js --fixture fixtures/snapshot.json --mock-llm"
+  }
+}

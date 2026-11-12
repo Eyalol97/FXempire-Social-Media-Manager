@@ -1,0 +1,1482 @@
+{
+ "runAt": "2026-11-12T12:05:21.156Z",
+ "now": "2026-11-12T11:59:04.274Z",
+ "nowLabel": "Thu 11-12 06:59",
+ "mode": "fixture + mock AI (offline test)",
+ "timezone": "America/New_York",
+ "config": {
+  "selection": {
+   "impactGate": 3,
+   "topPosts": 8,
+   "topVideos": 3,
+   "videoMaxPerCurrency": 2,
+   "videoMaxPerDay": 2
+  },
+  "scoring": {
+   "coveragePoints": 3,
+   "currencyPoints": {
+    "united-states": 2,
+    "euro-area": 1,
+    "germany": 1,
+    "france": 1,
+    "italy": 1,
+    "spain": 1,
+    "united-kingdom": 1,
+    "japan": 1,
+    "canada": 1
+   },
+   "breadthMax": 3
+  },
+  "timing": {
+   "xPreMinutes": -90,
+   "xPostMinutes": 10,
+   "videoPublishHours": -20,
+   "recordByHours": -48,
+   "quietStart": "07:00",
+   "quietEnd": "21:00"
+  }
+ },
+ "counts": {
+  "rawRows": 26,
+  "releases": 16,
+  "holidays": 5,
+  "inWindow": 13,
+  "articles": 11
+ },
+ "flags": {
+  "missingReleases": [
+   {
+    "release": "US CPI",
+    "article_id": 1644144,
+    "evidence": "Gold Price Forecast: Gold Drops Below $4,000 as Hot CPI Lifts Yields",
+    "title": "Gold Price Forecast: Gold Drops Below $4,000 as Hot CPI Lifts Yields",
+    "url": "https://www.fxempire.com/forecasts/article/gold-price-forecast-gold-drops-below-4000-as-hot-cpi-lifts-yields-1644144"
+   }
+  ],
+  "holidays": [
+   {
+    "date": "2026-11-11",
+    "country": "canada",
+    "name": "Remembrance Day",
+    "exchange": "Toronto Stock Exchange"
+   },
+   {
+    "date": "2026-11-11",
+    "country": "united-states",
+    "name": "Veterans Day",
+    "exchange": "New York Stock Exchange"
+   }
+  ]
+ },
+ "ranked": [
+  {
+   "id": 390612,
+   "name": "FOMC Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "FOMC Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "united-states",
+   "reference": "",
+   "at": "Wed 11-18 14:00",
+   "ms": 1795028400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 1,
+   "score": 5,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 3
+   },
+   "tier": 3,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 398183,
+   "name": "PPI MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "PPI MoM",
+     "forecast": "0.4%",
+     "previous": "1.3%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Fri 11-13 08:30",
+   "ms": 1794576600000,
+   "forecast": "0.4%",
+   "previous": "1.3%",
+   "actual": null,
+   "rank": 2,
+   "score": 5,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 410775,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "3.2%",
+     "previous": "3.1%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "canada",
+   "reference": "Oct",
+   "at": "Mon 11-16 08:30",
+   "ms": 1794835800000,
+   "forecast": "3.2%",
+   "previous": "3.1%",
+   "actual": null,
+   "rank": 3,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/CAD"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "canada release (+1)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399093,
+   "name": "Retail Sales MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Retail Sales MoM",
+     "forecast": "0.6%",
+     "previous": "0.8%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Tue 11-17 08:30",
+   "ms": 1794922200000,
+   "forecast": "0.6%",
+   "previous": "0.8%",
+   "actual": null,
+   "rank": 4,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399593,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "3.5%",
+     "previous": "3.5%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Oct",
+   "at": "Wed 11-18 02:00",
+   "ms": 1794985200000,
+   "forecast": "3.5%",
+   "previous": "3.5%",
+   "actual": null,
+   "rank": 5,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 398059,
+   "name": "Existing Home Sales",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Existing Home Sales",
+     "forecast": "3.85M",
+     "previous": "3.99M",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Thu 11-12 10:00",
+   "ms": 1794495600000,
+   "forecast": "3.85M",
+   "previous": "3.99M",
+   "actual": null,
+   "rank": 6,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 1,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 394048,
+   "name": "RBA Meeting Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "RBA Meeting Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "australia",
+   "reference": "",
+   "at": "Mon 11-16 19:30",
+   "ms": 1794875400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 7,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 3
+   },
+   "tier": 3,
+   "instruments": [
+    "AUD/USD"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399405,
+   "name": "GDP Growth Rate YoY Prel",
+   "alsoReleased": [
+    "GDP MoM",
+    "GDP Growth Rate QoQ Prel"
+   ],
+   "components": [
+    {
+     "name": "GDP Growth Rate YoY Prel",
+     "forecast": "1.9%",
+     "previous": "1.4%",
+     "actual": "1.9%",
+     "reference": "Q3"
+    },
+    {
+     "name": "GDP MoM",
+     "forecast": "0%",
+     "previous": "0%",
+     "actual": "0.2%",
+     "reference": "Sep"
+    },
+    {
+     "name": "GDP Growth Rate QoQ Prel",
+     "forecast": "0.7%",
+     "previous": "0.5%",
+     "actual": "0.7%",
+     "reference": "Q3"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Q3",
+   "at": "Thu 11-12 02:00",
+   "ms": 1794466800000,
+   "forecast": "1.9%",
+   "previous": "1.4%",
+   "actual": "1.9%",
+   "rank": 8,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401420,
+   "name": "GDP Growth Rate QoQ Prel",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "GDP Growth Rate QoQ Prel",
+     "forecast": "0.1%",
+     "previous": "0.4%",
+     "actual": null,
+     "reference": "Q3"
+    }
+   ],
+   "country": "japan",
+   "reference": "Q3",
+   "at": "Sun 11-15 18:50",
+   "ms": 1794786600000,
+   "forecast": "0.1%",
+   "previous": "0.4%",
+   "actual": null,
+   "rank": 9,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/JPY",
+    "Nikkei 225"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "japan release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399770,
+   "name": "Unemployment Rate",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Unemployment Rate",
+     "forecast": "4.9%",
+     "previous": "4.7%",
+     "actual": null,
+     "reference": "Sep"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Sep",
+   "at": "Tue 11-17 02:00",
+   "ms": 1794898800000,
+   "forecast": "4.9%",
+   "previous": "4.7%",
+   "actual": null,
+   "rank": 10,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401406,
+   "name": "Retail Sales YoY",
+   "alsoReleased": [
+    "Industrial Production YoY"
+   ],
+   "components": [
+    {
+     "name": "Retail Sales YoY",
+     "forecast": "",
+     "previous": "1.1%",
+     "actual": null,
+     "reference": "Oct"
+    },
+    {
+     "name": "Industrial Production YoY",
+     "forecast": "5.3%",
+     "previous": "5.5%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "china",
+   "reference": "Oct",
+   "at": "Sun 11-15 21:00",
+   "ms": 1794794400000,
+   "forecast": "",
+   "previous": "1.1%",
+   "actual": null,
+   "rank": 11,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 3
+   },
+   "tier": 1,
+   "instruments": [
+    "AUD/USD",
+    "Copper",
+    "WTI Oil"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401353,
+   "name": "ZEW Economic Sentiment Index",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "ZEW Economic Sentiment Index",
+     "forecast": "15.9",
+     "previous": "28.1",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Tue 11-17 05:00",
+   "ms": 1794909600000,
+   "forecast": "15.9",
+   "previous": "28.1",
+   "actual": null,
+   "rank": 12,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD",
+    "DAX"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "germany release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 402633,
+   "name": "Balance of Trade",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Balance of Trade",
+     "forecast": "",
+     "previous": "¥-536.6B",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "japan",
+   "reference": "Oct",
+   "at": "Tue 11-17 18:50",
+   "ms": 1794959400000,
+   "forecast": "",
+   "previous": "¥-536.6B",
+   "actual": null,
+   "rank": 13,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "USD/JPY",
+    "Nikkei 225"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "japan release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  }
+ ],
+ "skipped": [
+  {
+   "name": "Balance of Trade",
+   "country": "germany",
+   "at": "Mon 11-09 02:00",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY",
+   "country": "japan",
+   "at": "Thu 11-19 18:30",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "Retail Sales MoM",
+   "country": "united-kingdom",
+   "at": "Fri 11-20 02:00",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "GDP Growth Rate QoQ Prel",
+   "country": "japan",
+   "at": "Sun 11-15 18:50",
+   "rule": "Ranked #9, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Unemployment Rate",
+   "country": "united-kingdom",
+   "at": "Tue 11-17 02:00",
+   "rule": "Ranked #10, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Retail Sales YoY",
+   "country": "china",
+   "at": "Sun 11-15 21:00",
+   "rule": "Ranked #11, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "ZEW Economic Sentiment Index",
+   "country": "germany",
+   "at": "Tue 11-17 05:00",
+   "rule": "Ranked #12, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Balance of Trade",
+   "country": "japan",
+   "at": "Tue 11-17 18:50",
+   "rule": "Ranked #13, below the top 8",
+   "score": 2
+  },
+  {
+   "name": "Diwali",
+   "country": "fiji",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Flag Day",
+   "country": "azerbaijan",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance Day",
+   "country": "canada",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Veterans Day",
+   "country": "united-states",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Martyrdom of Fatima",
+   "country": "iran",
+   "at": "2026-11-13 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  }
+ ],
+ "drafts": [
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "text": "US FOMC Minutes at 14:00 ET. Forecast n/a, previous n/a. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "US FOMC Minutes at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [
+    "Mentions a figure that does not exist for this release (n/a)"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    }
+   ],
+   "slotMs": 1795023000000,
+   "slotAt": "Wed 11-18 12:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "text": "US FOMC Minutes came in at {actual} vs n/a expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "US FOMC Minutes came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [
+    "Mentions a figure that does not exist for this release (n/a)"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    }
+   ],
+   "slotMs": 1795029000000,
+   "slotAt": "Wed 11-18 14:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 390612,
+   "kind": "video_script",
+   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US FOMC Minutes]\nWHAT IT IS\nUS FOMC Minutes lands at 14:00 ET. The forecast is n/a, last time it was n/a. [ON SCREEN: \"Forecast n/a\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US FOMC Minutes]\nWHAT IT IS\nUS FOMC Minutes lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "issues": [
+    "Numbers not found in the source: 4500",
+    "Mentions a figure that does not exist for this release (n/a)"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)",
+      "video_script: Numbers not found in the source: 4500",
+      "video_script: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    }
+   ],
+   "slotMs": 1794956400000,
+   "slotAt": "Tue 11-17 18:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_pre",
+   "text": "US PPI MoM at 08:30 ET. Forecast 0.4%, previous 1.3%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "US PPI MoM at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794571200000,
+   "slotAt": "Fri 11-13 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_post",
+   "text": "US PPI MoM came in at {actual} vs 0.4% expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "US PPI MoM came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794577200000,
+   "slotAt": "Fri 11-13 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_pre",
+   "text": "Canada Inflation Rate YoY at 08:30 ET. Forecast 3.2%, previous 3.1%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "Canada Inflation Rate YoY at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794830400000,
+   "slotAt": "Mon 11-16 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_post",
+   "text": "Canada Inflation Rate YoY came in at {actual} vs 3.2% expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "Canada Inflation Rate YoY came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794836400000,
+   "slotAt": "Mon 11-16 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "video_script",
+   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: Canada Inflation Rate YoY]\nWHAT IT IS\nCanada Inflation Rate YoY lands at 08:30 ET. The forecast is 3.2%, last time it was 3.1%. [ON SCREEN: \"Forecast 3.2%\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: Canada Inflation Rate YoY]\nWHAT IT IS\nCanada Inflation Rate YoY lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "issues": [
+    "Numbers not found in the source: 4500"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794763800000,
+   "slotAt": "Sun 11-15 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "text": "US Retail Sales MoM at 08:30 ET. Forecast 0.6%, previous 0.8%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "US Retail Sales MoM at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "text": "US Retail Sales MoM came in at {actual} vs 0.6% expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "US Retail Sales MoM came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794922800000,
+   "slotAt": "Tue 11-17 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "video_script",
+   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US Retail Sales MoM]\nWHAT IT IS\nUS Retail Sales MoM lands at 08:30 ET. The forecast is 0.6%, last time it was 0.8%. [ON SCREEN: \"Forecast 0.6%\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US Retail Sales MoM]\nWHAT IT IS\nUS Retail Sales MoM lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "issues": [
+    "Numbers not found in the source: 4500"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "video_script: Numbers not found in the source: 4500"
+     ]
+    }
+   ],
+   "slotMs": 1794850200000,
+   "slotAt": "Mon 11-16 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "text": "UK Inflation Rate YoY at 02:00 ET. Forecast 3.5%, previous 3.5%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "UK Inflation Rate YoY at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794967200000,
+   "slotAt": "Tue 11-17 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "text": "UK Inflation Rate YoY came in at {actual} vs 3.5% expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "UK Inflation Rate YoY came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795003200000,
+   "slotAt": "Wed 11-18 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_pre",
+   "text": "US Existing Home Sales at 10:00 ET. Forecast 3.85M, previous 3.99M. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "US Existing Home Sales at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794490200000,
+   "slotAt": "Thu 11-12 08:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_post",
+   "text": "US Existing Home Sales came in at {actual} vs 3.85M expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "US Existing Home Sales came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794496200000,
+   "slotAt": "Thu 11-12 10:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_pre",
+   "text": "Australia RBA Meeting Minutes at 19:30 ET. Forecast n/a, previous n/a. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "Australia RBA Meeting Minutes at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [
+    "Mentions a figure that does not exist for this release (n/a)"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    }
+   ],
+   "slotMs": 1794870000000,
+   "slotAt": "Mon 11-16 18:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_post",
+   "text": "Australia RBA Meeting Minutes came in at {actual} vs n/a expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "raw": "Australia RBA Meeting Minutes came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [
+    "Mentions a figure that does not exist for this release (n/a)"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    },
+    {
+     "attempt": 2,
+     "problems": [
+      "x_pre: Mentions a figure that does not exist for this release (n/a)",
+      "x_post: Mentions a figure that does not exist for this release (n/a)"
+     ]
+    }
+   ],
+   "slotMs": 1794876000000,
+   "slotAt": "Mon 11-16 19:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_pre",
+   "text": "UK GDP Growth Rate YoY Prel at 02:00 ET. Forecast 1.9%, previous 1.4%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "raw": "UK GDP Growth Rate YoY Prel at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794448800000,
+   "slotAt": "Wed 11-11 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_post",
+   "text": "UK GDP Growth Rate YoY Prel came in at 1.9% vs 1.9% expected, in line with forecast. Watch how the dollar reacts into the session.",
+   "raw": "UK GDP Growth Rate YoY Prel came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "issues": [],
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794484800000,
+   "slotAt": "Thu 11-12 07:00",
+   "channel": "X"
+  }
+ ],
+ "schedule": [
+  {
+   "eventId": 399405,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794448800000,
+   "at": "Wed 11-11 21:00",
+   "notes": [
+    "Moved from Thu 11-12 00:30 to stay inside 07:00-21:00 ET",
+    "Slot already passed at run time"
+   ],
+   "passed": true
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794484800000,
+   "at": "Thu 11-12 07:00",
+   "notes": [
+    "Moved from Thu 11-12 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794490200000,
+   "at": "Thu 11-12 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794496200000,
+   "at": "Thu 11-12 10:10",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794571200000,
+   "at": "Fri 11-13 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794577200000,
+   "at": "Fri 11-13 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794663000000,
+   "at": "Sat 11-14 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794749400000,
+   "at": "Sun 11-15 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794763800000,
+   "at": "Sun 11-15 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794830400000,
+   "at": "Mon 11-16 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794836400000,
+   "at": "Mon 11-16 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794850200000,
+   "at": "Mon 11-16 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794855600000,
+   "at": "Mon 11-16 14:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794870000000,
+   "at": "Mon 11-16 18:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794876000000,
+   "at": "Mon 11-16 19:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794916800000,
+   "at": "Tue 11-17 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794922800000,
+   "at": "Tue 11-17 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794956400000,
+   "at": "Tue 11-17 18:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794967200000,
+   "at": "Tue 11-17 21:00",
+   "notes": [
+    "Moved from Wed 11-18 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795003200000,
+   "at": "Wed 11-18 07:00",
+   "notes": [
+    "Moved from Wed 11-18 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795023000000,
+   "at": "Wed 11-18 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795029000000,
+   "at": "Wed 11-18 14:10",
+   "notes": [],
+   "passed": false
+  }
+ ],
+ "log": [
+  "2026-11-12T12:05:21.119Z Fixture mode: fixtures/snapshot.json (now = 2026-11-12T11:59:04.274Z)",
+  "2026-11-12T12:05:21.122Z Calendar: 26 high-impact rows. Articles: 11",
+  "2026-11-12T12:05:21.122Z Releases: 16. Holidays after de-dup: 5 (major markets: 2)",
+  "2026-11-12T12:05:21.146Z Matched 0 events to articles. Releases missing from calendar: 1",
+  "2026-11-12T12:05:21.147Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-12T12:05:21.148Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:05:21.148Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:05:21.149Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:05:21.149Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:05:21.150Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:05:21.150Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:05:21.151Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:05:21.151Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)"
+ ]
+}

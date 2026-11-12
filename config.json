@@ -1,0 +1,86 @@
+{
+  "_note": "All tunable rules live here. Change weights and timings after A/B tests without touching code.",
+  "timezone": "America/New_York",
+  "windowDays": 7,
+  "lookbackHours": 24,
+
+  "selection": {
+    "impactGate": 3,
+    "topPosts": 8,
+    "topVideos": 3,
+    "videoMaxPerCurrency": 2,
+    "videoMaxPerDay": 2
+  },
+
+  "scoring": {
+    "coveragePoints": 3,
+    "currencyPoints": {
+      "united-states": 2,
+      "euro-area": 1, "germany": 1, "france": 1, "italy": 1, "spain": 1,
+      "united-kingdom": 1,
+      "japan": 1,
+      "canada": 1
+    },
+    "breadthMax": 3,
+    "breadthByCategory": {
+      "interest-rate": ["forex", "stocks", "commodities"],
+      "inflation-rate": ["forex", "stocks", "commodities"],
+      "core-inflation-rate": ["forex", "stocks", "commodities"],
+      "producer-price-inflation-mom": ["forex", "stocks", "commodities"],
+      "non-farm-payrolls": ["forex", "stocks", "commodities"],
+      "unemployment-rate": ["forex", "stocks"],
+      "gdp-growth-rate": ["forex", "stocks"],
+      "gdp-annual-growth-rate": ["forex", "stocks"],
+      "monthly-gdp-mom": ["forex", "stocks"],
+      "retail-sales-mom": ["forex", "stocks"],
+      "retail-sales-yoy": ["forex", "stocks", "commodities"],
+      "industrial-production": ["forex", "stocks", "commodities"],
+      "balance-of-trade": ["forex"],
+      "existing-home-sales": ["forex", "stocks"],
+      "zew-economic-sentiment-index": ["forex", "stocks"],
+      "crude-oil-stocks-change": ["commodities"]
+    },
+    "breadthDefault": ["forex"],
+    "tierByCategory": {
+      "interest-rate": 3,
+      "inflation-rate": 2, "core-inflation-rate": 2, "producer-price-inflation-mom": 2,
+      "non-farm-payrolls": 2, "unemployment-rate": 2,
+      "gdp-growth-rate": 2, "gdp-annual-growth-rate": 2, "retail-sales-mom": 2
+    },
+    "tierDefault": 1
+  },
+
+  "tagClasses": {
+    "c-": "forex", "us-dollar-index": "forex", "forex": "forex",
+    "co-": "commodities", "commodities": "commodities",
+    "i-": "stocks", "s-": "stocks", "stocks": "stocks", "indices": "stocks",
+    "cc-": "crypto", "cryptocurrencies": "crypto"
+  },
+
+  "timing": {
+    "xPreMinutes": -90,
+    "xPostMinutes": 10,
+    "videoPublishHours": -20,
+    "recordByHours": -48,
+    "quietStart": "07:00",
+    "quietEnd": "21:00"
+  },
+
+  "channels": {
+    "x": "X",
+    "video": ["TikTok", "Instagram Reels", "YouTube Shorts"]
+  },
+
+  "majorMarkets": ["united-states", "united-kingdom", "euro-area", "germany", "france", "japan", "china", "canada"],
+
+  "articles": { "pages": 3, "maxAgeHours": 72, "bodyChars": 1800 },
+
+  "llm": { "model": "gemini-2.5-flash", "temperature": 0.4, "delayMs": 7000, "maxRetries": 1 },
+
+  "guards": {
+    "xMaxChars": 280,
+    "scriptMinWords": 95,
+    "scriptMaxWords": 125,
+    "bannedPhrases": ["buy now", "sell now", "guaranteed", "can't lose", "financial advice", "will definitely"]
+  }
+}

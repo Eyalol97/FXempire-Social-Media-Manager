@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FXEmpire Social - Weekly Content Board</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#fff;--ink:#15181d;--mute:#667085;--line:#e4e7ec;--x:#111;--vid:#7c3aed;--rec:#b45309;--ok:#067647;--okbg:#ecfdf3;--warn:#b54708;--warnbg:#fffaeb;--bad:#b42318;--badbg:#fef3f2;--acc:#0b63ce}
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+  header{background:#0f172a;color:#fff;padding:18px 28px}
+  header h1{margin:0;font-size:20px;font-weight:650}
+  header .meta{color:#cbd5e1;font-size:13px;margin-top:4px}
+  main{max-width:1180px;margin:0 auto;padding:20px 24px 60px}
+  h2{font-size:17px;margin:28px 0 10px}
+  .flags{display:grid;gap:8px;margin-top:4px}
+  .flag{background:var(--badbg);border:1px solid #fecdca;border-radius:10px;padding:10px 14px;font-size:14px}
+  .flag.info{background:#eff8ff;border-color:#b2ddff}
+  .flag b{font-weight:650}
+  .flag a{color:inherit}
+  /* timeline */
+  .timeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px;min-height:90px;min-width:0}
+  .day.today{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
+  .day h4{margin:0 0 6px;font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+  .slot{display:block;font-size:12px;padding:3px 6px;border-radius:6px;margin-bottom:4px;cursor:pointer;border-left:3px solid;background:#f9fafb;text-decoration:none;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .slot.x_pre,.slot.x_post{border-color:var(--x)} .slot.video{border-color:var(--vid)} .slot.record_by{border-color:var(--rec)}
+  .slot.passed{opacity:.45}
+  .legend{display:flex;gap:14px;font-size:12px;color:var(--mute);margin:6px 0 0}
+  .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+  /* toolbar */
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 12px}
+  .toolbar button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+  .toolbar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .toolbar .count{color:var(--mute);font-size:13px;margin-left:auto}
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;scroll-margin-top:16px}
+  .card.flash{box-shadow:0 0 0 3px #84caff}
+  .card .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+  .chan{font-size:12px;font-weight:650;padding:2px 8px;border-radius:999px;color:#fff;background:var(--x);white-space:nowrap}
+  .chan.video_script{background:var(--vid)}
+  .when{font-size:13px;color:var(--mute);margin-top:2px}
+  .ev{font-weight:650;font-size:15px}
+  .status{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .st-ready_for_review{background:#f2f4f7;color:#344054} .st-approved{background:var(--okbg);color:var(--ok)}
+  .st-needs_fix,.st-rejected{background:var(--badbg);color:var(--bad)} .st-waiting_for_actual{background:var(--warnbg);color:var(--warn)}
+  .text{white-space:pre-wrap;background:#fafafa;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:14px;outline:none}
+  .text:focus{border-color:var(--acc);background:#fff}
+  .text .cue{color:var(--vid);font-size:12.5px}
+  .text .lbl{font-weight:700;font-size:11.5px;letter-spacing:.05em;color:var(--mute)}
+  .text .ph{background:var(--warnbg);color:var(--warn);border-radius:4px;padding:0 3px}
+  .issues{font-size:13px;color:var(--bad);margin:0;padding-left:18px}
+  .note{font-size:12.5px;color:var(--mute)}
+  .note.caught{color:var(--warn)}
+  .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:var(--mute)}
+  .row a{color:var(--acc)}
+  .actions{display:flex;gap:6px;margin-top:2px}
+  .actions button{font:inherit;font-size:13px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 10px;cursor:pointer}
+  .actions .approve{border-color:#abefc6;color:var(--ok)} .actions .reject{border-color:#fecdca;color:var(--bad)}
+  /* tables */
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:12px}
+  summary{cursor:pointer;padding:12px 16px;font-weight:650}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:8px 12px;border-top:1px solid var(--line);vertical-align:top}
+  th{color:var(--mute);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  .pill{display:inline-block;font-size:11.5px;padding:1px 7px;border-radius:999px;background:#f2f4f7;margin:1px 2px 1px 0}
+  .pill.p{background:#eef4ff;color:#3538cd} .pill.v{background:#f4f3ff;color:var(--vid)}
+  .muted{color:var(--mute)}
+  footer{color:var(--mute);font-size:12.5px;margin-top:30px}
+  pre.log{white-space:pre-wrap;font-size:12px;padding:0 16px 14px;margin:0;color:#475467}
+  @media (max-width:800px){.timeline{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>FXEmpire Social - Weekly Content Board</h1>
+  <div class="meta" id="meta">Loading...</div>
+</header>
+<main>
+  <div class="flags" id="flags"></div>
+
+  <h2>This week's schedule (ET)</h2>
+  <div class="timeline" id="timeline"></div>
+  <div class="legend"><span style="--c:var(--x)">X post</span><span style="--c:var(--vid)">Short video (TikTok / Reels / Shorts)</span><span style="--c:var(--rec)">Tiger record-by</span></div>
+
+  <h2>Drafts to review</h2>
+  <div class="toolbar" id="toolbar"></div>
+  <div class="cards" id="cards"></div>
+
+  <details open id="rankedBox"><summary>Ranked events: why each one was picked</summary><div id="ranked"></div></details>
+  <details id="skippedBox"><summary>Skipped events and the rule behind each</summary><div id="skipped"></div></details>
+  <details><summary>Run log</summary><pre class="log" id="log"></pre></details>
+  <footer id="foot"></footer>
+</main>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KIND = { x_pre: 'X - before', x_post: 'X - after', video_script: 'Video script' };
+const STATUS = { ready_for_review: 'Ready for review', needs_fix: 'Failed auto-check', waiting_for_actual: 'Waiting for actual', approved: 'Approved', rejected: 'Rejected' };
+const store = { get(k){ try { return JSON.parse(localStorage.getItem('fxe:' + k)); } catch { return null; } }, set(k, v){ try { localStorage.setItem('fxe:' + k, JSON.stringify(v)); } catch {} } };
+const country = c => c.replace(/-/g, ' ').replace(/\b\w/g, m => m.toUpperCase()).replace('United States', 'US').replace('United Kingdom', 'UK');
+
+function renderText(d) {
+  let t = esc(d.text);
+  t = t.replace(/\{(actual|direction)\}/g, '<span class="ph" title="Filled automatically after the release">{$1}</span>');
+  if (d.kind === 'video_script') {
+    t = t.replace(/\[ON SCREEN:([^\]]*)\]/g, '<span class="cue">[ON SCREEN:$1]</span>')
+         .replace(/^(HOOK|WHAT IT IS|WHY IT MATTERS|WHAT TO WATCH|CLOSE)$/gm, '<span class="lbl">$1</span>');
+  }
+  return t;
+}
+
+function boot(data) {
+  window.DATA = data;
+  const evById = Object.fromEntries(data.ranked.map(r => [r.id, r]));
+  document.getElementById('meta').innerHTML =
+    `Run: ${esc(data.nowLabel)} ET &middot; ${esc(data.mode)} &middot; ${data.counts.releases} releases, ${data.counts.holidays} holidays filtered, ${data.counts.articles} recent articles read`;
+
+  // flags for the human
+  const f = [];
+  for (const m of data.flags.missingReleases) f.push(`<div class="flag"><b>Check the calendar:</b> an FXEmpire article covers <b>${esc(m.release)}</b>, but it is not in the economic calendar this week. <a href="${esc(m.url)}" target="_blank">${esc(m.title)}</a></div>`);
+  if (data.flags.holidays.length) f.push(`<div class="flag info"><b>Market holidays this week:</b> ${data.flags.holidays.map(h => `${esc(h.name)} (${esc(country(h.country))}, ${esc(h.date)})`).join(', ')}. Used as schedule notes, not content.</div>`);
+  document.getElementById('flags').innerHTML = f.join('');
+
+  // timeline: 7 days from the run date
+  const days = [];
+  const start = new Date(data.now);
+  for (let i = -1; i < 7; i++) {
+    const d = new Date(start.getTime() + i * 864e5);
+    const key = new Intl.DateTimeFormat('en-US', { timeZone: data.timezone, month: '2-digit', day: '2-digit' }).format(d).replace('/', '-');
+    const wd = new Intl.DateTimeFormat('en-US', { timeZone: data.timezone, weekday: 'short' }).format(d);
+    if (!days.find(x => x.key === key)) days.push({ key, wd, today: i === 0 });
+  }
+  const shown = days.slice(-7);
+  document.getElementById('timeline').innerHTML = shown.map(day => {
+    const slots = data.schedule.filter(s => s.at.slice(4, 9) === day.key);
+    return `<div class="day ${day.today ? 'today' : ''}"><h4>${day.wd} ${day.key}${day.today ? ' &middot; today' : ''}</h4>` +
+      slots.map(s => { const e = evById[s.eventId]; const tag = s.kind === 'record_by' ? 'Record' : s.kind === 'video' ? 'Video' : s.kind === 'x_pre' ? 'X pre' : 'X post';
+        return `<a class="slot ${s.kind} ${s.passed ? 'passed' : ''}" data-target="${s.eventId}-${s.kind === 'video' || s.kind === 'record_by' ? 'video_script' : s.kind}" title="${esc(s.notes.join(' | '))}">${s.at.slice(-5)} ${tag}: ${esc(country(e.country))} ${esc(e.name)}</a>`; }).join('') + `</div>`;
+  }).join('');
+  document.querySelectorAll('.slot').forEach(a => a.onclick = () => {
+    const el = document.getElementById(a.dataset.target); if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 1400);
+  });
+
+  // cards sorted by next deadline
+  const drafts = data.drafts.map(d => ({ ...d, key: `${d.eventId}-${d.kind}` }));
+  const recordBy = Object.fromEntries(data.schedule.filter(s => s.kind === 'record_by').map(s => [s.eventId, s]));
+  drafts.forEach(d => { d.deadline = d.kind === 'video_script' && recordBy[d.eventId] ? recordBy[d.eventId].ms : d.slotMs; });
+  drafts.sort((a, b) => (a.deadline < Date.parse(data.now)) - (b.deadline < Date.parse(data.now)) || a.deadline - b.deadline);
+
+  let filter = 'all';
+  const filters = { all: 'All', x: 'X posts', video: 'Video scripts', attention: 'Needs attention' };
+  const statusOf = d => store.get('st:' + d.key) || d.status;
+
+  function drawCards() {
+    const list = drafts.filter(d => filter === 'all' || (filter === 'x' && d.kind !== 'video_script') || (filter === 'video' && d.kind === 'video_script') || (filter === 'attention' && ['needs_fix', 'rejected'].includes(statusOf(d))));
+    document.getElementById('toolbar').innerHTML = Object.entries(filters).map(([k, v]) => `<button class="${k === filter ? 'on' : ''}" data-f="${k}">${v}</button>`).join('') +
+      `<span class="count">${drafts.filter(d => statusOf(d) === 'approved').length} of ${drafts.length} approved</span>`;
+    document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; drawCards(); });
+
+    document.getElementById('cards').innerHTML = list.map(d => {
+      const e = evById[d.eventId]; const st = statusOf(d); const edited = store.get('tx:' + d.key);
+      const rec = d.kind === 'video_script' && recordBy[d.eventId] ? `<div class="note">Tiger records by <b>${esc(recordBy[d.eventId].at)} ET</b> &middot; publishes ${esc(d.slotAt)} ET</div>` : '';
+      const caught = d.attempts && d.attempts.length > 1 && d.attempts[0].problems.length ? `<div class="note caught">Auto-check caught on the first draft: ${esc(d.attempts[0].problems.join('; '))}. ${d.issues.length ? 'Still failing after retry.' : 'Fixed on retry.'}</div>` : '';
+      const passed = d.slotMs && d.slotMs < Date.parse(data.now) ? ' &middot; <span class="muted">slot passed</span>' : '';
+      return `<article class="card" id="${d.key}">
+        <div class="top"><div><span class="chan ${d.kind}">${KIND[d.kind]}</span>
+          <div class="when">${esc(d.channel || '')} &middot; ${esc(d.slotAt || '')} ET${passed}</div></div>
+          <span class="status st-${st}">${STATUS[st]}</span></div>
+        <div class="ev">${esc(country(e.country))} ${esc(e.name)} <span class="muted" style="font-weight:400">&middot; #${e.rank}, score ${e.score} &middot; release ${esc(e.at)} ET</span></div>
+        ${rec}
+        <div class="text" contenteditable="true" data-key="${d.key}">${edited ? esc(edited) : renderText(d)}</div>
+        ${d.issues.length ? `<ul class="issues">${d.issues.map(i => `<li>${esc(i)}</li>`).join('')}</ul>` : ''}
+        ${caught}
+        <div class="row">Instruments: ${e.instruments.map(i => `<span class="pill">${esc(i)}</span>`).join('')}</div>
+        <div class="row">Sources: ${d.sources.length ? d.sources.map(s => `<a href="${esc(s.url)}" target="_blank">${esc(s.title)}</a>`).join(' &middot; ') : '<span>FXEmpire economic calendar only (no matching article yet)</span>'}</div>
+        <div class="actions"><button class="approve" data-a="approved" data-k="${d.key}">Approve</button><button class="reject" data-a="rejected" data-k="${d.key}">Reject</button><button data-copy="${d.key}">Copy</button>${edited ? `<button data-reset="${d.key}">Undo edits</button>` : ''}</div>
+      </article>`;
+    }).join('') || '<p class="muted">Nothing here.</p>';
+
+    document.querySelectorAll('[data-a]').forEach(b => b.onclick = () => { const k = b.dataset.k; store.set('st:' + k, statusOf(drafts.find(d => d.key === k)) === b.dataset.a ? null : b.dataset.a); drawCards(); });
+    document.querySelectorAll('[data-copy]').forEach(b => b.onclick = () => { const t = document.querySelector(`.text[data-key="${b.dataset.copy}"]`).innerText; navigator.clipboard?.writeText(t); b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1200); });
+    document.querySelectorAll('[data-reset]').forEach(b => b.onclick = () => { store.set('tx:' + b.dataset.reset, null); drawCards(); });
+    document.querySelectorAll('.text').forEach(el => el.onblur = () => { const d = drafts.find(x => x.key === el.dataset.key); if (el.innerText.trim() !== d.text.trim()) { store.set('tx:' + d.key, el.innerText); drawCards(); } });
+  }
+  drawCards();
+
+  // ranked
+  document.getElementById('ranked').innerHTML = `<table><tr><th>#</th><th>Event</th><th>Release (ET)</th><th>Score</th><th>Instruments</th><th>Why</th></tr>` +
+    data.ranked.map(r => `<tr><td>${r.rank}</td><td><b>${esc(country(r.country))} ${esc(r.name)}</b>${r.alsoReleased.length ? `<div class="muted">with ${esc(r.alsoReleased.join(', '))}</div>` : ''}
+      <div>${r.post ? '<span class="pill p">X posts</span>' : ''}${r.video ? '<span class="pill v">Video</span>' : ''}</div></td>
+      <td>${esc(r.at)}<div class="muted">F ${esc(r.forecast || '-')} &middot; P ${esc(r.previous || '-')}${r.actual ? ` &middot; A ${esc(r.actual)}` : ''}</div></td>
+      <td><b>${r.score}</b><div class="muted">cov ${r.parts.coverage} &middot; cur ${r.parts.currency} &middot; breadth ${r.parts.breadth}</div></td>
+      <td>${r.instruments.map(i => `<span class="pill">${esc(i)}</span>`).join('')}</td>
+      <td>${r.why.map(esc).join('<br>')}</td></tr>`).join('') + `</table>`;
+
+  // skipped
+  document.getElementById('skipped').innerHTML = `<table><tr><th>Event</th><th>When (ET)</th><th>Rule</th></tr>` +
+    data.skipped.map(s => `<tr><td>${esc(country(s.country))} ${esc(s.name)}</td><td>${esc(s.at)}</td><td>${esc(s.rule)}</td></tr>`).join('') + `</table>`;
+  document.getElementById('skippedBox').querySelector('summary').textContent = `Skipped events and the rule behind each (${data.skipped.length})`;
+
+  document.getElementById('log').textContent = data.log.join('\n');
+  document.getElementById('foot').innerHTML = `Rules: High impact gate &middot; top ${data.config.selection.topPosts} events get X posts, top ${data.config.selection.topVideos} get videos &middot; X pre T${data.config.timing.xPreMinutes}m, X post T+${data.config.timing.xPostMinutes}m, video T${data.config.timing.videoPublishHours}h, record-by T${data.config.timing.recordByHours}h &middot; Nothing here is posted automatically. Review status and edits are saved in this browser only.`;
+}
+
+if (window.__DATA__) boot(window.__DATA__);
+else fetch('data.json', { cache: 'no-store' }).then(r => r.json()).then(boot).catch(e => { document.getElementById('meta').textContent = 'Could not load data.json: ' + e; });
+</script>
+</body>
+</html>

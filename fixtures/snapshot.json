@@ -1,0 +1,501 @@
+{
+ "capturedAt": "2026-11-12T11:59:04.274Z",
+ "note": "Real rows from FXEmpire's calendar and forecasts APIs captured on 2026-11-12; trimmed for offline testing.",
+ "events": [
+  {
+   "id": 416596,
+   "date": "2026-11-09T00:00:00.000Z",
+   "name": "Diwali",
+   "impact": 3,
+   "country": "fiji",
+   "allDay": true,
+   "stock_name": "South Pacific Stock Exchange"
+  },
+  {
+   "id": 37017,
+   "date": "2026-11-09T00:00:00.000Z",
+   "name": "National Flag Day",
+   "impact": 3,
+   "country": "azerbaijan",
+   "allDay": true,
+   "stock_name": "Baku Stock Exchange"
+  },
+  {
+   "id": 400901,
+   "date": "2026-11-09T07:00:00.000Z",
+   "name": "Balance of Trade",
+   "impact": 3,
+   "country": "germany",
+   "category": "balance-of-trade",
+   "forecast": "€19.2B",
+   "previous": "€17.8B",
+   "actual": "€15.6B",
+   "reference": "Sep",
+   "time": "02:00",
+   "allDay": false,
+   "color": "below"
+  },
+  {
+   "id": 416604,
+   "date": "2026-11-11T00:00:00.000Z",
+   "name": "Remembrance Day",
+   "impact": 3,
+   "country": "canada",
+   "allDay": true,
+   "stock_name": "Toronto Stock Exchange"
+  },
+  {
+   "id": 416610,
+   "date": "2026-11-11T00:00:00.000Z",
+   "name": "Veterans Day",
+   "impact": 3,
+   "country": "united-states",
+   "allDay": true,
+   "stock_name": "New York Stock Exchange"
+  },
+  {
+   "id": 416611,
+   "date": "2026-11-11T00:00:00.000Z",
+   "name": "Veterans Day",
+   "impact": 3,
+   "country": "united-states",
+   "allDay": true,
+   "stock_name": "NASDAQ"
+  },
+  {
+   "id": 416612,
+   "date": "2026-11-11T00:00:00.000Z",
+   "name": "Veterans Day",
+   "impact": 3,
+   "country": "united-states",
+   "allDay": true,
+   "stock_name": "NYSE American"
+  },
+  {
+   "id": 399405,
+   "date": "2026-11-12T07:00:00.000Z",
+   "name": "GDP Growth Rate YoY Prel",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "gdp-annual-growth-rate",
+   "forecast": "1.9%",
+   "previous": "1.4%",
+   "actual": "1.9%",
+   "reference": "Q3",
+   "time": "02:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 399541,
+   "date": "2026-11-12T07:00:00.000Z",
+   "name": "GDP MoM",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "monthly-gdp-mom",
+   "forecast": "0%",
+   "previous": "0%",
+   "actual": "0.2%",
+   "reference": "Sep",
+   "time": "02:00",
+   "allDay": false,
+   "color": "above"
+  },
+  {
+   "id": 399848,
+   "date": "2026-11-12T07:00:00.000Z",
+   "name": "GDP Growth Rate QoQ Prel",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "gdp-growth-rate",
+   "forecast": "0.7%",
+   "previous": "0.5%",
+   "actual": "0.7%",
+   "reference": "Q3",
+   "time": "02:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 398059,
+   "date": "2026-11-12T15:00:00.000Z",
+   "name": "Existing Home Sales",
+   "impact": 3,
+   "country": "united-states",
+   "category": "existing-home-sales",
+   "forecast": "3.85M",
+   "previous": "3.99M",
+   "actual": null,
+   "reference": "Oct",
+   "time": "10:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 416613,
+   "date": "2026-11-13T00:00:00.000Z",
+   "name": "Martyrdom of Fatima",
+   "impact": 3,
+   "country": "iran",
+   "allDay": true,
+   "stock_name": "Tehran Stock Exchange"
+  },
+  {
+   "id": 398183,
+   "date": "2026-11-13T13:30:00.000Z",
+   "name": "PPI MoM",
+   "impact": 3,
+   "country": "united-states",
+   "category": "producer-price-inflation-mom",
+   "forecast": "0.4%",
+   "previous": "1.3%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "08:30",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 401420,
+   "date": "2026-11-15T23:50:00.000Z",
+   "name": "GDP Growth Rate QoQ Prel",
+   "impact": 3,
+   "country": "japan",
+   "category": "gdp-growth-rate",
+   "forecast": "0.1%",
+   "previous": "0.4%",
+   "actual": null,
+   "reference": "Q3",
+   "time": "18:50",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 401406,
+   "date": "2026-11-16T02:00:00.000Z",
+   "name": "Retail Sales YoY",
+   "impact": 3,
+   "country": "china",
+   "category": "retail-sales-yoy",
+   "forecast": "",
+   "previous": "1.1%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "21:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 401469,
+   "date": "2026-11-16T02:00:00.000Z",
+   "name": "Industrial Production YoY",
+   "impact": 3,
+   "country": "china",
+   "category": "industrial-production",
+   "forecast": "5.3%",
+   "previous": "5.5%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "21:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 410775,
+   "date": "2026-11-16T13:30:00.000Z",
+   "name": "Inflation Rate YoY",
+   "impact": 3,
+   "country": "canada",
+   "category": "inflation-rate",
+   "forecast": "3.2%",
+   "previous": "3.1%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "08:30",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 394048,
+   "date": "2026-11-17T00:30:00.000Z",
+   "name": "RBA Meeting Minutes",
+   "impact": 3,
+   "country": "australia",
+   "category": "interest-rate",
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "reference": "",
+   "time": "19:30",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 399770,
+   "date": "2026-11-17T07:00:00.000Z",
+   "name": "Unemployment Rate",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "unemployment-rate",
+   "forecast": "4.9%",
+   "previous": "4.7%",
+   "actual": null,
+   "reference": "Sep",
+   "time": "02:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 401353,
+   "date": "2026-11-17T10:00:00.000Z",
+   "name": "ZEW Economic Sentiment Index",
+   "impact": 3,
+   "country": "germany",
+   "category": "zew-economic-sentiment-index",
+   "forecast": "15.9",
+   "previous": "28.1",
+   "actual": null,
+   "reference": "Nov",
+   "time": "05:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 399093,
+   "date": "2026-11-17T13:30:00.000Z",
+   "name": "Retail Sales MoM",
+   "impact": 3,
+   "country": "united-states",
+   "category": "retail-sales-mom",
+   "forecast": "0.6%",
+   "previous": "0.8%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "08:30",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 402633,
+   "date": "2026-11-17T23:50:00.000Z",
+   "name": "Balance of Trade",
+   "impact": 3,
+   "country": "japan",
+   "category": "balance-of-trade",
+   "forecast": "",
+   "previous": "¥-536.6B",
+   "actual": null,
+   "reference": "Oct",
+   "time": "18:50",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 399593,
+   "date": "2026-11-18T07:00:00.000Z",
+   "name": "Inflation Rate YoY",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "inflation-rate",
+   "forecast": "3.5%",
+   "previous": "3.5%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "02:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 390612,
+   "date": "2026-11-18T19:00:00.000Z",
+   "name": "FOMC Minutes",
+   "impact": 3,
+   "country": "united-states",
+   "category": "interest-rate",
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "reference": "",
+   "time": "14:00",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 403527,
+   "date": "2026-11-19T23:30:00.000Z",
+   "name": "Inflation Rate YoY",
+   "impact": 3,
+   "country": "japan",
+   "category": "inflation-rate",
+   "forecast": "",
+   "previous": "2.1%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "18:30",
+   "allDay": false,
+   "color": "none"
+  },
+  {
+   "id": 399716,
+   "date": "2026-11-20T07:00:00.000Z",
+   "name": "Retail Sales MoM",
+   "impact": 3,
+   "country": "united-kingdom",
+   "category": "retail-sales-mom",
+   "forecast": "0.1%",
+   "previous": "-0.4%",
+   "actual": null,
+   "reference": "Oct",
+   "time": "02:00",
+   "allDay": false,
+   "color": "none"
+  }
+ ],
+ "articles": [
+  {
+   "id": 1644089,
+   "title": "Nasdaq 100 Forecast: Nvidia Reports Rattle Tech Stocks Before the Open",
+   "tags": [
+    "i-us30-usd",
+    "indices",
+    "i-tech100-usd",
+    "s-nvda",
+    "i-spx",
+    "stocks"
+   ],
+   "timestamp": 1794472743000,
+   "articleUrl": "/forecasts/article/nasdaq-100-forecast-nvidia-reports-rattle-tech-stocks-before-the-open-1644089",
+   "author": "James Hyerczyk"
+  },
+  {
+   "id": 1644144,
+   "title": "Gold Price Forecast: Gold Drops Below $4,000 as Hot CPI Lifts Yields",
+   "tags": [
+    "co-brent-crude-oil",
+    "commodities",
+    "economic-news",
+    "co-gold",
+    "us-dollar-index",
+    "co-wti-crude-oil"
+   ],
+   "timestamp": 1794478996000,
+   "articleUrl": "/forecasts/article/gold-price-forecast-gold-drops-below-4000-as-hot-cpi-lifts-yields-1644144",
+   "author": "Muhammad Umair"
+  },
+  {
+   "id": 1644082,
+   "title": "US Dollar Price Forecast: DXY Eyes 103.15 at 19-Month High as EUR/USD, GBP/USD Slide",
+   "tags": [
+    "c-eur-usd",
+    "forex",
+    "c-gbp-usd",
+    "co-gold"
+   ],
+   "timestamp": 1794469888000,
+   "articleUrl": "/forecasts/article/us-dollar-price-forecast-dxy-hits-19-month-high-can-it-break-103-15-1644082",
+   "author": "Arslan Ali Butt"
+  },
+  {
+   "id": 1644068,
+   "title": "Gold vs Bitcoin: Bitcoin Slips as ETF Outflows Jump",
+   "tags": [
+    "cc-bitcoin",
+    "commodities",
+    "co-gold"
+   ],
+   "timestamp": 1794468096000,
+   "articleUrl": "/forecasts/article/gold-vs-bitcoin-bitcoin-slips-as-etf-outflows-jump-1644068",
+   "author": "Muhammad Umair"
+  },
+  {
+   "id": 1644067,
+   "title": "Gold (XAUUSD) & Silver Price Forecast: Fed Hike Bets Harden, Can Gold Hold $3,944?",
+   "tags": [
+    "commodities",
+    "co-gold",
+    "co-silver"
+   ],
+   "timestamp": 1794467593000,
+   "articleUrl": "/forecasts/article/gold-xauusd-silver-price-forecast-fed-hike-bets-harden-can-gold-hold-3944-1644067",
+   "author": "Arslan Ali Butt"
+  },
+  {
+   "id": 1644060,
+   "title": "Natural Gas and Oil Forecast: Peace Hopes Pressure Oil, Can WTI Hold $85.22?",
+   "tags": [
+    "co-brent-crude-oil",
+    "commodities",
+    "co-natural-gas",
+    "co-wti-crude-oil"
+   ],
+   "timestamp": 1794466904000,
+   "articleUrl": "/forecasts/article/natural-gas-and-oil-forecast-peace-hopes-pressure-oil-can-wti-hold-85-22-1644060",
+   "author": "Arslan Ali Butt"
+  },
+  {
+   "id": 1644048,
+   "title": "Oil Price Forecast: WTI Falls Below $87 as Supply Fears Ease",
+   "tags": [
+    "co-brent-crude-oil",
+    "commodities",
+    "us-dollar-index",
+    "co-wti-crude-oil"
+   ],
+   "timestamp": 1794456668000,
+   "articleUrl": "/forecasts/article/oil-price-forecast-wti-falls-below-87-as-supply-fears-ease-1644048",
+   "author": "Muhammad Umair"
+  },
+  {
+   "id": 1644005,
+   "title": "The Dollar Breaks Higher as Gold Faces a Critical Support Test",
+   "tags": [
+    "commodities",
+    "forex",
+    "co-gold",
+    "us-dollar-index"
+   ],
+   "timestamp": 1794430431000,
+   "articleUrl": "/forecasts/article/the-dollar-breaks-higher-as-gold-faces-a-critical-support-test-1644005",
+   "author": "Anna Radomska"
+  },
+  {
+   "id": 1643984,
+   "title": "NASDAQ Index, SP500, Dow Jones Forecasts – NASDAQ Rallies As CoreWeave Soars 24%",
+   "tags": [
+    "i-us30-usd",
+    "indices",
+    "i-tech100-usd",
+    "i-spx"
+   ],
+   "timestamp": 1794426230000,
+   "articleUrl": "/forecasts/article/nasdaq-index-sp500-dow-jones-forecasts-nasdaq-rallies-as-coreweave-soars-24-1643984",
+   "author": "Vladimir Zernov"
+  },
+  {
+   "id": 1643961,
+   "title": "Nasdaq Index: CoreWeave and Nvidia Lead Tech Rebound as CPI Risks Linger",
+   "tags": [
+    "i-us30-usd",
+    "indices",
+    "i-tech100-usd",
+    "s-nvda",
+    "i-spx",
+    "stocks"
+   ],
+   "timestamp": 1794419053000,
+   "articleUrl": "/forecasts/article/nasdaq-index-coreweave-and-nvidia-lead-tech-rebound-as-cpi-risks-linger-1643961",
+   "author": "James Hyerczyk"
+  },
+  {
+   "id": 1643937,
+   "title": "XRP Price Prediction: Technical Bounce to $1.20 Likely Before Downtrend Resumes",
+   "tags": [
+    "cryptocurrencies",
+    "cc-ripple"
+   ],
+   "timestamp": 1794419493000,
+   "articleUrl": "/forecasts/article/xrp-price-prediction-technical-bounce-to-1-20-likely-before-downtrend-resumes-1643937",
+   "author": "Alejandro Arrieche"
+  }
+ ]
+}
