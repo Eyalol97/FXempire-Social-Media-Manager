@@ -1,8 +1,8 @@
 {
- "runAt": "2026-11-12T12:33:20.694Z",
- "now": "2026-11-12T11:59:04.274Z",
- "nowLabel": "Thu 11-12 06:59",
- "mode": "fixture + mock AI (offline test)",
+ "runAt": "2026-11-12T13:30:53.184Z",
+ "now": "2026-11-12T13:17:16.315Z",
+ "nowLabel": "Thu 11-12 08:17",
+ "mode": "live: FXEmpire API + gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
   "selection": {
@@ -37,28 +37,26 @@
   }
  },
  "counts": {
-  "rawRows": 26,
+  "rawRows": 829,
   "releases": 16,
-  "holidays": 5,
+  "holidays": 27,
   "inWindow": 13,
-  "articles": 11
+  "articles": 60
  },
  "flags": {
-  "missingReleases": [
-   {
-    "release": "US CPI",
-    "article_id": 1644144,
-    "evidence": "Gold Price Forecast: Gold Drops Below $4,000 as Hot CPI Lifts Yields",
-    "title": "Gold Price Forecast: Gold Drops Below $4,000 as Hot CPI Lifts Yields",
-    "url": "https://www.fxempire.com/forecasts/article/gold-price-forecast-gold-drops-below-4000-as-hot-cpi-lifts-yields-1644144"
-   }
-  ],
+  "missingReleases": [],
   "holidays": [
    {
     "date": "2026-11-11",
     "country": "canada",
     "name": "Remembrance Day",
     "exchange": "Toronto Stock Exchange"
+   },
+   {
+    "date": "2026-11-11",
+    "country": "france",
+    "name": "Armistice Day",
+    "exchange": "Euronext Paris"
    },
    {
     "date": "2026-11-11",
@@ -758,6 +756,13 @@
    "score": null
   },
   {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
    "name": "National Flag Day",
    "country": "azerbaijan",
    "at": "2026-11-09 (all day)",
@@ -765,8 +770,85 @@
    "score": null
   },
   {
+   "name": "Independence Day",
+   "country": "cambodia",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Days of History and Memory of Ancestors",
+   "country": "kyrgyzstan",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Gobhardan Puja",
+   "country": "nepal",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "belgium",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Bhai Tika",
+   "country": "nepal",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Republic Day",
+   "country": "maldives",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "serbia",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance Day",
+   "country": "bermuda",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
    "name": "Remembrance Day",
    "country": "canada",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "france",
    "at": "2026-11-11 (all day)",
    "rule": "Market holiday (used as a schedule flag, not content)",
    "score": null
@@ -779,9 +861,79 @@
    "score": null
   },
   {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-12 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
    "name": "Martyrdom of Fatima",
    "country": "iran",
    "at": "2026-11-13 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Proclamation of the Republic Day",
+   "country": "brazil",
+   "at": "2026-11-15 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "slovakia",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "czech-republic",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance day",
+   "country": "croatia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Day",
+   "country": "oman",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "morocco",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "latvia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Genghis Khan’s Birthday",
+   "country": "mongolia",
+   "at": "2026-11-21 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "lebanon",
+   "at": "2026-11-22 (all day)",
    "rule": "Market holiday outside major markets",
    "score": null
   }
@@ -790,33 +942,14 @@
   {
    "eventId": 390612,
    "kind": "x_pre",
-   "text": "US FOMC Minutes at 14:00 ET. Forecast n/a, previous n/a. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "US FOMC Minutes at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Mentions a figure that does not exist for this release (n/a)"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795023000000,
    "slotAt": "Wed 11-18 12:30",
    "channel": "X"
@@ -824,33 +957,14 @@
   {
    "eventId": 390612,
    "kind": "x_post",
-   "text": "US FOMC Minutes came in at {actual} vs n/a expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "US FOMC Minutes came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Mentions a figure that does not exist for this release (n/a)"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795029000000,
    "slotAt": "Wed 11-18 14:10",
    "channel": "X"
@@ -858,34 +972,14 @@
   {
    "eventId": 390612,
    "kind": "video_script",
-   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US FOMC Minutes]\nWHAT IT IS\nUS FOMC Minutes lands at 14:00 ET. The forecast is n/a, last time it was n/a. [ON SCREEN: \"Forecast n/a\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
-   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US FOMC Minutes]\nWHAT IT IS\nUS FOMC Minutes lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Numbers not found in the source: 4500",
-    "Mentions a figure that does not exist for this release (n/a)"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)",
-      "video_script: Numbers not found in the source: 4500",
-      "video_script: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794956400000,
    "slotAt": "Tue 11-17 18:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -893,17 +987,14 @@
   {
    "eventId": 398183,
    "kind": "x_pre",
-   "text": "US PPI MoM at 08:30 ET. Forecast 0.4%, previous 1.3%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "US PPI MoM at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794571200000,
    "slotAt": "Fri 11-13 07:00",
    "channel": "X"
@@ -911,17 +1002,14 @@
   {
    "eventId": 398183,
    "kind": "x_post",
-   "text": "US PPI MoM came in at {actual} vs 0.4% expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "US PPI MoM came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794577200000,
    "slotAt": "Fri 11-13 08:40",
    "channel": "X"
@@ -929,25 +1017,14 @@
   {
    "eventId": 410775,
    "kind": "x_pre",
-   "text": "Canada Inflation Rate YoY at 08:30 ET. Forecast 3.2%, previous 3.1%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "Canada Inflation Rate YoY at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794830400000,
    "slotAt": "Mon 11-16 07:00",
    "channel": "X"
@@ -955,25 +1032,14 @@
   {
    "eventId": 410775,
    "kind": "x_post",
-   "text": "Canada Inflation Rate YoY came in at {actual} vs 3.2% expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "Canada Inflation Rate YoY came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794836400000,
    "slotAt": "Mon 11-16 08:40",
    "channel": "X"
@@ -981,27 +1047,14 @@
   {
    "eventId": 410775,
    "kind": "video_script",
-   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: Canada Inflation Rate YoY]\nWHAT IT IS\nCanada Inflation Rate YoY lands at 08:30 ET. The forecast is 3.2%, last time it was 3.1%. [ON SCREEN: \"Forecast 3.2%\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
-   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: Canada Inflation Rate YoY]\nWHAT IT IS\nCanada Inflation Rate YoY lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Numbers not found in the source: 4500"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794763800000,
    "slotAt": "Sun 11-15 12:30",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -1009,25 +1062,14 @@
   {
    "eventId": 399093,
    "kind": "x_pre",
-   "text": "US Retail Sales MoM at 08:30 ET. Forecast 0.6%, previous 0.8%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "US Retail Sales MoM at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794916800000,
    "slotAt": "Tue 11-17 07:00",
    "channel": "X"
@@ -1035,25 +1077,14 @@
   {
    "eventId": 399093,
    "kind": "x_post",
-   "text": "US Retail Sales MoM came in at {actual} vs 0.6% expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "US Retail Sales MoM came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794922800000,
    "slotAt": "Tue 11-17 08:40",
    "channel": "X"
@@ -1061,27 +1092,14 @@
   {
    "eventId": 399093,
    "kind": "video_script",
-   "text": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US Retail Sales MoM]\nWHAT IT IS\nUS Retail Sales MoM lands at 08:30 ET. The forecast is 0.6%, last time it was 0.8%. [ON SCREEN: \"Forecast 0.6%\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
-   "raw": "HOOK\nOne number could shake the dollar this week. [ON SCREEN: US Retail Sales MoM]\nWHAT IT IS\nUS Retail Sales MoM lands at {time_et} ET. The forecast is {forecast}, last time it was {previous}. [ON SCREEN: \"Forecast {forecast}\"]\nWHY IT MATTERS\nThis feeds straight into rate expectations, and rates drive the dollar, gold and stocks. Traders will look at it within seconds of the release, so the first move is often the biggest one of the day. [ON SCREEN: DXY chart]\nWHAT TO WATCH\nA print above the forecast could lift the dollar and pressure gold. A miss could do the opposite. Something close to the forecast may mean a quiet market until the next release. Also watch the revision to last month, it can change the picture. Gold was near 4,500 last week. [ON SCREEN: Gold chart]\nCLOSE\nFull breakdown on FXEmpire. [ON SCREEN: fxempire.com]",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Numbers not found in the source: 4500"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "video_script: Numbers not found in the source: 4500"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794850200000,
    "slotAt": "Mon 11-16 12:30",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -1089,17 +1107,14 @@
   {
    "eventId": 399593,
    "kind": "x_pre",
-   "text": "UK Inflation Rate YoY at 02:00 ET. Forecast 3.5%, previous 3.5%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "UK Inflation Rate YoY at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794967200000,
    "slotAt": "Tue 11-17 21:00",
    "channel": "X"
@@ -1107,17 +1122,14 @@
   {
    "eventId": 399593,
    "kind": "x_post",
-   "text": "UK Inflation Rate YoY came in at {actual} vs 3.5% expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "UK Inflation Rate YoY came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1795003200000,
    "slotAt": "Wed 11-18 07:00",
    "channel": "X"
@@ -1125,17 +1137,14 @@
   {
    "eventId": 398059,
    "kind": "x_pre",
-   "text": "US Existing Home Sales at 10:00 ET. Forecast 3.85M, previous 3.99M. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "US Existing Home Sales at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794490200000,
    "slotAt": "Thu 11-12 08:30",
    "channel": "X"
@@ -1143,17 +1152,14 @@
   {
    "eventId": 398059,
    "kind": "x_post",
-   "text": "US Existing Home Sales came in at {actual} vs 3.85M expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "US Existing Home Sales came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794496200000,
    "slotAt": "Thu 11-12 10:10",
    "channel": "X"
@@ -1161,29 +1167,14 @@
   {
    "eventId": 394048,
    "kind": "x_pre",
-   "text": "Australia RBA Meeting Minutes at 19:30 ET. Forecast n/a, previous n/a. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "Australia RBA Meeting Minutes at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Mentions a figure that does not exist for this release (n/a)"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794870000000,
    "slotAt": "Mon 11-16 18:00",
    "channel": "X"
@@ -1191,29 +1182,14 @@
   {
    "eventId": 394048,
    "kind": "x_post",
-   "text": "Australia RBA Meeting Minutes came in at {actual} vs n/a expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "raw": "Australia RBA Meeting Minutes came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
+   "text": "",
+   "raw": "",
    "issues": [
-    "Mentions a figure that does not exist for this release (n/a)"
+    "AI call failed: All Gemini models were busy for this call"
    ],
    "status": "needs_fix",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    },
-    {
-     "attempt": 2,
-     "problems": [
-      "x_pre: Mentions a figure that does not exist for this release (n/a)",
-      "x_post: Mentions a figure that does not exist for this release (n/a)"
-     ]
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794876000000,
    "slotAt": "Mon 11-16 19:40",
    "channel": "X"
@@ -1221,17 +1197,14 @@
   {
    "eventId": 399405,
    "kind": "x_pre",
-   "text": "UK GDP Growth Rate YoY Prel at 02:00 ET. Forecast 1.9%, previous 1.4%. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "raw": "UK GDP Growth Rate YoY Prel at {time_et} ET. Forecast {forecast}, previous {previous}. A surprise here could move the dollar fast. Full analysis on FXEmpire.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794448800000,
    "slotAt": "Wed 11-11 21:00",
    "channel": "X"
@@ -1239,17 +1212,14 @@
   {
    "eventId": 399405,
    "kind": "x_post",
-   "text": "UK GDP Growth Rate YoY Prel came in at 1.9% vs 1.9% expected, in line with forecast. Watch how the dollar reacts into the session.",
-   "raw": "UK GDP Growth Rate YoY Prel came in at {actual} vs {forecast} expected, {direction} forecast. Watch how the dollar reacts into the session.",
-   "issues": [],
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: All Gemini models were busy for this call"
    ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
    "slotMs": 1794484800000,
    "slotAt": "Thu 11-12 07:00",
    "channel": "X"
@@ -1275,9 +1245,10 @@
    "ms": 1794484800000,
    "at": "Thu 11-12 07:00",
    "notes": [
-    "Moved from Thu 11-12 02:10 to stay inside 07:00-21:00 ET"
+    "Moved from Thu 11-12 02:10 to stay inside 07:00-21:00 ET",
+    "Slot already passed at run time"
    ],
-   "passed": false
+   "passed": true
   },
   {
    "eventId": 398059,
@@ -1465,18 +1436,100 @@
   }
  ],
  "log": [
-  "2026-11-12T12:33:20.629Z Fixture mode: fixtures/snapshot.json (now = 2026-11-12T11:59:04.274Z)",
-  "2026-11-12T12:33:20.632Z Calendar: 26 high-impact rows. Articles: 11",
-  "2026-11-12T12:33:20.633Z Releases: 16. Holidays after de-dup: 5 (major markets: 2)",
-  "2026-11-12T12:33:20.681Z Matched 0 events to articles. Releases missing from calendar: 1",
-  "2026-11-12T12:33:20.682Z Ranked 13. Posts: 8. Videos: 3",
-  "2026-11-12T12:33:20.683Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:33:20.684Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:33:20.685Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:33:20.685Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:33:20.686Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:33:20.686Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:33:20.687Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:33:20.687Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)"
+  "2026-11-12T13:17:24.607Z Calendar: 829 high-impact rows. Articles: 60",
+  "2026-11-12T13:17:24.608Z Releases: 16. Holidays after de-dup: 27 (major markets: 3)",
+  "2026-11-12T13:17:24.734Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-12T13:18:55.480Z gemini-3.8-flash: timed out after 90 s, trying the next model",
+  "2026-11-12T13:18:55.613Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:19:02.615Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:19:13.983Z gemini-flash-latest: 503, trying the next model",
+  "2026-11-12T13:19:13.983Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:19:49.045Z gemini-3.8-flash: 503, trying the next model",
+  "2026-11-12T13:19:51.116Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:19:58.252Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:20:07.546Z gemini-flash-latest: 503, trying the next model",
+  "2026-11-12T13:20:07.546Z Matching failed (All Gemini models were busy for this call). Continuing without article coverage points.",
+  "2026-11-12T13:20:07.546Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-12T13:20:07.547Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-12T13:20:12.134Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:20:19.126Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:20:26.131Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:20:42.742Z gemini-flash-latest: 503, trying the next model",
+  "2026-11-12T13:20:42.742Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:21:12.874Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:21:19.876Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:21:26.889Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:21:38.542Z gemini-flash-latest: 503, trying the next model",
+  "2026-11-12T13:21:38.542Z Drafting failed for FOMC Minutes (united-states): All Gemini models were busy for this call",
+  "2026-11-12T13:21:40.858Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:21:47.899Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:21:54.884Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:22:07.116Z gemini-flash-latest: 503, trying the next model",
+  "2026-11-12T13:22:07.116Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:22:37.267Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:22:44.367Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:22:51.283Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:22:58.266Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:22:58.266Z Drafting failed for PPI MoM (united-states): All Gemini models were busy for this call",
+  "2026-11-12T13:23:05.262Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:23:12.351Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:23:19.277Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:23:26.266Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:23:26.266Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:23:58.677Z gemini-3.8-flash: 503, trying the next model",
+  "2026-11-12T13:24:03.411Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:24:10.392Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:24:17.405Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:24:17.405Z Drafting failed for Inflation Rate YoY (canada): All Gemini models were busy for this call",
+  "2026-11-12T13:24:24.505Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:24:31.419Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:24:38.402Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:24:45.408Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:24:45.408Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:25:15.530Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:25:22.561Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:25:29.524Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:25:36.538Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:25:36.538Z Drafting failed for Retail Sales MoM (united-states): All Gemini models were busy for this call",
+  "2026-11-12T13:25:43.541Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:25:50.563Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:25:57.548Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:26:04.587Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:26:04.587Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:26:34.712Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:26:41.739Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:26:48.726Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:26:55.726Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:26:55.726Z Drafting failed for Inflation Rate YoY (united-kingdom): All Gemini models were busy for this call",
+  "2026-11-12T13:27:02.724Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:27:09.738Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:27:16.720Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:27:23.748Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:27:23.748Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:27:53.865Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:28:00.854Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:28:07.883Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:28:14.858Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:28:14.858Z Drafting failed for Existing Home Sales (united-states): All Gemini models were busy for this call",
+  "2026-11-12T13:28:21.860Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:28:28.879Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:28:35.876Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:28:42.884Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:28:42.884Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:29:13.010Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:29:20.020Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:29:27.017Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:29:34.022Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:29:34.022Z Drafting failed for RBA Meeting Minutes (australia): All Gemini models were busy for this call",
+  "2026-11-12T13:29:43.572Z gemini-3.8-flash: 503, trying the next model",
+  "2026-11-12T13:29:47.995Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:29:55.117Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:30:02.028Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:30:02.028Z All models busy, waiting 30 s before one more round",
+  "2026-11-12T13:30:32.158Z gemini-3.8-flash: 429, trying the next model",
+  "2026-11-12T13:30:39.169Z gemini-omni-1.2-flash: 429, trying the next model",
+  "2026-11-12T13:30:46.171Z gemini-omni-1.1-flash: 429, trying the next model",
+  "2026-11-12T13:30:53.178Z gemini-flash-latest: 429, trying the next model",
+  "2026-11-12T13:30:53.178Z Drafting failed for GDP Growth Rate YoY Prel (united-kingdom): All Gemini models were busy for this call"
  ]
 }
