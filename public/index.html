@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FXEmpire Social - Weekly Content Board</title>
 <style>
-  :root{--bg:#f6f7f9;--card:#fff;--ink:#15181d;--mute:#667085;--line:#e4e7ec;--x:#111;--vid:#7c3aed;--rec:#b45309;--ok:#067647;--okbg:#ecfdf3;--warn:#b54708;--warnbg:#fffaeb;--bad:#b42318;--badbg:#fef3f2;--acc:#0b63ce}
+  :root{--brand:#00e0c6;--bg:#f6f7f9;--card:#fff;--ink:#15181d;--mute:#667085;--line:#e4e7ec;--x:#111;--vid:#7c3aed;--rec:#b45309;--ok:#067647;--okbg:#ecfdf3;--warn:#b54708;--warnbg:#fffaeb;--bad:#b42318;--badbg:#fef3f2;--acc:#0b63ce}
   *{box-sizing:border-box}
   body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
-  header{background:#0f172a;color:#fff;padding:18px 28px}
-  header h1{margin:0;font-size:20px;font-weight:650}
-  header .meta{color:#cbd5e1;font-size:13px;margin-top:4px}
-  main{max-width:1180px;margin:0 auto;padding:20px 24px 60px}
+  header{background:#000;color:#fff;padding:14px 28px;display:flex;align-items:center;gap:18px}
+  header img{width:56px;height:56px;border-radius:8px}
+  header h1{margin:0;font-size:19px;font-weight:650}
+  header .pending{margin-left:auto;text-align:right}
+  header .pending b{display:block;font-size:30px;line-height:1;color:var(--brand)}
+  header .pending span{font-size:13px;color:#cbd5e1}
+  main{max-width:1440px;margin:0 auto;padding:20px 24px 60px}
   h2{font-size:17px;margin:28px 0 10px}
   .flags{display:grid;gap:8px;margin-top:4px}
   .flag{background:var(--badbg);border:1px solid #fecdca;border-radius:10px;padding:10px 14px;font-size:14px}
@@ -19,20 +22,26 @@
   .flag b{font-weight:650}
   .flag a{color:inherit}
   /* timeline */
-  .timeline{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
-  .day{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px;min-height:90px;min-width:0}
-  .day.today{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}
-  .day h4{margin:0 0 6px;font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-  .slot{display:block;font-size:12px;padding:3px 6px;border-radius:6px;margin-bottom:4px;cursor:pointer;border-left:3px solid;background:#f9fafb;text-decoration:none;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .slot.x_pre,.slot.x_post{border-color:var(--x)} .slot.video{border-color:var(--vid)} .slot.record_by{border-color:var(--rec)}
-  .slot.passed{opacity:.45}
+  .timeline{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+  .day{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;min-height:320px;min-width:0}
+  .day.today{border-color:var(--brand);box-shadow:0 0 0 1px var(--brand) inset}
+  .day h4{margin:0 0 10px;font-size:13px;color:var(--ink);font-weight:700}
+  .day h4 small{display:block;font-weight:500;color:var(--mute);font-size:12px}
+  .day .empty{font-size:12.5px;color:var(--mute)}
+  .slot{display:block;font-size:13px;line-height:1.35;padding:8px 9px;border-radius:8px;margin-bottom:7px;cursor:pointer;text-decoration:none;color:#fff;background:var(--x)}
+  .slot .t{display:block;font-weight:700;font-size:12px;opacity:.85;margin-bottom:2px}
+  .slot.video{background:var(--vid)} .slot.record_by{background:#fde68a;color:#78350f}
+  .slot:hover{filter:brightness(1.12)}
+  .slot.passed{opacity:.4}
   .legend{display:flex;gap:14px;font-size:12px;color:var(--mute);margin:6px 0 0}
-  .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+  .legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
   /* toolbar */
   .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 12px}
   .toolbar button{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
   .toolbar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
   .toolbar .count{color:var(--mute);font-size:13px;margin-left:auto}
+  .toolbar .lbl{font-size:12px;color:var(--mute);width:62px}
+  .toolbar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
   /* cards */
   .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;scroll-margin-top:16px}
@@ -69,23 +78,25 @@
   .muted{color:var(--mute)}
   footer{color:var(--mute);font-size:12.5px;margin-top:30px}
   pre.log{white-space:pre-wrap;font-size:12px;padding:0 16px 14px;margin:0;color:#475467}
-  @media (max-width:800px){.timeline{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:1000px){.timeline{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
 <header>
-  <h1>FXEmpire Social - Weekly Content Board</h1>
-  <div class="meta" id="meta">Loading...</div>
+  <img src="logo.png" alt="FXEmpire">
+  <h1>Social Content Board</h1>
+  <div class="pending"><b id="pendingCount">-</b><span>drafts waiting for your approval</span></div>
 </header>
 <main>
   <div class="flags" id="flags"></div>
 
   <h2>This week's schedule (ET)</h2>
   <div class="timeline" id="timeline"></div>
-  <div class="legend"><span style="--c:var(--x)">X post</span><span style="--c:var(--vid)">Short video (TikTok / Reels / Shorts)</span><span style="--c:var(--rec)">Tiger record-by</span></div>
+  <div class="legend"><span style="--c:var(--x)">X post</span><span style="--c:var(--vid)">Short video (TikTok / Reels / Shorts)</span><span style="--c:#fde68a">Tiger records by</span></div>
 
   <h2>Drafts to review</h2>
   <div class="toolbar" id="toolbar"></div>
+  <div class="toolbar" id="toolbar2"></div>
   <div class="cards" id="cards"></div>
 
   <details open id="rankedBox"><summary>Ranked events: why each one was picked</summary><div id="ranked"></div></details>
@@ -113,13 +124,10 @@ function renderText(d) {
 function boot(data) {
   window.DATA = data;
   const evById = Object.fromEntries(data.ranked.map(r => [r.id, r]));
-  document.getElementById('meta').innerHTML =
-    `Run: ${esc(data.nowLabel)} ET &middot; ${esc(data.mode)} &middot; ${data.counts.releases} releases, ${data.counts.holidays} holidays filtered, ${data.counts.articles} recent articles read`;
 
   // flags for the human
   const f = [];
   for (const m of data.flags.missingReleases) f.push(`<div class="flag"><b>Check the calendar:</b> an FXEmpire article covers <b>${esc(m.release)}</b>, but it is not in the economic calendar this week. <a href="${esc(m.url)}" target="_blank">${esc(m.title)}</a></div>`);
-  if (data.flags.holidays.length) f.push(`<div class="flag info"><b>Market holidays this week:</b> ${data.flags.holidays.map(h => `${esc(h.name)} (${esc(country(h.country))}, ${esc(h.date)})`).join(', ')}. Used as schedule notes, not content.</div>`);
   document.getElementById('flags').innerHTML = f.join('');
 
   // timeline: 7 days from the run date
@@ -134,9 +142,9 @@ function boot(data) {
   const shown = days.slice(-7);
   document.getElementById('timeline').innerHTML = shown.map(day => {
     const slots = data.schedule.filter(s => s.at.slice(4, 9) === day.key);
-    return `<div class="day ${day.today ? 'today' : ''}"><h4>${day.wd} ${day.key}${day.today ? ' &middot; today' : ''}</h4>` +
-      slots.map(s => { const e = evById[s.eventId]; const tag = s.kind === 'record_by' ? 'Record' : s.kind === 'video' ? 'Video' : s.kind === 'x_pre' ? 'X pre' : 'X post';
-        return `<a class="slot ${s.kind} ${s.passed ? 'passed' : ''}" data-target="${s.eventId}-${s.kind === 'video' || s.kind === 'record_by' ? 'video_script' : s.kind}" title="${esc(s.notes.join(' | '))}">${s.at.slice(-5)} ${tag}: ${esc(country(e.country))} ${esc(e.name)}</a>`; }).join('') + `</div>`;
+    return `<div class="day ${day.today ? 'today' : ''}"><h4>${day.wd}<small>${day.key}${day.today ? ' &middot; today' : ''}</small></h4>` +
+      (slots.map(s => { const e = evById[s.eventId]; const tag = s.kind === 'record_by' ? 'Tiger records' : s.kind === 'video' ? 'Video' : s.kind === 'x_pre' ? 'X - before' : 'X - after';
+        return `<a class="slot ${s.kind} ${s.passed ? 'passed' : ''}" data-target="${s.eventId}-${s.kind === 'video' || s.kind === 'record_by' ? 'video_script' : s.kind}" title="${esc(s.notes.join(' | '))}"><span class="t">${s.at.slice(-5)} &middot; ${tag}</span>${esc(country(e.country))} ${esc(e.name)}</a>`; }).join('') || '<div class="empty">Nothing scheduled</div>') + `</div>`;
   }).join('');
   document.querySelectorAll('.slot').forEach(a => a.onclick = () => {
     const el = document.getElementById(a.dataset.target); if (!el) return;
@@ -149,15 +157,21 @@ function boot(data) {
   drafts.forEach(d => { d.deadline = d.kind === 'video_script' && recordBy[d.eventId] ? recordBy[d.eventId].ms : d.slotMs; });
   drafts.sort((a, b) => (a.deadline < Date.parse(data.now)) - (b.deadline < Date.parse(data.now)) || a.deadline - b.deadline);
 
-  let filter = 'all';
-  const filters = { all: 'All', x: 'X posts', video: 'Video scripts', attention: 'Needs attention' };
+  let filter = 'all', review = 'any';
+  const filters = { all: 'All', x: 'X posts', video: 'Video scripts', attention: 'Failed auto-check' };
+  const reviews = { any: 'All', open: 'Not reviewed', approved: 'Approved', rejected: 'Rejected' };
   const statusOf = d => store.get('st:' + d.key) || d.status;
+  const decided = d => ['approved', 'rejected'].includes(statusOf(d));
 
   function drawCards() {
-    const list = drafts.filter(d => filter === 'all' || (filter === 'x' && d.kind !== 'video_script') || (filter === 'video' && d.kind === 'video_script') || (filter === 'attention' && ['needs_fix', 'rejected'].includes(statusOf(d))));
-    document.getElementById('toolbar').innerHTML = Object.entries(filters).map(([k, v]) => `<button class="${k === filter ? 'on' : ''}" data-f="${k}">${v}</button>`).join('') +
-      `<span class="count">${drafts.filter(d => statusOf(d) === 'approved').length} of ${drafts.length} approved</span>`;
+    const list = drafts.filter(d => (filter === 'all' || (filter === 'x' && d.kind !== 'video_script') || (filter === 'video' && d.kind === 'video_script') || (filter === 'attention' && d.status === 'needs_fix'))
+      && (review === 'any' || (review === 'open' && !decided(d)) || statusOf(d) === review));
+    document.getElementById('pendingCount').textContent = drafts.filter(d => !decided(d)).length;
+    document.getElementById('toolbar').innerHTML = '<span class="lbl">Type</span>' + Object.entries(filters).map(([k, v]) => `<button class="${k === filter ? 'on' : ''}" data-f="${k}">${v}</button>`).join('') +
+      `<span class="count">${list.length} shown &middot; ${drafts.filter(d => statusOf(d) === 'approved').length} of ${drafts.length} approved</span>`;
+    document.getElementById('toolbar2').innerHTML = '<span class="lbl">Review</span>' + Object.entries(reviews).map(([k, v]) => `<button class="${k === review ? 'on' : ''}" data-r="${k}">${v}</button>`).join('');
     document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; drawCards(); });
+    document.querySelectorAll('[data-r]').forEach(b => b.onclick = () => { review = b.dataset.r; drawCards(); });
 
     document.getElementById('cards').innerHTML = list.map(d => {
       const e = evById[d.eventId]; const st = statusOf(d); const edited = store.get('tx:' + d.key);
@@ -201,11 +215,11 @@ function boot(data) {
   document.getElementById('skippedBox').querySelector('summary').textContent = `Skipped events and the rule behind each (${data.skipped.length})`;
 
   document.getElementById('log').textContent = data.log.join('\n');
-  document.getElementById('foot').innerHTML = `Rules: High impact gate &middot; top ${data.config.selection.topPosts} events get X posts, top ${data.config.selection.topVideos} get videos &middot; X pre T${data.config.timing.xPreMinutes}m, X post T+${data.config.timing.xPostMinutes}m, video T${data.config.timing.videoPublishHours}h, record-by T${data.config.timing.recordByHours}h &middot; Nothing here is posted automatically. Review status and edits are saved in this browser only.`;
+  document.getElementById('foot').innerHTML = `Last run ${esc(data.nowLabel)} ET &middot; ${esc(data.mode)} &middot; ${data.counts.releases} calendar releases, ${data.counts.articles} FXEmpire articles checked<br>Rules: High impact gate &middot; top ${data.config.selection.topPosts} events get X posts, top ${data.config.selection.topVideos} get videos &middot; X pre T${data.config.timing.xPreMinutes}m, X post T+${data.config.timing.xPostMinutes}m, video T${data.config.timing.videoPublishHours}h, record-by T${data.config.timing.recordByHours}h &middot; Nothing here is posted automatically. Review status and edits are saved in this browser only.`;
 }
 
 if (window.__DATA__) boot(window.__DATA__);
-else fetch('data.json', { cache: 'no-store' }).then(r => r.json()).then(boot).catch(e => { document.getElementById('meta').textContent = 'Could not load data.json: ' + e; });
+else fetch('data.json', { cache: 'no-store' }).then(r => r.json()).then(boot).catch(e => { document.getElementById('flags').innerHTML = '<div class="flag">Could not load data.json: ' + e + '</div>'; });
 </script>
 </body>
 </html>
