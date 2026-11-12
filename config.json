@@ -75,7 +75,8 @@
 
   "articles": { "pages": 3, "maxAgeHours": 72, "bodyChars": 1800 },
 
-  "llm": { "model": "gemini-3.8-flash", "temperature": 0.4, "delayMs": 7000, "maxRetries": 1, "budgetMinutes": 18 },
+  "llm": { "model": "gemini-3.8-flash", "temperature": 0.4, "delayMs": 7000, "maxRetries": 1, "budgetMinutes": 18,
+    "githubModels": ["openai/gpt-4.1-mini", "openai/gpt-4o-mini", "openai/gpt-4.1"] },
 
   "guards": {
     "xMaxChars": 280,

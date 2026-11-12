@@ -48,7 +48,7 @@ async function main() {
 
   // Leave time to write the board even if Gemini is struggling (workflow limit is 25 min)
   const deadlineMs = Date.now() + (cfg.llm.budgetMinutes || 18) * 60e3;
-  const llm = await makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log, deadlineMs });
+  const llm = await makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log, deadlineMs, githubModels: cfg.llm.githubModels });
 
   // 3. AI step 1: match articles to events + spot releases missing from the calendar
   const evList = inWindow.map(e => ({ id: e.id, country: e.country, name: e.name, category: e.category, reference: e.reference, time_et: label(cfg.timezone, Date.parse(e.date)) }));
@@ -121,7 +121,7 @@ async function main() {
     }
     for (const [kind, c] of Object.entries(checked)) {
       drafts.push({
-        eventId: e.id, kind, text: c.text, raw: c.raw, issues: c.issues,
+        eventId: e.id, kind, text: c.text, raw: c.raw, issues: c.issues, model: llm.modelUsed,
         status: c.issues.length ? 'needs_fix' : c.pending ? 'waiting_for_actual' : 'ready_for_review',
         sources: ctxArticles.map(a => ({ title: a.title, url: 'https://www.fxempire.com' + a.articleUrl })),
         attempts
@@ -140,7 +140,7 @@ async function main() {
   const ev = r => ({ id: r.event.id, name: r.event.name, alsoReleased: r.event.alsoReleased || [], components: r.event.components || [], country: r.event.country, reference: r.event.reference, at: label(cfg.timezone, r.timeMs), ms: r.timeMs, forecast: r.event.forecast, previous: r.event.previous, actual: r.event.actual });
   const data = {
     runAt: new Date().toISOString(), now: new Date(nowMs).toISOString(), nowLabel: label(cfg.timezone, nowMs),
-    mode: fixture ? 'fixture + mock AI (offline test)' : `live: FXEmpire API + ${llm.modelUsed || model}`,
+    mode: fixture ? 'fixture + mock AI (offline test)' : `live: FXEmpire API + ${llm.modelUsed || 'no AI answer'}`,
     timezone: cfg.timezone, config: { selection: cfg.selection, scoring: { coveragePoints: cfg.scoring.coveragePoints, currencyPoints: cfg.scoring.currencyPoints, breadthMax: cfg.scoring.breadthMax }, timing: cfg.timing },
     counts: { rawRows: rawEvents.length, releases: releases.length, holidays: holidays.length, inWindow: inWindow.length, articles: recent.length },
     flags: {

@@ -22,44 +22,57 @@ async function listFlashModels(key, preferred, log) {
   }
 }
 
-export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs }) {
-  if (mock) return mockLlm;
-  const key = process.env.GEMINI_API_KEY;
-  if (!key) throw new Error('GEMINI_API_KEY is not set');
-  const models = await listFlashModels(key, model, log);
-  let current = 0, last = 0;
+// Providers are tried in order: Gemini (if a key is set), then GitHub Models (free inside GitHub Actions).
+// A provider that answers "quota exhausted" for every model is skipped for the rest of the run.
+// Keep the configured GitHub models that still exist; if none do, take small chat models from the catalog.
+async function githubCatalog(token, wanted, log) {
+  try {
+    const r = await fetch('https://models.github.ai/catalog/models', { headers: { Authorization: `Bearer ${token}`, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
+    if (!r.ok) throw new Error(String(r.status));
+    const ids = (await r.json()).map(m => m.id).filter(Boolean);
+    const keep = wanted.filter(w => ids.includes(w));
+    const extra = ids.filter(i => /mini|flash|small/i.test(i) && !/embed|image|audio|realtime|reason/i.test(i) && !keep.includes(i));
+    return [...keep, ...extra].slice(0, 4);
+  } catch (e) {
+    log(`Could not read the GitHub Models catalog (${e.message}); using the configured list`);
+    return wanted;
+  }
+}
 
-  // One request, never longer than 90 s. A hung connection counts as "overloaded", not as a crash.
-  async function callOnce(name, prompt) {
-    const wait = last + delayMs - Date.now();
+export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs, githubModels = [] }) {
+  if (mock) return mockLlm;
+  const providers = [];
+  const gKey = process.env.GEMINI_API_KEY, ghToken = process.env.GITHUB_TOKEN;
+  if (gKey) providers.push({ id: 'gemini', key: gKey, models: await listFlashModels(gKey, model, log), last: 0, out: false });
+  if (ghToken && githubModels.length) providers.push({ id: 'github', key: ghToken, models: await githubCatalog(ghToken, githubModels, log), last: 0, out: false });
+  if (!providers.length) throw new Error('No AI provider: set GEMINI_API_KEY or run inside GitHub Actions');
+  log(`AI providers in order: ${providers.map(p => `${p.id} [${p.models.slice(0, 4).join(', ')}]`).join(' -> ')}`);
+
+  async function callOnce(p, name, prompt) {
+    const wait = p.last + delayMs - Date.now();
     if (wait > 0) await sleep(wait); // stay under free-tier rate limits
-    last = Date.now();
+    p.last = Date.now();
     try {
-      const r = await fetch(`${API}/models/${name}:generateContent`, {
-        method: 'POST',
-        signal: AbortSignal.timeout(90000),
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { temperature, responseMimeType: 'application/json' }
-        })
-      });
+      const r = p.id === 'gemini'
+        ? await fetch(`${API}/models/${name}:generateContent`, {
+            method: 'POST', signal: AbortSignal.timeout(90000),
+            headers: { 'Content-Type': 'application/json', 'x-goog-api-key': p.key },
+            body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature, responseMimeType: 'application/json' } })
+          })
+        : await fetch('https://models.github.ai/inference/chat/completions', {
+            method: 'POST', signal: AbortSignal.timeout(90000),
+            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${p.key}` },
+            body: JSON.stringify({ model: name, temperature, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] })
+          });
       if (r.status === 429 || r.status >= 500) {
-        // Keep Google's own explanation (which quota, how long to wait) in the log
-        const body = await r.text().catch(() => '');
-        let why = '';
-        try {
-          const j = JSON.parse(body);
-          const v = (j.error?.details || []).flatMap(d => d.violations || []).map(x => `${x.quotaId || x.quotaMetric || ''}`.trim()).filter(Boolean);
-          const retry = (j.error?.details || []).find(d => d.retryDelay)?.retryDelay;
-          why = [v.length ? `quota: ${[...new Set(v)].join(', ')}` : (j.error?.message || '').slice(0, 160), retry ? `retry in ${retry}` : ''].filter(Boolean).join('; ');
-        } catch { why = body.slice(0, 160); }
-        return { busy: `${r.status}${why ? ' (' + why + ')' : ''}` };
+        const body = (await r.text()).replace(/\s+/g, ' ');
+        const reason = (body.match(/"message":\s*"([^"]{0,220})/) || [])[1] || body.slice(0, 160);
+        return { busy: `${r.status} ${reason}`, quota: r.status === 429 };
       }
-      if (r.status === 404) return { gone: true };
-      if (!r.ok) return { fatal: `Gemini ${r.status}: ${(await r.text()).slice(0, 300)}` };
+      if (r.status === 404 || r.status === 400 && p.id === 'github') return { gone: `${r.status} ${(await r.text()).slice(0, 160)}` };
+      if (!r.ok) return { fatal: `${p.id} ${r.status}: ${(await r.text()).slice(0, 300)}` };
       const j = await r.json();
-      const text = j.candidates?.[0]?.content?.parts?.map(p => p.text).join('') || '';
+      const text = p.id === 'gemini' ? (j.candidates?.[0]?.content?.parts?.map(x => x.text).join('') || '') : (j.choices?.[0]?.message?.content || '');
       try { return { data: JSON.parse(text.replace(/^```json\s*|```$/g, '')) }; }
       catch { return { busy: 'invalid JSON in answer' }; }
     } catch (e) {
@@ -67,27 +80,34 @@ export async function makeLlm({ mock, model, temperature, delayMs, log, deadline
     }
   }
 
-  // Overloaded model -> go straight to the next model; only after all are tried, wait and go round again.
-  async function gemini(prompt) {
+  async function ai(prompt) {
     for (let round = 0; round < 2; round++) {
-      for (let i = 0; i < models.length && i < 4; i++) {
-        if (deadlineMs && Date.now() > deadlineMs) throw new Error('time budget for AI calls used up');
-        const idx = (current + i) % models.length, name = models[idx];
-        const res = await callOnce(name, prompt);
-        if (res.data) {
-          if (idx !== current) { log(`Switched to ${name} for the rest of the run`); current = idx; }
-          gemini.modelUsed = name;
-          return res.data;
+      for (const p of providers) {
+        if (p.out) continue;
+        let quotaHits = 0, tried = 0;
+        for (const name of p.models.slice(0, 4)) {
+          if (deadlineMs && Date.now() > deadlineMs) throw new Error('time budget for AI calls used up');
+          tried++;
+          const res = await callOnce(p, name, prompt);
+          if (res.data) {
+            if (ai.modelUsed !== `${p.id}/${name}`) log(`Using ${p.id}: ${name}`);
+            ai.modelUsed = `${p.id}/${name}`;
+            p.models = [name, ...p.models.filter(m => m !== name)]; // stick with what works
+            return res.data;
+          }
+          if (res.fatal) { log(res.fatal); break; }
+          if (res.quota) quotaHits++;
+          log(`${p.id} ${name}: ${res.gone || res.busy}`);
         }
-        if (res.fatal) throw new Error(res.fatal);
-        log(`${name}: ${res.gone ? 'not available (404)' : res.busy}, trying the next model`);
+        if (quotaHits === tried) { p.out = true; log(`${p.id}: every model is over its limit, skipping it for the rest of this run`); }
       }
-      if (round === 0) { log('All models busy, waiting 30 s before one more round'); await sleep(30000); }
+      if (providers.every(p => p.out)) break;
+      if (round === 0) { log('All providers busy, waiting 30 s before one more round'); await sleep(30000); }
     }
-    throw new Error('All Gemini models were busy for this call');
+    throw new Error('No AI provider could answer this call');
   }
-  gemini.modelUsed = models[0];
-  return gemini;
+  ai.modelUsed = null;
+  return ai;
 }
 
 // ---------- mock (only for offline testing of the pipeline, never used in a real run) ----------
