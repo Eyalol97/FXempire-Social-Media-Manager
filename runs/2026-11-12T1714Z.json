@@ -1,0 +1,1536 @@
+{
+ "runAt": "2026-11-12T17:14:51.976Z",
+ "now": "2026-11-12T17:04:03.829Z",
+ "nowLabel": "Thu 11-12 12:04",
+ "mode": "live: FXEmpire API + no AI answer",
+ "timezone": "America/New_York",
+ "config": {
+  "selection": {
+   "impactGate": 3,
+   "topPosts": 8,
+   "topVideos": 3,
+   "videoMaxPerCurrency": 2,
+   "videoMaxPerDay": 2
+  },
+  "scoring": {
+   "coveragePoints": 3,
+   "currencyPoints": {
+    "united-states": 2,
+    "euro-area": 1,
+    "germany": 1,
+    "france": 1,
+    "italy": 1,
+    "spain": 1,
+    "united-kingdom": 1,
+    "japan": 1,
+    "canada": 1
+   },
+   "breadthMax": 3
+  },
+  "timing": {
+   "xPreMinutes": -90,
+   "xPostMinutes": 10,
+   "videoPublishHours": -20,
+   "recordByHours": -48,
+   "quietStart": "07:00",
+   "quietEnd": "21:00"
+  }
+ },
+ "counts": {
+  "rawRows": 829,
+  "releases": 16,
+  "holidays": 27,
+  "inWindow": 13,
+  "articles": 60
+ },
+ "flags": {
+  "missingReleases": [],
+  "holidays": [
+   {
+    "date": "2026-11-11",
+    "country": "canada",
+    "name": "Remembrance Day",
+    "exchange": "Toronto Stock Exchange"
+   },
+   {
+    "date": "2026-11-11",
+    "country": "france",
+    "name": "Armistice Day",
+    "exchange": "Euronext Paris"
+   },
+   {
+    "date": "2026-11-11",
+    "country": "united-states",
+    "name": "Veterans Day",
+    "exchange": "New York Stock Exchange"
+   }
+  ]
+ },
+ "ranked": [
+  {
+   "id": 390612,
+   "name": "FOMC Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "FOMC Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "united-states",
+   "reference": "",
+   "at": "Wed 11-18 14:00",
+   "ms": 1795028400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 1,
+   "score": 5,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 3
+   },
+   "tier": 3,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 398183,
+   "name": "PPI MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "PPI MoM",
+     "forecast": "0.4%",
+     "previous": "1.3%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Fri 11-13 08:30",
+   "ms": 1794576600000,
+   "forecast": "0.4%",
+   "previous": "1.3%",
+   "actual": null,
+   "rank": 2,
+   "score": 5,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 410775,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "3.2%",
+     "previous": "3.1%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "canada",
+   "reference": "Oct",
+   "at": "Mon 11-16 08:30",
+   "ms": 1794835800000,
+   "forecast": "3.2%",
+   "previous": "3.1%",
+   "actual": null,
+   "rank": 3,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/CAD"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "canada release (+1)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399093,
+   "name": "Retail Sales MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Retail Sales MoM",
+     "forecast": "0.6%",
+     "previous": "0.8%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Tue 11-17 08:30",
+   "ms": 1794922200000,
+   "forecast": "0.6%",
+   "previous": "0.8%",
+   "actual": null,
+   "rank": 4,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399593,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "3.5%",
+     "previous": "3.5%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Oct",
+   "at": "Wed 11-18 02:00",
+   "ms": 1794985200000,
+   "forecast": "3.5%",
+   "previous": "3.5%",
+   "actual": null,
+   "rank": 5,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 3
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 398059,
+   "name": "Existing Home Sales",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Existing Home Sales",
+     "forecast": "3.85M",
+     "previous": "3.97M",
+     "actual": "3.75M",
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Thu 11-12 10:00",
+   "ms": 1794495600000,
+   "forecast": "3.85M",
+   "previous": "3.97M",
+   "actual": "3.75M",
+   "rank": 6,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 1,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united states release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 394048,
+   "name": "RBA Meeting Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "RBA Meeting Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "australia",
+   "reference": "",
+   "at": "Mon 11-16 19:30",
+   "ms": 1794875400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 7,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 3
+   },
+   "tier": 3,
+   "instruments": [
+    "AUD/USD"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399405,
+   "name": "GDP Growth Rate YoY Prel",
+   "alsoReleased": [
+    "GDP MoM",
+    "GDP Growth Rate QoQ Prel"
+   ],
+   "components": [
+    {
+     "name": "GDP Growth Rate YoY Prel",
+     "forecast": "1.9%",
+     "previous": "1.4%",
+     "actual": "1.9%",
+     "reference": "Q3"
+    },
+    {
+     "name": "GDP MoM",
+     "forecast": "0%",
+     "previous": "0%",
+     "actual": "0.2%",
+     "reference": "Sep"
+    },
+    {
+     "name": "GDP Growth Rate QoQ Prel",
+     "forecast": "0.7%",
+     "previous": "0.5%",
+     "actual": "0.7%",
+     "reference": "Q3"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Q3",
+   "at": "Thu 11-12 02:00",
+   "ms": 1794466800000,
+   "forecast": "1.9%",
+   "previous": "1.4%",
+   "actual": "1.9%",
+   "rank": 8,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401420,
+   "name": "GDP Growth Rate QoQ Prel",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "GDP Growth Rate QoQ Prel",
+     "forecast": "0.1%",
+     "previous": "0.4%",
+     "actual": null,
+     "reference": "Q3"
+    }
+   ],
+   "country": "japan",
+   "reference": "Q3",
+   "at": "Sun 11-15 18:50",
+   "ms": 1794786600000,
+   "forecast": "0.1%",
+   "previous": "0.4%",
+   "actual": null,
+   "rank": 9,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/JPY",
+    "Nikkei 225"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "japan release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399770,
+   "name": "Unemployment Rate",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Unemployment Rate",
+     "forecast": "4.9%",
+     "previous": "4.7%",
+     "actual": null,
+     "reference": "Sep"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Sep",
+   "at": "Tue 11-17 02:00",
+   "ms": 1794898800000,
+   "forecast": "4.9%",
+   "previous": "4.7%",
+   "actual": null,
+   "rank": 10,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "united kingdom release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401406,
+   "name": "Retail Sales YoY",
+   "alsoReleased": [
+    "Industrial Production YoY"
+   ],
+   "components": [
+    {
+     "name": "Retail Sales YoY",
+     "forecast": "",
+     "previous": "1.1%",
+     "actual": null,
+     "reference": "Oct"
+    },
+    {
+     "name": "Industrial Production YoY",
+     "forecast": "5.3%",
+     "previous": "5.5%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "china",
+   "reference": "Oct",
+   "at": "Sun 11-15 21:00",
+   "ms": 1794794400000,
+   "forecast": "",
+   "previous": "1.1%",
+   "actual": null,
+   "rank": 11,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 3
+   },
+   "tier": 1,
+   "instruments": [
+    "AUD/USD",
+    "Copper",
+    "WTI Oil"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 401353,
+   "name": "ZEW Economic Sentiment Index",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "ZEW Economic Sentiment Index",
+     "forecast": "15.9",
+     "previous": "28.1",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Tue 11-17 05:00",
+   "ms": 1794909600000,
+   "forecast": "15.9",
+   "previous": "28.1",
+   "actual": null,
+   "rank": 12,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD",
+    "DAX"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "germany release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 402633,
+   "name": "Balance of Trade",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Balance of Trade",
+     "forecast": "",
+     "previous": "¥-536.6B",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "japan",
+   "reference": "Oct",
+   "at": "Tue 11-17 18:50",
+   "ms": 1794959400000,
+   "forecast": "",
+   "previous": "¥-536.6B",
+   "actual": null,
+   "rank": 13,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "USD/JPY",
+    "Nikkei 225"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "japan release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  }
+ ],
+ "skipped": [
+  {
+   "name": "Balance of Trade",
+   "country": "germany",
+   "at": "Mon 11-09 02:00",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY",
+   "country": "japan",
+   "at": "Thu 11-19 18:30",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "Retail Sales MoM",
+   "country": "united-kingdom",
+   "at": "Fri 11-20 02:00",
+   "rule": "Outside the rolling window",
+   "score": null
+  },
+  {
+   "name": "GDP Growth Rate QoQ Prel",
+   "country": "japan",
+   "at": "Sun 11-15 18:50",
+   "rule": "Ranked #9, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Unemployment Rate",
+   "country": "united-kingdom",
+   "at": "Tue 11-17 02:00",
+   "rule": "Ranked #10, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Retail Sales YoY",
+   "country": "china",
+   "at": "Sun 11-15 21:00",
+   "rule": "Ranked #11, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "ZEW Economic Sentiment Index",
+   "country": "germany",
+   "at": "Tue 11-17 05:00",
+   "rule": "Ranked #12, below the top 8",
+   "score": 3
+  },
+  {
+   "name": "Balance of Trade",
+   "country": "japan",
+   "at": "Tue 11-17 18:50",
+   "rule": "Ranked #13, below the top 8",
+   "score": 2
+  },
+  {
+   "name": "Diwali",
+   "country": "fiji",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Flag Day",
+   "country": "azerbaijan",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "cambodia",
+   "at": "2026-11-09 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Days of History and Memory of Ancestors",
+   "country": "kyrgyzstan",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Gobhardan Puja",
+   "country": "nepal",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-10 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "belgium",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Bhai Tika",
+   "country": "nepal",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Republic Day",
+   "country": "maldives",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "serbia",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance Day",
+   "country": "bermuda",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance Day",
+   "country": "canada",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Armistice Day",
+   "country": "france",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Veterans Day",
+   "country": "united-states",
+   "at": "2026-11-11 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Laxmi Puja",
+   "country": "nepal",
+   "at": "2026-11-12 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Martyrdom of Fatima",
+   "country": "iran",
+   "at": "2026-11-13 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Proclamation of the Republic Day",
+   "country": "brazil",
+   "at": "2026-11-15 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "slovakia",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "czech-republic",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance day",
+   "country": "croatia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Day",
+   "country": "oman",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "morocco",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "latvia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Genghis Khan’s Birthday",
+   "country": "mongolia",
+   "at": "2026-11-21 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "lebanon",
+   "at": "2026-11-22 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  }
+ ],
+ "drafts": [
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795023000000,
+   "slotAt": "Wed 11-18 12:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795029000000,
+   "slotAt": "Wed 11-18 14:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 390612,
+   "kind": "video_script",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794956400000,
+   "slotAt": "Tue 11-17 18:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794571200000,
+   "slotAt": "Fri 11-13 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794577200000,
+   "slotAt": "Fri 11-13 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794830400000,
+   "slotAt": "Mon 11-16 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794836400000,
+   "slotAt": "Mon 11-16 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 410775,
+   "kind": "video_script",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794763800000,
+   "slotAt": "Sun 11-15 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794922800000,
+   "slotAt": "Tue 11-17 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "video_script",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794850200000,
+   "slotAt": "Mon 11-16 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794967200000,
+   "slotAt": "Tue 11-17 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795003200000,
+   "slotAt": "Wed 11-18 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794490200000,
+   "slotAt": "Thu 11-12 08:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794496200000,
+   "slotAt": "Thu 11-12 10:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794870000000,
+   "slotAt": "Mon 11-16 18:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794876000000,
+   "slotAt": "Mon 11-16 19:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_pre",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794448800000,
+   "slotAt": "Wed 11-11 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_post",
+   "text": "",
+   "raw": "",
+   "issues": [
+    "AI call failed: No AI provider could answer this call"
+   ],
+   "status": "needs_fix",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794484800000,
+   "slotAt": "Thu 11-12 07:00",
+   "channel": "X"
+  }
+ ],
+ "schedule": [
+  {
+   "eventId": 399405,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794448800000,
+   "at": "Wed 11-11 21:00",
+   "notes": [
+    "Moved from Thu 11-12 00:30 to stay inside 07:00-21:00 ET",
+    "Slot already passed at run time"
+   ],
+   "passed": true
+  },
+  {
+   "eventId": 399405,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794484800000,
+   "at": "Thu 11-12 07:00",
+   "notes": [
+    "Moved from Thu 11-12 02:10 to stay inside 07:00-21:00 ET",
+    "Slot already passed at run time"
+   ],
+   "passed": true
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794490200000,
+   "at": "Thu 11-12 08:30",
+   "notes": [
+    "Slot already passed at run time"
+   ],
+   "passed": true
+  },
+  {
+   "eventId": 398059,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794496200000,
+   "at": "Thu 11-12 10:10",
+   "notes": [
+    "Slot already passed at run time"
+   ],
+   "passed": true
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794571200000,
+   "at": "Fri 11-13 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398183,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794577200000,
+   "at": "Fri 11-13 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794663000000,
+   "at": "Sat 11-14 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794749400000,
+   "at": "Sun 11-15 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794763800000,
+   "at": "Sun 11-15 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794830400000,
+   "at": "Mon 11-16 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 410775,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794836400000,
+   "at": "Mon 11-16 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794850200000,
+   "at": "Mon 11-16 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794855600000,
+   "at": "Mon 11-16 14:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794870000000,
+   "at": "Mon 11-16 18:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 394048,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794876000000,
+   "at": "Mon 11-16 19:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794916800000,
+   "at": "Tue 11-17 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794922800000,
+   "at": "Tue 11-17 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794956400000,
+   "at": "Tue 11-17 18:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794967200000,
+   "at": "Tue 11-17 21:00",
+   "notes": [
+    "Moved from Wed 11-18 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795003200000,
+   "at": "Wed 11-18 07:00",
+   "notes": [
+    "Moved from Wed 11-18 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795023000000,
+   "at": "Wed 11-18 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795029000000,
+   "at": "Wed 11-18 14:10",
+   "notes": [],
+   "passed": false
+  }
+ ],
+ "log": [
+  "2026-11-12T17:04:14.079Z Calendar: 829 high-impact rows. Articles: 60",
+  "2026-11-12T17:04:14.081Z Releases: 16. Holidays after de-dup: 27 (major markets: 3)",
+  "2026-11-12T17:04:14.282Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-12T17:04:14.498Z Could not read the GitHub Models catalog (Unexpected token 'O', \"OK\r\n\" is not valid JSON); using the configured list",
+  "2026-11-12T17:04:14.498Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest] -> github [openai/gpt-4.1-mini, openai/gpt-4o-mini, openai/gpt-4.1]",
+  "2026-11-12T17:04:15.157Z gemini gemini-3.8-flash: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T17:04:21.704Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53738s)",
+  "2026-11-12T17:04:28.728Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53731s)",
+  "2026-11-12T17:04:36.632Z gemini gemini-flash-latest: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T17:04:36.810Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:04:44.007Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:04:50.829Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:04:50.829Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:05:25.629Z gemini gemini-3.8-flash: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T17:05:27.968Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 53672s)",
+  "2026-11-12T17:05:35.000Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 53665s)",
+  "2026-11-12T17:05:41.990Z gemini gemini-flash-latest: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53658s)",
+  "2026-11-12T17:05:42.200Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:05:49.235Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:05:56.223Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:05:56.224Z Matching failed (No AI provider could answer this call). Continuing without article coverage points.",
+  "2026-11-12T17:05:56.224Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-12T17:05:56.225Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-12T17:05:56.378Z gemini gemini-3.8-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53643s)",
+  "2026-11-12T17:06:03.390Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53636s)",
+  "2026-11-12T17:06:10.388Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53629s)",
+  "2026-11-12T17:06:17.394Z gemini gemini-flash-latest: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 53622s)",
+  "2026-11-12T17:06:17.394Z gemini: every model is over its limit, skipping it for the rest of this run",
+  "2026-11-12T17:06:17.589Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:06:24.542Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:06:31.537Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:06:31.537Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:07:01.684Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:08.698Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:15.748Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:15.748Z Drafting failed for FOMC Minutes (united-states): No AI provider could answer this call",
+  "2026-11-12T17:07:22.691Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:29.706Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:36.699Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:07:36.699Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:08:06.834Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:13.857Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:20.865Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:20.865Z Drafting failed for PPI MoM (united-states): No AI provider could answer this call",
+  "2026-11-12T17:08:27.860Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:34.902Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:41.877Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:08:41.877Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:09:12.030Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:19.032Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:26.074Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:26.074Z Drafting failed for Inflation Rate YoY (canada): No AI provider could answer this call",
+  "2026-11-12T17:09:33.091Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:40.035Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:47.049Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:09:47.049Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:10:17.264Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:24.209Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:31.212Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:31.212Z Drafting failed for Retail Sales MoM (united-states): No AI provider could answer this call",
+  "2026-11-12T17:10:38.240Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:45.215Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:52.262Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:10:52.262Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:11:22.441Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:29.403Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:36.493Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:36.493Z Drafting failed for Inflation Rate YoY (united-kingdom): No AI provider could answer this call",
+  "2026-11-12T17:11:43.463Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:50.438Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:57.467Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:11:57.468Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:12:27.607Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:12:34.644Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:12:41.619Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:12:41.619Z Drafting failed for Existing Home Sales (united-states): No AI provider could answer this call",
+  "2026-11-12T17:12:48.634Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:12:55.632Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:13:02.641Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:13:02.641Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:13:32.783Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:13:39.803Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:13:46.827Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:13:46.827Z Drafting failed for RBA Meeting Minutes (australia): No AI provider could answer this call",
+  "2026-11-12T17:13:53.835Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:00.823Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:07.813Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:07.813Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T17:14:37.974Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:44.980Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:51.971Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T17:14:51.971Z Drafting failed for GDP Growth Rate YoY Prel (united-kingdom): No AI provider could answer this call"
+ ]
+}
