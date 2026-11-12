@@ -45,12 +45,17 @@ async function main() {
   const recent = articles.filter(a => nowMs - a.timestamp <= cfg.articles.maxAgeHours * H);
   const articlesById = Object.fromEntries(articles.map(a => [a.id, a]));
 
-  const llm = makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log });
+  const llm = await makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log });
 
   // 3. AI step 1: match articles to events + spot releases missing from the calendar
   const evList = inWindow.map(e => ({ id: e.id, country: e.country, name: e.name, category: e.category, reference: e.reference, time_et: label(cfg.timezone, Date.parse(e.date)) }));
   const artList = recent.map(a => ({ id: a.id, title: a.title, tags: a.tags.filter(t => /^(c|co|i|s|cc)-|us-dollar-index|economic-news/.test(t)) }));
-  const matchOut = await llm(prompt('match.md').replace('{{events}}', () => JSON.stringify(evList, null, 1)).replace('{{articles}}', () => JSON.stringify(artList, null, 1)));
+  let matchOut = { matches: [], missing_releases: [] };
+  try {
+    matchOut = await llm(prompt('match.md').replace('{{events}}', () => JSON.stringify(evList, null, 1)).replace('{{articles}}', () => JSON.stringify(artList, null, 1)));
+  } catch (err) {
+    log(`Matching failed (${err.message}). Continuing without article coverage points.`);
+  }
   const matches = {};
   for (const m of matchOut.matches || []) {
     const ids = (m.article_ids || []).filter(id => articlesById[id]); // drop ids the model invented
@@ -91,8 +96,9 @@ async function main() {
 
     const attempts = [];
     let out, checked;
+    let aiError = null;
     for (let i = 0; i <= cfg.llm.maxRetries; i++) {
-      out = await llm(p);
+      try { out = await llm(p); } catch (err) { aiError = err.message; log(`Drafting failed for ${e.name} (${e.country}): ${aiError}`); break; }
       checked = {};
       for (const kind of ['x_pre', 'x_post', ...(r.video ? ['video_script'] : [])]) {
         const filled = fillPlaceholders(out[kind] || '', values);
@@ -103,6 +109,12 @@ async function main() {
       if (!problems.length) break;
       log(`Draft for ${e.name} (${e.country}) failed checks: ${problems.join(' | ')}`);
       p += `\n\nYOUR PREVIOUS ANSWER FAILED THESE CHECKS, FIX THEM AND RETURN THE FULL JSON AGAIN:\n${problems.join('\n')}\nPrevious answer:\n${JSON.stringify(out)}`;
+    }
+    if (aiError && !checked) {
+      for (const kind of ['x_pre', 'x_post', ...(r.video ? ['video_script'] : [])]) {
+        drafts.push({ eventId: e.id, kind, text: '', raw: '', issues: [`AI call failed: ${aiError}`], status: 'needs_fix', sources: ctxArticles.map(a => ({ title: a.title, url: 'https://www.fxempire.com' + a.articleUrl })), attempts });
+      }
+      continue;
     }
     for (const [kind, c] of Object.entries(checked)) {
       drafts.push({
@@ -125,7 +137,7 @@ async function main() {
   const ev = r => ({ id: r.event.id, name: r.event.name, alsoReleased: r.event.alsoReleased || [], components: r.event.components || [], country: r.event.country, reference: r.event.reference, at: label(cfg.timezone, r.timeMs), ms: r.timeMs, forecast: r.event.forecast, previous: r.event.previous, actual: r.event.actual });
   const data = {
     runAt: new Date().toISOString(), now: new Date(nowMs).toISOString(), nowLabel: label(cfg.timezone, nowMs),
-    mode: fixture ? 'fixture + mock AI (offline test)' : `live: FXEmpire API + ${model}`,
+    mode: fixture ? 'fixture + mock AI (offline test)' : `live: FXEmpire API + ${llm.modelUsed || model}`,
     timezone: cfg.timezone, config: { selection: cfg.selection, scoring: { coveragePoints: cfg.scoring.coveragePoints, currencyPoints: cfg.scoring.currencyPoints, breadthMax: cfg.scoring.breadthMax }, timing: cfg.timing },
     counts: { rawRows: rawEvents.length, releases: releases.length, holidays: holidays.length, inWindow: inWindow.length, articles: recent.length },
     flags: {

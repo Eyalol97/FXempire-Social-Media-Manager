@@ -1,5 +1,5 @@
 {
- "runAt": "2026-11-12T12:05:21.156Z",
+ "runAt": "2026-11-12T12:33:20.694Z",
  "now": "2026-11-12T11:59:04.274Z",
  "nowLabel": "Thu 11-12 06:59",
  "mode": "fixture + mock AI (offline test)",
@@ -1465,18 +1465,18 @@
   }
  ],
  "log": [
-  "2026-11-12T12:05:21.119Z Fixture mode: fixtures/snapshot.json (now = 2026-11-12T11:59:04.274Z)",
-  "2026-11-12T12:05:21.122Z Calendar: 26 high-impact rows. Articles: 11",
-  "2026-11-12T12:05:21.122Z Releases: 16. Holidays after de-dup: 5 (major markets: 2)",
-  "2026-11-12T12:05:21.146Z Matched 0 events to articles. Releases missing from calendar: 1",
-  "2026-11-12T12:05:21.147Z Ranked 13. Posts: 8. Videos: 3",
-  "2026-11-12T12:05:21.148Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:05:21.148Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:05:21.149Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:05:21.149Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:05:21.150Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:05:21.150Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
-  "2026-11-12T12:05:21.151Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)",
-  "2026-11-12T12:05:21.151Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)"
+  "2026-11-12T12:33:20.629Z Fixture mode: fixtures/snapshot.json (now = 2026-11-12T11:59:04.274Z)",
+  "2026-11-12T12:33:20.632Z Calendar: 26 high-impact rows. Articles: 11",
+  "2026-11-12T12:33:20.633Z Releases: 16. Holidays after de-dup: 5 (major markets: 2)",
+  "2026-11-12T12:33:20.681Z Matched 0 events to articles. Releases missing from calendar: 1",
+  "2026-11-12T12:33:20.682Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-12T12:33:20.683Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:33:20.684Z Draft for FOMC Minutes (united-states) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a) | video_script: Numbers not found in the source: 4500 | video_script: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:33:20.685Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:33:20.685Z Draft for Inflation Rate YoY (canada) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:33:20.686Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:33:20.686Z Draft for Retail Sales MoM (united-states) failed checks: video_script: Numbers not found in the source: 4500",
+  "2026-11-12T12:33:20.687Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)",
+  "2026-11-12T12:33:20.687Z Draft for RBA Meeting Minutes (australia) failed checks: x_pre: Mentions a figure that does not exist for this release (n/a) | x_post: Mentions a figure that does not exist for this release (n/a)"
  ]
 }

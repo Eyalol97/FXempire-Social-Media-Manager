@@ -1,33 +1,68 @@
 // AI calls. Gemini in production; a deterministic mock for offline tests (--mock-llm).
 const sleep = ms => new Promise(r => setTimeout(r, ms));
+const API = 'https://generativelanguage.googleapis.com/v1beta';
 
-export function makeLlm({ mock, model, temperature, delayMs, log }) {
+// Ask Google which models this key can use, so a retired or overloaded model is not a dead end.
+async function listFlashModels(key, preferred, log) {
+  try {
+    const r = await fetch(`${API}/models?pageSize=200`, { headers: { 'x-goog-api-key': key } });
+    if (!r.ok) throw new Error(String(r.status));
+    const j = await r.json();
+    const names = (j.models || [])
+      .filter(m => (m.supportedGenerationMethods || []).includes('generateContent'))
+      .map(m => m.name.replace(/^models\//, ''))
+      .filter(n => /flash/i.test(n) && !/image|tts|audio|live|embedding/i.test(n));
+    const rank = n => (/preview|exp/i.test(n) ? 1 : 0) + (/lite/i.test(n) ? 0.5 : 0);
+    const ordered = [preferred, ...names.filter(n => n !== preferred).sort((a, b) => rank(a) - rank(b) || b.localeCompare(a))];
+    log(`Models available to this key (in fallback order): ${ordered.slice(0, 5).join(', ')}`);
+    return ordered;
+  } catch (e) {
+    log(`Could not list models (${e.message}); using ${preferred} only`);
+    return [preferred];
+  }
+}
+
+export async function makeLlm({ mock, model, temperature, delayMs, log }) {
   if (mock) return mockLlm;
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new Error('GEMINI_API_KEY is not set');
-  let last = 0;
-  return async function gemini(prompt) {
-    const wait = last + delayMs - Date.now();
-    if (wait > 0) await sleep(wait); // stay under free-tier rate limits
-    last = Date.now();
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
-    for (let attempt = 0; attempt < 3; attempt++) {
-      const r = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-        body: JSON.stringify({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: { temperature, responseMimeType: 'application/json' }
-        })
-      });
-      if (r.status === 429 || r.status >= 500) { log(`Gemini ${r.status}, retrying`); await sleep(15000 * (attempt + 1)); continue; }
-      if (!r.ok) throw new Error(`Gemini ${r.status}: ${(await r.text()).slice(0, 300)}`);
-      const j = await r.json();
-      const text = j.candidates?.[0]?.content?.parts?.map(p => p.text).join('') || '';
-      return JSON.parse(text.replace(/^```json\s*|```$/g, ''));
+  const models = await listFlashModels(key, model, log);
+  let current = 0, last = 0;
+
+  async function gemini(prompt) {
+    for (let m = current; m < Math.min(models.length, current + 3); m++) {
+      const name = models[m];
+      for (let attempt = 0; attempt < 3; attempt++) {
+        const wait = last + delayMs - Date.now();
+        if (wait > 0) await sleep(wait); // stay under free-tier rate limits
+        last = Date.now();
+        const r = await fetch(`${API}/models/${name}:generateContent`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+          body: JSON.stringify({
+            contents: [{ role: 'user', parts: [{ text: prompt }] }],
+            generationConfig: { temperature, responseMimeType: 'application/json' }
+          })
+        });
+        if (r.status === 429 || r.status >= 500) {
+          log(`${name}: ${r.status}, waiting before retry ${attempt + 1}/3`);
+          await sleep(20000 * (attempt + 1));
+          continue;
+        }
+        if (r.status === 404) { log(`${name}: not available (404)`); break; }
+        if (!r.ok) throw new Error(`Gemini ${r.status}: ${(await r.text()).slice(0, 300)}`);
+        const j = await r.json();
+        const text = j.candidates?.[0]?.content?.parts?.map(p => p.text).join('') || '';
+        if (m !== current) { log(`Switched to ${name} for the rest of the run`); current = m; }
+        gemini.modelUsed = name;
+        return JSON.parse(text.replace(/^```json\s*|```$/g, ''));
+      }
+      log(`${name} kept failing, trying the next model`);
     }
-    throw new Error('Gemini kept failing');
-  };
+    throw new Error('All Gemini models failed for this call');
+  }
+  gemini.modelUsed = models[0];
+  return gemini;
 }
 
 // ---------- mock (only for offline testing of the pipeline, never used in a real run) ----------
