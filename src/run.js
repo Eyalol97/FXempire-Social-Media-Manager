@@ -46,7 +46,9 @@ async function main() {
   const recent = articles.filter(a => nowMs - a.timestamp <= cfg.articles.maxAgeHours * H);
   const articlesById = Object.fromEntries(articles.map(a => [a.id, a]));
 
-  const llm = await makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log });
+  // Leave time to write the board even if Gemini is struggling (workflow limit is 25 min)
+  const deadlineMs = Date.now() + (cfg.llm.budgetMinutes || 18) * 60e3;
+  const llm = await makeLlm({ mock, model, temperature: cfg.llm.temperature, delayMs: cfg.llm.delayMs, log, deadlineMs });
 
   // 3. AI step 1: match articles to events + spot releases missing from the calendar
   const evList = inWindow.map(e => ({ id: e.id, country: e.country, name: e.name, category: e.category, reference: e.reference, time_et: label(cfg.timezone, Date.parse(e.date)) }));

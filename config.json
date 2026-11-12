@@ -75,7 +75,7 @@
 
   "articles": { "pages": 3, "maxAgeHours": 72, "bodyChars": 1800 },
 
-  "llm": { "model": "gemini-3.8-flash", "temperature": 0.4, "delayMs": 7000, "maxRetries": 1 },
+  "llm": { "model": "gemini-3.8-flash", "temperature": 0.4, "delayMs": 7000, "maxRetries": 1, "budgetMinutes": 18 },
 
   "guards": {
     "xMaxChars": 280,

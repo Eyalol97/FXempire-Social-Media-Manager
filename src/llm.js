@@ -22,44 +22,58 @@ async function listFlashModels(key, preferred, log) {
   }
 }
 
-export async function makeLlm({ mock, model, temperature, delayMs, log }) {
+export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs }) {
   if (mock) return mockLlm;
   const key = process.env.GEMINI_API_KEY;
   if (!key) throw new Error('GEMINI_API_KEY is not set');
   const models = await listFlashModels(key, model, log);
   let current = 0, last = 0;
 
-  async function gemini(prompt) {
-    for (let m = current; m < Math.min(models.length, current + 3); m++) {
-      const name = models[m];
-      for (let attempt = 0; attempt < 3; attempt++) {
-        const wait = last + delayMs - Date.now();
-        if (wait > 0) await sleep(wait); // stay under free-tier rate limits
-        last = Date.now();
-        const r = await fetch(`${API}/models/${name}:generateContent`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
-          body: JSON.stringify({
-            contents: [{ role: 'user', parts: [{ text: prompt }] }],
-            generationConfig: { temperature, responseMimeType: 'application/json' }
-          })
-        });
-        if (r.status === 429 || r.status >= 500) {
-          log(`${name}: ${r.status}, waiting before retry ${attempt + 1}/3`);
-          await sleep(20000 * (attempt + 1));
-          continue;
-        }
-        if (r.status === 404) { log(`${name}: not available (404)`); break; }
-        if (!r.ok) throw new Error(`Gemini ${r.status}: ${(await r.text()).slice(0, 300)}`);
-        const j = await r.json();
-        const text = j.candidates?.[0]?.content?.parts?.map(p => p.text).join('') || '';
-        if (m !== current) { log(`Switched to ${name} for the rest of the run`); current = m; }
-        gemini.modelUsed = name;
-        return JSON.parse(text.replace(/^```json\s*|```$/g, ''));
-      }
-      log(`${name} kept failing, trying the next model`);
+  // One request, never longer than 90 s. A hung connection counts as "overloaded", not as a crash.
+  async function callOnce(name, prompt) {
+    const wait = last + delayMs - Date.now();
+    if (wait > 0) await sleep(wait); // stay under free-tier rate limits
+    last = Date.now();
+    try {
+      const r = await fetch(`${API}/models/${name}:generateContent`, {
+        method: 'POST',
+        signal: AbortSignal.timeout(90000),
+        headers: { 'Content-Type': 'application/json', 'x-goog-api-key': key },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }],
+          generationConfig: { temperature, responseMimeType: 'application/json' }
+        })
+      });
+      if (r.status === 429 || r.status >= 500) return { busy: `${r.status}` };
+      if (r.status === 404) return { gone: true };
+      if (!r.ok) return { fatal: `Gemini ${r.status}: ${(await r.text()).slice(0, 300)}` };
+      const j = await r.json();
+      const text = j.candidates?.[0]?.content?.parts?.map(p => p.text).join('') || '';
+      try { return { data: JSON.parse(text.replace(/^```json\s*|```$/g, '')) }; }
+      catch { return { busy: 'invalid JSON in answer' }; }
+    } catch (e) {
+      return { busy: e.name === 'TimeoutError' ? 'timed out after 90 s' : `network error (${e.message})` };
     }
-    throw new Error('All Gemini models failed for this call');
+  }
+
+  // Overloaded model -> go straight to the next model; only after all are tried, wait and go round again.
+  async function gemini(prompt) {
+    for (let round = 0; round < 2; round++) {
+      for (let i = 0; i < models.length && i < 4; i++) {
+        if (deadlineMs && Date.now() > deadlineMs) throw new Error('time budget for AI calls used up');
+        const idx = (current + i) % models.length, name = models[idx];
+        const res = await callOnce(name, prompt);
+        if (res.data) {
+          if (idx !== current) { log(`Switched to ${name} for the rest of the run`); current = idx; }
+          gemini.modelUsed = name;
+          return res.data;
+        }
+        if (res.fatal) throw new Error(res.fatal);
+        log(`${name}: ${res.gone ? 'not available (404)' : res.busy}, trying the next model`);
+      }
+      if (round === 0) { log('All models busy, waiting 30 s before one more round'); await sleep(30000); }
+    }
+    throw new Error('All Gemini models were busy for this call');
   }
   gemini.modelUsed = models[0];
   return gemini;
