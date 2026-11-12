@@ -1,8 +1,8 @@
 {
- "runAt": "2026-11-12T13:30:53.184Z",
- "now": "2026-11-12T13:17:16.315Z",
- "nowLabel": "Thu 11-12 08:17",
- "mode": "live: FXEmpire API + gemini-3.8-flash",
+ "runAt": "2026-11-12T15:02:15.032Z",
+ "now": "2026-11-12T14:49:17.105Z",
+ "nowLabel": "Thu 11-12 09:49",
+ "mode": "live: FXEmpire API + no AI answer",
  "timezone": "America/New_York",
  "config": {
   "selection": {
@@ -945,7 +945,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -960,7 +960,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -975,7 +975,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -990,7 +990,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1005,7 +1005,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1020,7 +1020,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1035,7 +1035,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1050,7 +1050,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1065,7 +1065,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1080,7 +1080,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1095,7 +1095,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1110,7 +1110,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1125,7 +1125,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1140,7 +1140,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1155,7 +1155,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1170,7 +1170,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1185,7 +1185,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1200,7 +1200,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1215,7 +1215,7 @@
    "text": "",
    "raw": "",
    "issues": [
-    "AI call failed: All Gemini models were busy for this call"
+    "AI call failed: No AI provider could answer this call"
    ],
    "status": "needs_fix",
    "sources": [],
@@ -1256,8 +1256,10 @@
    "channel": "X",
    "ms": 1794490200000,
    "at": "Thu 11-12 08:30",
-   "notes": [],
-   "passed": false
+   "notes": [
+    "Slot already passed at run time"
+   ],
+   "passed": true
   },
   {
    "eventId": 398059,
@@ -1436,100 +1438,105 @@
   }
  ],
  "log": [
-  "2026-11-12T13:17:24.607Z Calendar: 829 high-impact rows. Articles: 60",
-  "2026-11-12T13:17:24.608Z Releases: 16. Holidays after de-dup: 27 (major markets: 3)",
-  "2026-11-12T13:17:24.734Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-12T13:18:55.480Z gemini-3.8-flash: timed out after 90 s, trying the next model",
-  "2026-11-12T13:18:55.613Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:19:02.615Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:19:13.983Z gemini-flash-latest: 503, trying the next model",
-  "2026-11-12T13:19:13.983Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:19:49.045Z gemini-3.8-flash: 503, trying the next model",
-  "2026-11-12T13:19:51.116Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:19:58.252Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:20:07.546Z gemini-flash-latest: 503, trying the next model",
-  "2026-11-12T13:20:07.546Z Matching failed (All Gemini models were busy for this call). Continuing without article coverage points.",
-  "2026-11-12T13:20:07.546Z Matched 0 events to articles. Releases missing from calendar: 0",
-  "2026-11-12T13:20:07.547Z Ranked 13. Posts: 8. Videos: 3",
-  "2026-11-12T13:20:12.134Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:20:19.126Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:20:26.131Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:20:42.742Z gemini-flash-latest: 503, trying the next model",
-  "2026-11-12T13:20:42.742Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:21:12.874Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:21:19.876Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:21:26.889Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:21:38.542Z gemini-flash-latest: 503, trying the next model",
-  "2026-11-12T13:21:38.542Z Drafting failed for FOMC Minutes (united-states): All Gemini models were busy for this call",
-  "2026-11-12T13:21:40.858Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:21:47.899Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:21:54.884Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:22:07.116Z gemini-flash-latest: 503, trying the next model",
-  "2026-11-12T13:22:07.116Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:22:37.267Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:22:44.367Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:22:51.283Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:22:58.266Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:22:58.266Z Drafting failed for PPI MoM (united-states): All Gemini models were busy for this call",
-  "2026-11-12T13:23:05.262Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:23:12.351Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:23:19.277Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:23:26.266Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:23:26.266Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:23:58.677Z gemini-3.8-flash: 503, trying the next model",
-  "2026-11-12T13:24:03.411Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:24:10.392Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:24:17.405Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:24:17.405Z Drafting failed for Inflation Rate YoY (canada): All Gemini models were busy for this call",
-  "2026-11-12T13:24:24.505Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:24:31.419Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:24:38.402Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:24:45.408Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:24:45.408Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:25:15.530Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:25:22.561Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:25:29.524Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:25:36.538Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:25:36.538Z Drafting failed for Retail Sales MoM (united-states): All Gemini models were busy for this call",
-  "2026-11-12T13:25:43.541Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:25:50.563Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:25:57.548Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:26:04.587Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:26:04.587Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:26:34.712Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:26:41.739Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:26:48.726Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:26:55.726Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:26:55.726Z Drafting failed for Inflation Rate YoY (united-kingdom): All Gemini models were busy for this call",
-  "2026-11-12T13:27:02.724Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:27:09.738Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:27:16.720Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:27:23.748Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:27:23.748Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:27:53.865Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:28:00.854Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:28:07.883Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:28:14.858Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:28:14.858Z Drafting failed for Existing Home Sales (united-states): All Gemini models were busy for this call",
-  "2026-11-12T13:28:21.860Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:28:28.879Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:28:35.876Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:28:42.884Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:28:42.884Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:29:13.010Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:29:20.020Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:29:27.017Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:29:34.022Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:29:34.022Z Drafting failed for RBA Meeting Minutes (australia): All Gemini models were busy for this call",
-  "2026-11-12T13:29:43.572Z gemini-3.8-flash: 503, trying the next model",
-  "2026-11-12T13:29:47.995Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:29:55.117Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:30:02.028Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:30:02.028Z All models busy, waiting 30 s before one more round",
-  "2026-11-12T13:30:32.158Z gemini-3.8-flash: 429, trying the next model",
-  "2026-11-12T13:30:39.169Z gemini-omni-1.2-flash: 429, trying the next model",
-  "2026-11-12T13:30:46.171Z gemini-omni-1.1-flash: 429, trying the next model",
-  "2026-11-12T13:30:53.178Z gemini-flash-latest: 429, trying the next model",
-  "2026-11-12T13:30:53.178Z Drafting failed for GDP Growth Rate YoY Prel (united-kingdom): All Gemini models were busy for this call"
+  "2026-11-12T14:49:25.904Z Calendar: 829 high-impact rows. Articles: 60",
+  "2026-11-12T14:49:25.905Z Releases: 16. Holidays after de-dup: 27 (major markets: 3)",
+  "2026-11-12T14:49:26.074Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-12T14:49:26.236Z Could not read the GitHub Models catalog (Unexpected token 'O', \"OK\r\n\" is not valid JSON); using the configured list",
+  "2026-11-12T14:49:26.236Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest] -> github [openai/gpt-4.1-mini, openai/gpt-4o-mini, openai/gpt-4.1]",
+  "2026-11-12T14:49:26.397Z gemini gemini-3.8-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61833s)",
+  "2026-11-12T14:49:33.414Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 61826s)",
+  "2026-11-12T14:49:40.417Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 61819s)",
+  "2026-11-12T14:49:55.818Z gemini gemini-flash-latest: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T14:49:55.982Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:50:02.942Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:50:09.987Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:50:09.987Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:52:10.018Z gemini gemini-3.8-flash: timed out after 90 s",
+  "2026-11-12T14:52:10.209Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61669s)",
+  "2026-11-12T14:52:17.159Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61662s)",
+  "2026-11-12T14:52:27.440Z gemini gemini-flash-latest: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T14:52:27.711Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:52:34.571Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:52:41.589Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:52:41.589Z Matching failed (No AI provider could answer this call). Continuing without article coverage points.",
+  "2026-11-12T14:52:41.589Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-12T14:52:41.590Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-12T14:52:45.321Z gemini gemini-3.8-flash: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T14:52:48.792Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 61631s)",
+  "2026-11-12T14:52:55.857Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61624s)",
+  "2026-11-12T14:53:02.758Z gemini gemini-flash-latest: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61617s)",
+  "2026-11-12T14:53:02.856Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:53:09.869Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:53:16.860Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:53:16.860Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:53:47.023Z gemini gemini-3.8-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61572s)",
+  "2026-11-12T14:53:54.108Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61565s)",
+  "2026-11-12T14:54:01.029Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61558s)",
+  "2026-11-12T14:54:10.673Z gemini gemini-flash-latest: 503 (This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.)",
+  "2026-11-12T14:54:10.785Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:54:17.768Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:54:24.780Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:54:24.781Z Drafting failed for FOMC Minutes (united-states): No AI provider could answer this call",
+  "2026-11-12T14:54:24.951Z gemini gemini-3.8-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61535s)",
+  "2026-11-12T14:54:31.935Z gemini gemini-omni-1.2-flash: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateContentInputTokensPerModelPerMinute-FreeTier; retry in 61528s)",
+  "2026-11-12T14:54:39.018Z gemini gemini-omni-1.1-flash: 429 (quota: GenerateContentInputTokensPerModelPerMinute-FreeTier, GenerateRequestsPerMinutePerProjectPerModel-FreeTier, GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61521s)",
+  "2026-11-12T14:54:45.923Z gemini gemini-flash-latest: 429 (quota: GenerateRequestsPerDayPerProjectPerModel-FreeTier; retry in 61514s)",
+  "2026-11-12T14:54:45.923Z gemini: every model is over its limit, skipping it for the rest of this run",
+  "2026-11-12T14:54:46.017Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:54:53.037Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:00.040Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:00.040Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:55:30.209Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:37.170Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:44.226Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:44.226Z Drafting failed for PPI MoM (united-states): No AI provider could answer this call",
+  "2026-11-12T14:55:51.208Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:55:58.184Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:56:05.178Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:56:05.178Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:56:35.309Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:56:42.289Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:56:49.336Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:56:49.336Z Drafting failed for Inflation Rate YoY (canada): No AI provider could answer this call",
+  "2026-11-12T14:56:56.315Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:03.302Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:10.332Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:10.332Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:57:40.451Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:47.442Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:54.455Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:57:54.455Z Drafting failed for Retail Sales MoM (united-states): No AI provider could answer this call",
+  "2026-11-12T14:58:01.458Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:08.489Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:15.495Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:15.495Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:58:45.614Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:52.604Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:59.601Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:58:59.601Z Drafting failed for Inflation Rate YoY (united-kingdom): No AI provider could answer this call",
+  "2026-11-12T14:59:06.626Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:59:13.619Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:59:20.604Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:59:20.604Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T14:59:50.773Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T14:59:57.774Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:00:04.728Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:00:04.728Z Drafting failed for Existing Home Sales (united-states): No AI provider could answer this call",
+  "2026-11-12T15:00:11.749Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:00:18.748Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:00:25.738Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:00:25.738Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T15:00:55.849Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:02.858Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:09.875Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:09.875Z Drafting failed for RBA Meeting Minutes (australia): No AI provider could answer this call",
+  "2026-11-12T15:01:16.860Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:23.901Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:30.894Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:01:30.894Z All providers busy, waiting 30 s before one more round",
+  "2026-11-12T15:02:01.030Z github openai/gpt-4.1-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:02:08.004Z github openai/gpt-4o-mini: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:02:15.027Z github openai/gpt-4.1: network error (Unexpected token 'O', \"OK\r\n\" is not valid JSON)",
+  "2026-11-12T15:02:15.028Z Drafting failed for GDP Growth Rate YoY Prel (united-kingdom): No AI provider could answer this call"
  ]
 }
