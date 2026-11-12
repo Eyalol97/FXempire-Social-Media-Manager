@@ -65,9 +65,16 @@ export async function makeLlm({ mock, model, temperature, delayMs, log, deadline
             body: JSON.stringify({ model: name, temperature, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] })
           });
       if (r.status === 429 || r.status >= 500) {
-        const body = (await r.text()).replace(/\s+/g, ' ');
-        const reason = (body.match(/"message":\s*"([^"]{0,220})/) || [])[1] || body.slice(0, 160);
-        return { busy: `${r.status} ${reason}`, quota: r.status === 429 };
+        // Keep the provider's own explanation (which quota, how long to wait) in the log
+        const body = await r.text().catch(() => '');
+        let why = '';
+        try {
+          const j = JSON.parse(body);
+          const v = (j.error?.details || []).flatMap(d => d.violations || []).map(x => `${x.quotaId || x.quotaMetric || ''}`.trim()).filter(Boolean);
+          const retry = (j.error?.details || []).find(d => d.retryDelay)?.retryDelay;
+          why = [v.length ? `quota: ${[...new Set(v)].join(', ')}` : String(j.error?.message || j.message || '').slice(0, 160), retry ? `retry in ${retry}` : ''].filter(Boolean).join('; ');
+        } catch { why = body.replace(/\s+/g, ' ').slice(0, 160); }
+        return { busy: `${r.status}${why ? ' (' + why + ')' : ''}`, quota: r.status === 429 };
       }
       if (r.status === 404 || r.status === 400 && p.id === 'github') return { gone: `${r.status} ${(await r.text()).slice(0, 160)}` };
       if (!r.ok) return { fatal: `${p.id} ${r.status}: ${(await r.text()).slice(0, 300)}` };
