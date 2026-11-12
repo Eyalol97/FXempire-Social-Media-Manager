@@ -24,7 +24,7 @@ async function listFlashModels(key, preferred, log) {
 
 // Gemini only. (A GitHub Models fallback was tried and removed: that service was retired in July 2026.)
 // A provider that answers "quota exhausted" for every model is skipped for the rest of the run.
-export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs, githubModels = [] }) {
+export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs }) {
   if (mock) return mockLlm;
   const providers = [];
   const gKey = process.env.GEMINI_API_KEY;
@@ -37,17 +37,11 @@ export async function makeLlm({ mock, model, temperature, delayMs, log, deadline
     if (wait > 0) await sleep(wait); // stay under free-tier rate limits
     p.last = Date.now();
     try {
-      const r = p.id === 'gemini'
-        ? await fetch(`${API}/models/${name}:generateContent`, {
-            method: 'POST', signal: AbortSignal.timeout(90000),
-            headers: { 'Content-Type': 'application/json', 'x-goog-api-key': p.key },
-            body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature, responseMimeType: 'application/json' } })
-          })
-        : await fetch('https://models.github.ai/inference/chat/completions', {
-            method: 'POST', signal: AbortSignal.timeout(90000),
-            headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${p.key}` },
-            body: JSON.stringify({ model: name, temperature, response_format: { type: 'json_object' }, messages: [{ role: 'user', content: prompt }] })
-          });
+      const r = await fetch(`${API}/models/${name}:generateContent`, {
+          method: 'POST', signal: AbortSignal.timeout(90000),
+          headers: { 'Content-Type': 'application/json', 'x-goog-api-key': p.key },
+          body: JSON.stringify({ contents: [{ role: 'user', parts: [{ text: prompt }] }], generationConfig: { temperature, responseMimeType: 'application/json' } })
+        });
       if (r.status === 429 || r.status >= 500) {
         // Keep the provider's own explanation (which quota, how long to wait) in the log
         const body = await r.text().catch(() => '');
@@ -60,10 +54,10 @@ export async function makeLlm({ mock, model, temperature, delayMs, log, deadline
         } catch { why = body.replace(/\s+/g, ' ').slice(0, 160); }
         return { busy: `${r.status}${why ? ' (' + why + ')' : ''}`, quota: r.status === 429 };
       }
-      if (r.status === 404 || r.status === 400 && p.id === 'github') return { gone: `${r.status} ${(await r.text()).slice(0, 160)}` };
+      if (r.status === 404) return { gone: `${r.status} ${(await r.text()).slice(0, 160)}` };
       if (!r.ok) return { fatal: `${p.id} ${r.status}: ${(await r.text()).slice(0, 300)}` };
       const j = await r.json();
-      const text = p.id === 'gemini' ? (j.candidates?.[0]?.content?.parts?.map(x => x.text).join('') || '') : (j.choices?.[0]?.message?.content || '');
+      const text = j.candidates?.[0]?.content?.parts?.map(x => x.text).join('') || '';
       try { return { data: JSON.parse(text.replace(/^```json\s*|```$/g, '')) }; }
       catch { return { busy: 'invalid JSON in answer' }; }
     } catch (e) {
