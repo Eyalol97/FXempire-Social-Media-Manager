@@ -31,9 +31,30 @@
   .slot{display:block;font-size:13px;line-height:1.35;padding:8px 9px;border-radius:8px;margin-bottom:7px;cursor:pointer;text-decoration:none;color:#fff;background:var(--x)}
   .slot .t{display:block;font-weight:700;font-size:12px;opacity:.85;margin-bottom:2px}
   .slot.video{background:var(--vid)} .slot.record_by{background:#fde68a;color:#78350f}
+  .slot.release{background:#fff;color:var(--ink);border:2px solid var(--ink);cursor:default}
+  .slot.release .t{opacity:1}
+  .slot .rel{font-weight:600;opacity:.8}
   .slot:hover{filter:brightness(1.12)}
+  .slot.release:hover{filter:none}
+  /* event rows: before | release | after */
+  .evrows{display:grid;gap:14px}
+  .evrow{display:grid;grid-template-columns:minmax(0,1.25fr) 230px minmax(0,1fr);gap:0;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .evrow.done{opacity:.75}
+  .col{padding:12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+  .col h5{margin:0;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+  .col.before{background:#f8fafc}
+  .col.after{background:#f8fafc}
+  .col.release{border-left:1px solid var(--line);border-right:1px solid var(--line);background:#fff;gap:6px}
+  .col.release .big{font-size:22px;font-weight:700;line-height:1.1}
+  .col.release .nm{font-weight:650;font-size:15px}
+  .col.release .fig{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px;margin-top:4px}
+  .col.release .fig span:nth-child(odd){color:var(--mute)}
+  .col .none{font-size:12.5px;color:var(--mute);padding:6px 0}
+  .card .rel{font-weight:650;color:var(--ink)}
+  @media (max-width:1000px){.evrow{grid-template-columns:1fr}.col.release{border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);order:-1}}
   .slot.passed{opacity:.4}
   .legend{display:flex;gap:14px;font-size:12px;color:var(--mute);margin:6px 0 0}
+  .legend .lg-rel::before{background:#fff !important;box-shadow:inset 0 0 0 2px var(--ink)}
   .legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
   /* toolbar */
   .toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 12px}
@@ -43,7 +64,7 @@
   .toolbar .lbl{font-size:12px;color:var(--mute);width:62px}
   .toolbar button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
   /* cards */
-  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+  .cards{display:block}
   .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;scroll-margin-top:16px}
   .card.flash{box-shadow:0 0 0 3px #84caff}
   .card .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
@@ -92,7 +113,7 @@
 
   <h2>This week's schedule (ET)</h2>
   <div class="timeline" id="timeline"></div>
-  <div class="legend"><span style="--c:var(--x)">X post</span><span style="--c:var(--vid)">Short video (TikTok / Reels / Shorts)</span><span style="--c:#fde68a">Tiger records by</span></div>
+  <div class="legend"><span style="--c:var(--x)">X post</span><span style="--c:var(--vid)">Short video (TikTok / Reels / Shorts)</span><span style="--c:#fde68a">Tiger records by</span><span class="lg-rel">Event release</span></div>
 
   <h2>Drafts to review</h2>
   <div class="toolbar" id="toolbar"></div>
@@ -109,6 +130,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const KIND = { x_pre: 'X - before', x_post: 'X - after', video_script: 'Video script' };
 const STATUS = { ready_for_review: 'Ready for review', needs_fix: 'Failed auto-check', waiting_for_actual: 'Waiting for actual', approved: 'Approved', rejected: 'Rejected' };
 const store = { get(k){ try { return JSON.parse(localStorage.getItem('fxe:' + k)); } catch { return null; } }, set(k, v){ try { localStorage.setItem('fxe:' + k, JSON.stringify(v)); } catch {} } };
+const relLabel = mins => { const a = Math.abs(mins); const v = a >= 120 ? Math.round(a / 60) + 'h' : a + 'm'; return mins < 0 ? `T-${v}` : `T+${v}`; };
 const country = c => c.replace(/-/g, ' ').replace(/\b\w/g, m => m.toUpperCase()).replace('United States', 'US').replace('United Kingdom', 'UK');
 
 function renderText(d) {
@@ -141,9 +163,13 @@ function boot(data) {
   }
   const shown = days.slice(-7);
   document.getElementById('timeline').innerHTML = shown.map(day => {
-    const slots = data.schedule.filter(s => s.at.slice(4, 9) === day.key);
+    const releases = data.ranked.filter(r => r.post).map(r => ({ release: true, eventId: r.id, ms: r.ms, at: r.at, passed: r.ms < Date.parse(data.now), notes: [] }));
+    const slots = [...data.schedule, ...releases].filter(s => s.at.slice(4, 9) === day.key).sort((a, b) => a.ms - b.ms);
     return `<div class="day ${day.today ? 'today' : ''}"><h4>${day.wd}<small>${day.key}${day.today ? ' &middot; today' : ''}</small></h4>` +
-      (slots.map(s => { const e = evById[s.eventId]; const tag = s.kind === 'record_by' ? 'Tiger records' : s.kind === 'video' ? 'Video' : s.kind === 'x_pre' ? 'X - before' : 'X - after';
+      (slots.map(s => { const e = evById[s.eventId];
+        if (s.release) return `<div class="slot release ${s.passed ? 'passed' : ''}"><span class="t">${s.at.slice(-5)} &middot; RELEASE</span>${esc(country(e.country))} ${esc(e.name)}</div>`;
+        const rel = relLabel(Math.round((s.ms - e.ms) / 6e4));
+        const tag = s.kind === 'record_by' ? `Tiger records &middot; <span class="rel">${rel}</span>` : s.kind === 'video' ? `Video &middot; before &middot; <span class="rel">${rel}</span>` : s.kind === 'x_pre' ? `X &middot; before &middot; <span class="rel">${rel}</span>` : `X &middot; after &middot; <span class="rel">${rel}</span>`;
         return `<a class="slot ${s.kind} ${s.passed ? 'passed' : ''}" data-target="${s.eventId}-${s.kind === 'video' || s.kind === 'record_by' ? 'video_script' : s.kind}" title="${esc(s.notes.join(' | '))}"><span class="t">${s.at.slice(-5)} &middot; ${tag}</span>${esc(country(e.country))} ${esc(e.name)}</a>`; }).join('') || '<div class="empty">Nothing scheduled</div>') + `</div>`;
   }).join('');
   document.querySelectorAll('.slot').forEach(a => a.onclick = () => {
@@ -173,25 +199,45 @@ function boot(data) {
     document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { filter = b.dataset.f; drawCards(); });
     document.querySelectorAll('[data-r]').forEach(b => b.onclick = () => { review = b.dataset.r; drawCards(); });
 
-    document.getElementById('cards').innerHTML = list.map(d => {
+    const cardHtml = d => {
       const e = evById[d.eventId]; const st = statusOf(d); const edited = store.get('tx:' + d.key);
       const rec = d.kind === 'video_script' && recordBy[d.eventId] ? `<div class="note">Tiger records by <b>${esc(recordBy[d.eventId].at)} ET</b> &middot; publishes ${esc(d.slotAt)} ET</div>` : '';
-      const caught = d.attempts && d.attempts.length > 1 && d.attempts[0].problems.length ? `<div class="note caught">Auto-check caught on the first draft: ${esc(d.attempts[0].problems.join('; '))}. ${d.issues.length ? 'Still failing after retry.' : 'Fixed on retry.'}</div>` : '';
+      const firstOwn = (d.attempts && d.attempts.length > 1 ? d.attempts[0].problems : []).filter(p => p.startsWith(d.kind + ':')).map(p => p.slice(d.kind.length + 2));
+      const caught = firstOwn.length ? `<div class="note caught">Auto-check caught on the first draft: ${esc(firstOwn.join('; '))}. ${d.issues.length ? 'Still failing after retry.' : 'Fixed on retry.'}</div>` : '';
       const passed = d.slotMs && d.slotMs < Date.parse(data.now) ? ' &middot; <span class="muted">slot passed</span>' : '';
       return `<article class="card" id="${d.key}">
         <div class="top"><div><span class="chan ${d.kind}">${KIND[d.kind]}</span>
           <div class="when">${esc(d.channel || '')} &middot; ${esc(d.slotAt || '')} ET${passed}</div></div>
           <span class="status st-${st}">${STATUS[st]}</span></div>
-        <div class="ev">${esc(country(e.country))} ${esc(e.name)} <span class="muted" style="font-weight:400">&middot; #${e.rank}, score ${e.score} &middot; release ${esc(e.at)} ET</span></div>
+        <div class="note"><span class="rel">${d.slotMs ? relLabel(Math.round((d.slotMs - e.ms) / 6e4)) : ''}</span> ${d.slotMs ? (d.slotMs < e.ms ? 'before' : 'after') + ' the release' : ''}</div>
         ${rec}
         <div class="text" contenteditable="true" data-key="${d.key}">${edited ? esc(edited) : renderText(d)}</div>
         ${d.issues.length ? `<ul class="issues">${d.issues.map(i => `<li>${esc(i)}</li>`).join('')}</ul>` : ''}
         ${caught}
-        <div class="row">Instruments: ${e.instruments.map(i => `<span class="pill">${esc(i)}</span>`).join('')}</div>
         <div class="row">Sources: ${d.sources.length ? d.sources.map(s => `<a href="${esc(s.url)}" target="_blank">${esc(s.title)}</a>`).join(' &middot; ') : '<span>FXEmpire economic calendar only (no matching article yet)</span>'}</div>
         <div class="actions"><button class="approve" data-a="approved" data-k="${d.key}">Approve</button><button class="reject" data-a="rejected" data-k="${d.key}">Reject</button><button data-copy="${d.key}">Copy</button>${edited ? `<button data-reset="${d.key}">Undo edits</button>` : ''}</div>
       </article>`;
-    }).join('') || '<p class="muted">Nothing here.</p>';
+    };
+    const nowMs = Date.parse(data.now);
+    const rows = data.ranked.filter(r => r.post).sort((a, b) => (a.ms < nowMs) - (b.ms < nowMs) || a.ms - b.ms);
+    const html = rows.map(e => {
+      const mine = list.filter(d => d.eventId === e.id);
+      if (!mine.length) return '';
+      const before = mine.filter(d => d.kind !== 'x_post').sort((a, b) => a.slotMs - b.slotMs), after = mine.filter(d => d.kind === 'x_post');
+      const done = e.ms < nowMs;
+      return `<section class="evrow ${done ? 'done' : ''}">
+        <div class="col before"><h5>Before the release</h5>${before.map(cardHtml).join('') || '<div class="none">Nothing to review here with the current filters</div>'}</div>
+        <div class="col release"><h5>Release${done ? ' &middot; already out' : ''}</h5>
+          <div class="big">${esc(e.at.slice(-5))} <span style="font-size:13px;font-weight:500" class="muted">ET</span></div>
+          <div class="muted" style="font-size:13px">${esc(e.at.slice(0, 9))}</div>
+          <div class="nm">${esc(country(e.country))} ${esc(e.name)}</div>
+          <div class="fig"><span>Forecast</span><span>${esc(e.forecast || '-')}</span><span>Previous</span><span>${esc(e.previous || '-')}</span><span>Actual</span><span>${esc(e.actual || 'not out yet')}</span></div>
+          <div class="muted" style="font-size:12.5px;margin-top:4px">#${e.rank} &middot; score ${e.score}${e.video ? ' &middot; video' : ''}</div>
+          <div>${e.instruments.map(i => `<span class="pill">${esc(i)}</span>`).join('')}</div></div>
+        <div class="col after"><h5>After the release</h5>${after.map(cardHtml).join('') || '<div class="none">Nothing to review here with the current filters</div>'}</div>
+      </section>`;
+    }).join('');
+    document.getElementById('cards').innerHTML = html ? `<div class="evrows">${html}</div>` : '<p class="muted">Nothing here.</p>';
 
     document.querySelectorAll('[data-a]').forEach(b => b.onclick = () => { const k = b.dataset.k; store.set('st:' + k, statusOf(drafts.find(d => d.key === k)) === b.dataset.a ? null : b.dataset.a); drawCards(); });
     document.querySelectorAll('[data-copy]').forEach(b => b.onclick = () => { const t = document.querySelector(`.text[data-key="${b.dataset.copy}"]`).innerText; navigator.clipboard?.writeText(t); b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1200); });

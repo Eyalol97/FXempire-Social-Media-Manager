@@ -44,7 +44,18 @@ export async function makeLlm({ mock, model, temperature, delayMs, log, deadline
           generationConfig: { temperature, responseMimeType: 'application/json' }
         })
       });
-      if (r.status === 429 || r.status >= 500) return { busy: `${r.status}` };
+      if (r.status === 429 || r.status >= 500) {
+        // Keep Google's own explanation (which quota, how long to wait) in the log
+        const body = await r.text().catch(() => '');
+        let why = '';
+        try {
+          const j = JSON.parse(body);
+          const v = (j.error?.details || []).flatMap(d => d.violations || []).map(x => `${x.quotaId || x.quotaMetric || ''}`.trim()).filter(Boolean);
+          const retry = (j.error?.details || []).find(d => d.retryDelay)?.retryDelay;
+          why = [v.length ? `quota: ${[...new Set(v)].join(', ')}` : (j.error?.message || '').slice(0, 160), retry ? `retry in ${retry}` : ''].filter(Boolean).join('; ');
+        } catch { why = body.slice(0, 160); }
+        return { busy: `${r.status}${why ? ' (' + why + ')' : ''}` };
+      }
       if (r.status === 404) return { gone: true };
       if (!r.ok) return { fatal: `Gemini ${r.status}: ${(await r.text()).slice(0, 300)}` };
       const j = await r.json();
