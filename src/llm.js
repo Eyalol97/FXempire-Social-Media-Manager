@@ -22,30 +22,14 @@ async function listFlashModels(key, preferred, log) {
   }
 }
 
-// Providers are tried in order: Gemini (if a key is set), then GitHub Models (free inside GitHub Actions).
+// Gemini only. (A GitHub Models fallback was tried and removed: that service was retired in July 2026.)
 // A provider that answers "quota exhausted" for every model is skipped for the rest of the run.
-// Keep the configured GitHub models that still exist; if none do, take small chat models from the catalog.
-async function githubCatalog(token, wanted, log) {
-  try {
-    const r = await fetch('https://models.github.ai/catalog/models', { headers: { Authorization: `Bearer ${token}`, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
-    if (!r.ok) throw new Error(String(r.status));
-    const ids = (await r.json()).map(m => m.id).filter(Boolean);
-    const keep = wanted.filter(w => ids.includes(w));
-    const extra = ids.filter(i => /mini|flash|small/i.test(i) && !/embed|image|audio|realtime|reason/i.test(i) && !keep.includes(i));
-    return [...keep, ...extra].slice(0, 4);
-  } catch (e) {
-    log(`Could not read the GitHub Models catalog (${e.message}); using the configured list`);
-    return wanted;
-  }
-}
-
 export async function makeLlm({ mock, model, temperature, delayMs, log, deadlineMs, githubModels = [] }) {
   if (mock) return mockLlm;
   const providers = [];
-  const gKey = process.env.GEMINI_API_KEY, ghToken = process.env.GITHUB_TOKEN;
-  if (gKey) providers.push({ id: 'gemini', key: gKey, models: await listFlashModels(gKey, model, log), last: 0, out: false });
-  if (ghToken && githubModels.length) providers.push({ id: 'github', key: ghToken, models: await githubCatalog(ghToken, githubModels, log), last: 0, out: false });
-  if (!providers.length) throw new Error('No AI provider: set GEMINI_API_KEY or run inside GitHub Actions');
+  const gKey = process.env.GEMINI_API_KEY;
+  if (!gKey) throw new Error('GEMINI_API_KEY is not set');
+  providers.push({ id: 'gemini', key: gKey, models: await listFlashModels(gKey, model, log), last: 0, out: false });
   log(`AI providers in order: ${providers.map(p => `${p.id} [${p.models.slice(0, 4).join(', ')}]`).join(' -> ')}`);
 
   async function callOnce(p, name, prompt) {

@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  models: read   # free GitHub Models fallback through the built-in token
 
 jobs:
   run:
@@ -22,7 +21,6 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node src/run.js
       - name: Keep a copy of this run
         run: |
