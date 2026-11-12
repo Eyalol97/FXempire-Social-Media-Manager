@@ -25,10 +25,19 @@ export function instrumentNames(tags) {
   return [...new Set(out)];
 }
 
+// Asset class of a readable instrument name, so breadth can be counted from the instruments actually listed
+export function instrumentClass(name) {
+  if (/\/|Dollar Index/.test(name)) return 'forex';
+  if (/S&P|Nasdaq|Dow|DAX|Nikkei|FTSE/.test(name)) return 'stocks';
+  if (/Gold|Silver|Oil|Gas|Copper/.test(name)) return 'commodities';
+  if (/Bitcoin|Ethereum/.test(name)) return 'crypto';
+  return null;
+}
+
 // Default instruments by country when no article is matched (so the "why" column is never empty)
 const COUNTRY_DEFAULT = {
   'united-states': ['US Dollar Index', 'EUR/USD', 'S&P 500', 'Gold'],
-  'united-kingdom': ['GBP/USD', 'EUR/GBP'], 'euro-area': ['EUR/USD', 'DAX'], germany: ['EUR/USD', 'DAX'],
+  'united-kingdom': ['GBP/USD', 'EUR/GBP', 'FTSE 100'], 'euro-area': ['EUR/USD', 'DAX'], germany: ['EUR/USD', 'DAX'],
   japan: ['USD/JPY', 'Nikkei 225'], canada: ['USD/CAD'], china: ['AUD/USD', 'Copper', 'WTI Oil'], australia: ['AUD/USD']
 };
 
@@ -81,11 +90,15 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
     const tags = matchedIds.flatMap(id => articlesById[id].tags);
     const coverage = matchedIds.length ? s.coveragePoints : 0;
     const currency = s.currencyPoints[e.country] || 0;
-    const classes = new Set(s.breadthByCategory[e.category] || s.breadthDefault);
-    for (const c of tagClasses(tags, cfg.tagClasses)) classes.add(c);
+    // Breadth counts only asset classes that the event type moves AND that appear in the instruments we list for it.
+    // (Earlier version took the classes from the event type alone, so Canada CPI got 3 classes with only USD/CAD listed.)
+    const allInstruments = matchedIds.length ? instrumentNames(tags) : (COUNTRY_DEFAULT[e.country] || []);
+    const catClasses = new Set(s.breadthByCategory[e.category] || s.breadthDefault);
+    const classes = new Set(allInstruments.map(instrumentClass).filter(c => c && catClasses.has(c)));
+    for (const c of tagClasses(tags, cfg.tagClasses)) classes.add(c); // FXEmpire's own article tags count as evidence
     const breadth = Math.min(classes.size, s.breadthMax);
     const tier = s.tierByCategory[e.category] || s.tierDefault;
-    const instruments = matchedIds.length ? instrumentNames(tags) : (COUNTRY_DEFAULT[e.country] || []);
+    const instruments = allInstruments.filter(n => classes.has(instrumentClass(n))); // shown instruments match the score
 
     ranked.push({
       event: e, timeMs: t,
@@ -96,7 +109,7 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
       why: [
         coverage ? `Covered by ${matchedIds.length} FXEmpire article(s)` : 'No FXEmpire article yet',
         currency ? `${e.country.replace(/-/g, ' ')} release (+${currency})` : 'Currency outside the core list',
-        `Moves ${[...classes].join(', ')} (+${breadth})`
+        classes.size ? `Moves ${[...classes].join(', ')} (+${breadth})` : 'No listed instrument in a class this event moves (+0)'
       ]
     });
   }

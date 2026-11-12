@@ -152,6 +152,11 @@ async function main() {
     skipped: skipped.map(s => ({ name: s.event.name, country: s.event.country, at: s.event.allDay || !s.event.category ? s.event.date.slice(0, 10) + ' (all day)' : label(cfg.timezone, Date.parse(s.event.date)), rule: s.rule, score: s.score ?? null })),
     drafts, schedule, log: runLog
   };
+  // If no AI call answered at all, don't replace the live board with a page of failed drafts.
+  // The run fails loudly in GitHub Actions instead, and the board keeps the last good run.
+  if (!mock && !llm.modelUsed && posts.length) {
+    throw new Error('No AI model answered in this run (see the log above). Keeping the last good board.');
+  }
   fs.mkdirSync(path.dirname(path.join(ROOT, outFile)), { recursive: true });
   fs.writeFileSync(path.join(ROOT, outFile), JSON.stringify(data, null, 1));
   log(`Wrote ${outFile}: ${drafts.length} drafts, ${schedule.length} slots`);
