@@ -53,9 +53,12 @@ async function main() {
   // 3. AI step 1: match articles to events + spot releases missing from the calendar
   const evList = inWindow.map(e => ({ id: e.id, country: e.country, name: e.name, category: e.category, reference: e.reference, time_et: label(cfg.timezone, Date.parse(e.date)) }));
   const artList = recent.map(a => ({ id: a.id, title: a.title, tags: a.tags.filter(t => /^(c|co|i|s|cc)-|us-dollar-index|economic-news/.test(t)) }));
+  // Releases from the last 10 days that are already outside the window. Sent so the AI does not flag them as missing.
+  const recentList = releases.filter(e => { const t = Date.parse(e.date); return t < winStart && t >= nowMs - 10 * 24 * H; })
+    .map(e => ({ country: e.country, name: e.name, category: e.category, time_et: label(cfg.timezone, Date.parse(e.date)) }));
   let matchOut = { matches: [], missing_releases: [] };
   try {
-    matchOut = await llm(prompt('match.md').replace('{{events}}', () => JSON.stringify(evList, null, 1)).replace('{{articles}}', () => JSON.stringify(artList, null, 1)));
+    matchOut = await llm(prompt('match.md').replace('{{events}}', () => JSON.stringify(evList, null, 1)).replace('{{articles}}', () => JSON.stringify(artList, null, 1)).replace('{{recent}}', () => JSON.stringify(recentList, null, 1)));
   } catch (err) {
     log(`Matching failed (${err.message}). Continuing without article coverage points.`);
   }

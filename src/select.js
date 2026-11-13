@@ -1,6 +1,6 @@
 // Deterministic part of the system: filtering, holiday handling, scoring, ranking, skip reasons.
 // No AI here, so every rank can be explained and reproduced.
-import { H } from './time.js';
+import { H, M, clampToActiveHours } from './time.js';
 
 export function tagClasses(tags, map) {
   const classes = new Set();
@@ -87,6 +87,9 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
     const t = Date.parse(e.date);
     if (e.impact < cfg.selection.impactGate) { skipped.push({ event: e, rule: 'Not High impact' }); continue; }
     if (t < windowStart) { skipped.push({ event: e, rule: `Already happened (over ${cfg.lookbackHours} hours ago) - too late to post` }); continue; }
+    // An event whose after-release post time has also passed has nothing left to post: don't let it take a slot.
+    const afterSlot = clampToActiveHours(cfg.timezone, t + cfg.timing.xPostMinutes * M, cfg.timing.quietStart, cfg.timing.quietEnd, 'post').ms;
+    if (afterSlot < nowMs) { skipped.push({ event: e, rule: 'Already happened, and the after-release post time has passed - nothing left to post' }); continue; }
     if (t > windowEnd) { skipped.push({ event: e, rule: `Too far ahead (over ${cfg.windowDays} days away) - a later run will cover it` }); continue; }
 
     const matchedIds = (matches[e.id] || []).filter(id => articlesById[id]);

@@ -106,13 +106,14 @@ const COUNTRY = { 'united-states': /\bus\b|u\.s\.|dollar|fed\b/i, 'united-kingdo
 async function mockLlm(prompt) {
   if (prompt.includes('Task A - matching')) {
     const events = JSON.parse(prompt.split('EVENTS:\n')[1].split('\n\nARTICLES:')[0]);
-    const articles = JSON.parse(prompt.split('ARTICLES:\n')[1]);
+    const articles = JSON.parse(prompt.split('ARTICLES:\n')[1].split('\n\nRECENT:')[0]);
+    const recent = prompt.includes('RECENT:\n') ? JSON.parse(prompt.split('RECENT:\n')[1]) : [];
     const matches = events.map(e => {
       const ids = articles.filter(a => CAT.some(([ec, ar]) => ec.test(e.category + ' ' + e.name) && ar.test(a.title)) && (COUNTRY[e.country] || /$^/).test(a.title)).map(a => a.id);
       return { event_id: e.id, article_ids: ids, reason: 'mock keyword match' };
     });
     const missing = articles.filter(a => /\bcpi\b/i.test(a.title)).slice(0, 1)
-      .filter(() => !events.some(e => e.country === 'united-states' && /^(inflation-rate|core-inflation-rate)/.test(e.category)))
+      .filter(() => ![...events, ...recent].some(e => e.country === 'united-states' && /^(inflation-rate|core-inflation-rate)/.test(e.category)))
       .map(a => ({ release: 'US CPI', article_id: a.id, evidence: a.title }));
     return { matches, missing_releases: missing };
   }
