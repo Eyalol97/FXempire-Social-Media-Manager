@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-13T13:13:56.694Z",
- "now": "2026-11-13T13:12:13.774Z",
- "nowLabel": "Fri 11-13 08:12",
+ "runAt": "2026-11-13T13:37:27.071Z",
+ "now": "2026-11-13T13:36:49.255Z",
+ "nowLabel": "Fri 11-13 08:36",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -222,52 +222,6 @@
    "sources": []
   },
   {
-   "id": 398059,
-   "name": "Existing Home Sales",
-   "alsoReleased": [],
-   "components": [
-    {
-     "name": "Existing Home Sales",
-     "forecast": "3.85M",
-     "previous": "3.97M",
-     "actual": "3.75M",
-     "reference": "Oct"
-    }
-   ],
-   "country": "united-states",
-   "reference": "Oct",
-   "at": "Thu 11-12 10:00",
-   "ms": 1794495600000,
-   "forecast": "3.85M",
-   "previous": "3.97M",
-   "actual": "3.75M",
-   "rank": 4,
-   "score": 4,
-   "parts": {
-    "coverage": 0,
-    "currency": 2,
-    "breadth": 2
-   },
-   "tier": 1,
-   "instruments": [
-    "US Dollar Index",
-    "EUR/USD",
-    "S&P 500"
-   ],
-   "assetClasses": [
-    "forex",
-    "stocks"
-   ],
-   "why": [
-    "No FXEmpire article yet",
-    "US release (+2)",
-    "Moves forex, stocks (+2)"
-   ],
-   "post": true,
-   "video": false,
-   "sources": []
-  },
-  {
    "id": 401420,
    "name": "GDP Growth Rate QoQ Prel",
    "alsoReleased": [],
@@ -287,7 +241,7 @@
    "forecast": "0.1%",
    "previous": "0.4%",
    "actual": null,
-   "rank": 5,
+   "rank": 4,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -332,7 +286,7 @@
    "forecast": "4.9%",
    "previous": "4.7%",
    "actual": null,
-   "rank": 6,
+   "rank": 5,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -378,7 +332,7 @@
    "forecast": "3.5%",
    "previous": "3.5%",
    "actual": null,
-   "rank": 7,
+   "rank": 6,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -424,7 +378,7 @@
    "forecast": "2.0%",
    "previous": "2.1%",
    "actual": null,
-   "rank": 8,
+   "rank": 7,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -469,7 +423,7 @@
    "forecast": "0.1%",
    "previous": "-0.4%",
    "actual": null,
-   "rank": 9,
+   "rank": 8,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -491,7 +445,7 @@
     "UK release (+1)",
     "Moves forex, stocks (+2)"
    ],
-   "post": false,
+   "post": true,
    "video": false,
    "sources": []
   },
@@ -515,7 +469,7 @@
    "forecast": "15.9",
    "previous": "28.1",
    "actual": null,
-   "rank": 10,
+   "rank": 9,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -560,7 +514,7 @@
    "forecast": "3.2%",
    "previous": "3.1%",
    "actual": null,
-   "rank": 11,
+   "rank": 10,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -612,7 +566,7 @@
    "forecast": "0.8%",
    "previous": "1.1%",
    "actual": null,
-   "rank": 12,
+   "rank": 11,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -645,8 +599,8 @@
    "components": [
     {
      "name": "Balance of Trade",
-     "forecast": "\u00a5-450.0B",
-     "previous": "\u00a5-536.6B",
+     "forecast": "¥-450.0B",
+     "previous": "¥-536.6B",
      "actual": null,
      "reference": "Oct"
     }
@@ -655,10 +609,10 @@
    "reference": "Oct",
    "at": "Tue 11-17 18:50",
    "ms": 1794959400000,
-   "forecast": "\u00a5-450.0B",
-   "previous": "\u00a5-536.6B",
+   "forecast": "¥-450.0B",
+   "previous": "¥-536.6B",
    "actual": null,
-   "rank": 13,
+   "rank": 12,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -701,7 +655,7 @@
    "forecast": "",
    "previous": "",
    "actual": null,
-   "rank": 14,
+   "rank": 13,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -769,45 +723,45 @@
    "score": null
   },
   {
-   "name": "Retail Sales MoM",
-   "country": "united-kingdom",
-   "at": "Fri 11-20 02:00",
-   "rule": "Ranked #9, below the top 8",
-   "score": 3
+   "name": "Existing Home Sales",
+   "country": "united-states",
+   "at": "Thu 11-12 10:00",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "score": null
   },
   {
    "name": "ZEW Economic Sentiment Index",
    "country": "germany",
    "at": "Tue 11-17 05:00",
-   "rule": "Ranked #10, below the top 8",
+   "rule": "Ranked #9, below the top 8",
    "score": 3
   },
   {
    "name": "Inflation Rate YoY",
    "country": "canada",
    "at": "Mon 11-16 08:30",
-   "rule": "Ranked #11, below the top 8",
+   "rule": "Ranked #10, below the top 8",
    "score": 2
   },
   {
    "name": "Retail Sales YoY",
    "country": "china",
    "at": "Sun 11-15 21:00",
-   "rule": "Ranked #12, below the top 8",
+   "rule": "Ranked #11, below the top 8",
    "score": 2
   },
   {
    "name": "Balance of Trade",
    "country": "japan",
    "at": "Tue 11-17 18:50",
-   "rule": "Ranked #13, below the top 8",
+   "rule": "Ranked #12, below the top 8",
    "score": 2
   },
   {
    "name": "RBA Meeting Minutes",
    "country": "australia",
    "at": "Mon 11-16 19:30",
-   "rule": "Ranked #14, below the top 8",
+   "rule": "Ranked #13, below the top 8",
    "score": 1
   },
   {
@@ -986,7 +940,7 @@
    "score": null
   },
   {
-   "name": "Genghis Khan\u2019s Birthday",
+   "name": "Genghis Khan’s Birthday",
    "country": "mongolia",
    "at": "2026-11-21 (all day)",
    "rule": "Market holiday outside major markets",
@@ -1015,12 +969,7 @@
      "url": "https://www.fxempire.com/forecasts/article/gold-and-silver-price-forecast-gold-hits-13-month-low-before-us-ppi-1644401"
     }
    ],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794571200000,
    "slotAt": "Fri 11-13 07:00",
    "channel": "X"
@@ -1039,12 +988,7 @@
      "url": "https://www.fxempire.com/forecasts/article/gold-and-silver-price-forecast-gold-hits-13-month-low-before-us-ppi-1644401"
     }
    ],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794577200000,
    "slotAt": "Fri 11-13 08:40",
    "channel": "X"
@@ -1058,12 +1002,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795023000000,
    "slotAt": "Wed 11-18 12:30",
    "channel": "X"
@@ -1077,12 +1016,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795029000000,
    "slotAt": "Wed 11-18 14:10",
    "channel": "X"
@@ -1096,12 +1030,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794956400000,
    "slotAt": "Tue 11-17 18:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -1149,44 +1078,6 @@
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
   },
   {
-   "eventId": 398059,
-   "kind": "x_pre",
-   "text": "US Existing Home Sales (Oct) drops at 10:00 ET. Consensus expects 3.85M vs 3.97M prior. Traders watch for impacts on the US Dollar and $EURUSD. Full analysis on FXEmpire.",
-   "raw": "US Existing Home Sales ({reference}) drops at {time_et} ET. Consensus expects {forecast} vs {previous} prior. Traders watch for impacts on the US Dollar and $EURUSD. Full analysis on FXEmpire.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794490200000,
-   "slotAt": "Thu 11-12 08:30",
-   "channel": "X"
-  },
-  {
-   "eventId": 398059,
-   "kind": "x_post",
-   "text": "US Existing Home Sales for Oct came in below expectations at 3.75M vs 3.85M forecast. A weaker print could weigh on the US Dollar Index, while $EURUSD and S&P 500 traders assess housing demand.",
-   "raw": "US Existing Home Sales for {reference} came in below expectations at {actual} vs {forecast} forecast. A weaker print could weigh on the US Dollar Index, while $EURUSD and S&P 500 traders assess housing demand.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794496200000,
-   "slotAt": "Thu 11-12 10:10",
-   "channel": "X"
-  },
-  {
    "eventId": 401420,
    "kind": "x_pre",
    "text": "Japan releases preliminary Q3 GDP at 18:50 ET. Markets look for 0.1%, down from 0.4%. A surprise could move $USDJPY and the Nikkei 225 as traders assess growth momentum. Full analysis on FXEmpire.",
@@ -1195,12 +1086,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794781200000,
    "slotAt": "Sun 11-15 17:20",
    "channel": "X"
@@ -1214,12 +1100,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794787200000,
    "slotAt": "Sun 11-15 19:00",
    "channel": "X"
@@ -1233,12 +1114,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794708000000,
    "slotAt": "Sat 11-14 21:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -1252,12 +1128,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794880800000,
    "slotAt": "Mon 11-16 21:00",
    "channel": "X"
@@ -1271,12 +1142,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794916800000,
    "slotAt": "Tue 11-17 07:00",
    "channel": "X"
@@ -1290,12 +1156,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794967200000,
    "slotAt": "Tue 11-17 21:00",
    "channel": "X"
@@ -1309,12 +1170,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795003200000,
    "slotAt": "Wed 11-18 07:00",
    "channel": "X"
@@ -1328,12 +1184,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795125600000,
    "slotAt": "Thu 11-19 17:00",
    "channel": "X"
@@ -1347,40 +1198,51 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
+   "attempts": [],
+   "slotMs": 1795131600000,
+   "slotAt": "Thu 11-19 18:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_pre",
+   "text": "UK Retail Sales MoM (Oct) drops at 02:00 ET. Consensus looks for 0.1% vs -0.4% prior. A surprise could drive volatility across $GBPUSD and EUR/GBP. Full analysis on FXEmpire.",
+   "raw": "UK Retail Sales MoM ({reference}) drops at {time_et} ET. Consensus looks for {forecast} vs {previous} prior. A surprise could drive volatility across $GBPUSD and EUR/GBP. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
    "attempts": [
     {
      "attempt": 1,
      "problems": []
     }
    ],
-   "slotMs": 1795131600000,
-   "slotAt": "Thu 11-19 18:40",
+   "slotMs": 1795140000000,
+   "slotAt": "Thu 11-19 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_post",
+   "text": "UK Retail Sales MoM (Oct) came in at {actual}, {direction} expectations of 0.1% (prior -0.4%). Traders are watching how $GBPUSD and EUR/GBP respond to consumer demand trends.",
+   "raw": "UK Retail Sales MoM ({reference}) came in at {actual}, {direction} expectations of {forecast} (prior {previous}). Traders are watching how $GBPUSD and EUR/GBP respond to consumer demand trends.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795176000000,
+   "slotAt": "Fri 11-20 07:00",
    "channel": "X"
   }
  ],
  "schedule": [
-  {
-   "eventId": 398059,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1794490200000,
-   "at": "Thu 11-12 08:30",
-   "notes": [
-    "Slot already passed at run time"
-   ],
-   "passed": true
-  },
-  {
-   "eventId": 398059,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1794496200000,
-   "at": "Thu 11-12 10:10",
-   "notes": [
-    "Slot already passed at run time"
-   ],
-   "passed": true
-  },
   {
    "eventId": 398183,
    "kind": "x_pre",
@@ -1572,16 +1434,44 @@
    "at": "Thu 11-19 18:40",
    "notes": [],
    "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795140000000,
+   "at": "Thu 11-19 21:00",
+   "notes": [
+    "Moved from Fri 11-20 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795176000000,
+   "at": "Fri 11-20 07:00",
+   "notes": [
+    "Moved from Fri 11-20 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
   }
  ],
  "log": [
-  "2026-11-13T13:12:21.827Z Calendar: 838 high-impact rows. Articles: 60",
-  "2026-11-13T13:12:21.828Z Releases: 20. Holidays after de-dup: 27 (major markets: 3)",
-  "2026-11-13T13:12:22.042Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-13T13:12:22.042Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-13T13:12:33.749Z Using gemini: gemini-3.8-flash",
-  "2026-11-13T13:12:33.749Z Matched 1 events to articles. Releases missing from calendar: 1",
-  "2026-11-13T13:12:33.751Z Ranked 14. Posts: 8. Videos: 3",
-  "2026-11-13T13:13:08.906Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked"
+  "2026-11-13T13:36:57.907Z Calendar: 838 high-impact rows. Articles: 60",
+  "2026-11-13T13:36:57.908Z Releases: 20. Holidays after de-dup: 27 (major markets: 3)",
+  "2026-11-13T13:36:58.174Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-13T13:36:58.174Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-13T13:37:20.541Z Using gemini: gemini-3.8-flash",
+  "2026-11-13T13:37:20.541Z Matched 1 events to articles. Releases missing from calendar: 1",
+  "2026-11-13T13:37:20.545Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-13T13:37:20.604Z Reused earlier drafts for PPI MoM (united-states), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.605Z Reused earlier drafts for FOMC Minutes (united-states), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.606Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.607Z Reused earlier drafts for GDP Growth Rate QoQ Prel (japan), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.607Z Reused earlier drafts for Unemployment Rate (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.608Z Reused earlier drafts for Inflation Rate YoY (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-13T13:37:20.608Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked"
  ]
 }
