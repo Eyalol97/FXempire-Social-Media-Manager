@@ -75,6 +75,12 @@ async function main() {
   log(`Ranked ${ranked.length}. Posts: ${posts.length}. Videos: ${videos.length}`);
 
   // 5. AI step 2: drafts, then automated checks, one retry with the problems listed
+  // Drafts that worked in the previous run are reused (numbers re-filled and re-checked),
+  // so the AI is only asked for what is still missing. Saves quota and lets runs build on each other.
+  let prevDrafts = [];
+  if (!fixture || args.includes('--reuse')) {
+    try { prevDrafts = JSON.parse(fs.readFileSync(path.join(ROOT, outFile), 'utf8')).drafts || []; } catch { prevDrafts = []; }
+  }
   const drafts = [];
   for (const r of posts) {
     const e = r.event, tMs = r.timeMs;
@@ -100,7 +106,22 @@ async function main() {
     const attempts = [];
     let out, checked;
     let aiError = null;
-    for (let i = 0; i <= cfg.llm.maxRetries; i++) {
+    let reusedModel = null;
+    const kinds = ['x_pre', 'x_post', ...(r.video ? ['video_script'] : [])];
+    const prev = Object.fromEntries(kinds.map(k => [k, prevDrafts.find(d => d.eventId === e.id && d.kind === k && d.raw)]));
+    if (kinds.every(k => prev[k])) {
+      const again = {};
+      for (const kind of kinds) {
+        const filled = fillPlaceholders(prev[kind].raw, values);
+        again[kind] = { raw: prev[kind].raw, text: filled, ...checkDraft(kind, filled, corpus, cfg) };
+      }
+      if (Object.values(again).every(c => !c.issues.length)) {
+        checked = again;
+        reusedModel = prev.x_pre.model || null;
+        log(`Reused earlier drafts for ${e.name} (${e.country}), numbers re-filled and re-checked`);
+      }
+    }
+    for (let i = 0; !reusedModel && i <= cfg.llm.maxRetries; i++) {
       try { out = await llm(p); } catch (err) { aiError = err.message; log(`Drafting failed for ${e.name} (${e.country}): ${aiError}`); break; }
       checked = {};
       for (const kind of ['x_pre', 'x_post', ...(r.video ? ['video_script'] : [])]) {
@@ -121,7 +142,7 @@ async function main() {
     }
     for (const [kind, c] of Object.entries(checked)) {
       drafts.push({
-        eventId: e.id, kind, text: c.text, raw: c.raw, issues: c.issues, model: llm.modelUsed,
+        eventId: e.id, kind, text: c.text, raw: c.raw, issues: c.issues, model: reusedModel || llm.modelUsed,
         status: c.issues.length ? 'needs_fix' : c.pending ? 'waiting_for_actual' : 'ready_for_review',
         sources: ctxArticles.map(a => ({ title: a.title, url: 'https://www.fxempire.com' + a.articleUrl })),
         attempts
@@ -154,7 +175,7 @@ async function main() {
   };
   // If no AI call answered at all, don't replace the live board with a page of failed drafts.
   // The run fails loudly in GitHub Actions instead, and the board keeps the last good run.
-  if (!mock && !llm.modelUsed && posts.length) {
+  if (!mock && posts.length && !drafts.some(d => d.text)) {
     throw new Error('No AI model answered in this run (see the log above). Keeping the last good board.');
   }
   fs.mkdirSync(path.dirname(path.join(ROOT, outFile)), { recursive: true });
