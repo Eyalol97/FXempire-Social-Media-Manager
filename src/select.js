@@ -86,8 +86,8 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
   for (const e of releases) {
     const t = Date.parse(e.date);
     if (e.impact < cfg.selection.impactGate) { skipped.push({ event: e, rule: 'Not High impact' }); continue; }
-    if (t < windowStart) { skipped.push({ event: e, rule: `Already released more than ${cfg.lookbackHours} hours ago, too late to post about` }); continue; }
-    if (t > windowEnd) { skipped.push({ event: e, rule: `More than ${cfg.windowDays} days away, will be picked up by a later daily run` }); continue; }
+    if (t < windowStart) { skipped.push({ event: e, rule: `Already happened (over ${cfg.lookbackHours} hours ago) - too late to post` }); continue; }
+    if (t > windowEnd) { skipped.push({ event: e, rule: `Too far ahead (over ${cfg.windowDays} days away) - a later run will cover it` }); continue; }
 
     const matchedIds = (matches[e.id] || []).filter(id => articlesById[id]);
     const tags = matchedIds.flatMap(id => articlesById[id].tags);
