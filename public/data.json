@@ -115,7 +115,7 @@
    ],
    "why": [
     "Covered by 1 FXEmpire article(s)",
-    "united states release (+2)",
+    "US release (+2)",
     "Moves commodities, forex (+2)"
    ],
    "post": true,
@@ -168,7 +168,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united states release (+2)",
+    "US release (+2)",
     "Moves forex, stocks, commodities (+3)"
    ],
    "post": true,
@@ -214,7 +214,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united states release (+2)",
+    "US release (+2)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -260,7 +260,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united states release (+2)",
+    "US release (+2)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -305,7 +305,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "japan release (+1)",
+    "Japan release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -351,7 +351,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united kingdom release (+1)",
+    "UK release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -397,7 +397,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united kingdom release (+1)",
+    "UK release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -442,7 +442,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "japan release (+1)",
+    "Japan release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": true,
@@ -488,7 +488,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "united kingdom release (+1)",
+    "UK release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": false,
@@ -533,7 +533,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "germany release (+1)",
+    "Germany release (+1)",
     "Moves forex, stocks (+2)"
    ],
    "post": false,
@@ -576,7 +576,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "canada release (+1)",
+    "Canada release (+1)",
     "Moves forex (+1)"
    ],
    "post": false,
@@ -631,7 +631,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "Currency outside the core list",
+    "Currency outside the core list (+0)",
     "Moves forex, commodities (+2)"
    ],
    "post": false,
@@ -645,8 +645,8 @@
    "components": [
     {
      "name": "Balance of Trade",
-     "forecast": "¥-450.0B",
-     "previous": "¥-536.6B",
+     "forecast": "\u00a5-450.0B",
+     "previous": "\u00a5-536.6B",
      "actual": null,
      "reference": "Oct"
     }
@@ -655,8 +655,8 @@
    "reference": "Oct",
    "at": "Tue 11-17 18:50",
    "ms": 1794959400000,
-   "forecast": "¥-450.0B",
-   "previous": "¥-536.6B",
+   "forecast": "\u00a5-450.0B",
+   "previous": "\u00a5-536.6B",
    "actual": null,
    "rank": 13,
    "score": 2,
@@ -674,7 +674,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "japan release (+1)",
+    "Japan release (+1)",
     "Moves forex (+1)"
    ],
    "post": false,
@@ -717,7 +717,7 @@
    ],
    "why": [
     "No FXEmpire article yet",
-    "Currency outside the core list",
+    "Currency outside the core list (+0)",
     "Moves forex (+1)"
    ],
    "post": false,
@@ -730,42 +730,42 @@
    "name": "Balance of Trade",
    "country": "germany",
    "at": "Mon 11-09 02:00",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
    "name": "Westpac Consumer Confidence Change",
    "country": "australia",
    "at": "Mon 11-09 18:30",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
    "name": "NAB Business Confidence",
    "country": "australia",
    "at": "Mon 11-09 19:30",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
    "name": "Imports YoY",
    "country": "china",
    "at": "Mon 11-09 21:30",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
    "name": "Core Inflation Rate YoY",
    "country": "united-states",
    "at": "Tue 11-10 08:30",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
    "name": "GDP Growth Rate YoY Prel",
    "country": "united-kingdom",
    "at": "Thu 11-12 02:00",
-   "rule": "Outside the rolling window",
+   "rule": "Already released more than 24 hours ago, too late to post about",
    "score": null
   },
   {
@@ -986,7 +986,7 @@
    "score": null
   },
   {
-   "name": "Genghis Khan’s Birthday",
+   "name": "Genghis Khan\u2019s Birthday",
    "country": "mongolia",
    "at": "2026-11-21 (all day)",
    "rule": "Market holiday outside major markets",

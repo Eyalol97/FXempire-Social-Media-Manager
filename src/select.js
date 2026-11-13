@@ -75,6 +75,8 @@ function groupReleases(releases, cfg) {
   });
 }
 
+const countryName = c => ({ 'united-states': 'US', 'united-kingdom': 'UK', 'euro-area': 'Euro Area' })[c] || c.replace(/-/g, ' ').replace(/\b\w/g, x => x.toUpperCase());
+
 export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
   const s = cfg.scoring;
   const windowStart = nowMs - cfg.lookbackHours * H;
@@ -84,7 +86,8 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
   for (const e of releases) {
     const t = Date.parse(e.date);
     if (e.impact < cfg.selection.impactGate) { skipped.push({ event: e, rule: 'Not High impact' }); continue; }
-    if (t < windowStart || t > windowEnd) { skipped.push({ event: e, rule: 'Outside the rolling window' }); continue; }
+    if (t < windowStart) { skipped.push({ event: e, rule: `Already released more than ${cfg.lookbackHours} hours ago, too late to post about` }); continue; }
+    if (t > windowEnd) { skipped.push({ event: e, rule: `More than ${cfg.windowDays} days away, will be picked up by a later daily run` }); continue; }
 
     const matchedIds = (matches[e.id] || []).filter(id => articlesById[id]);
     const tags = matchedIds.flatMap(id => articlesById[id].tags);
@@ -108,7 +111,7 @@ export function scoreAndRank(releases, matches, articlesById, nowMs, cfg) {
       articleIds: matchedIds,
       why: [
         coverage ? `Covered by ${matchedIds.length} FXEmpire article(s)` : 'No FXEmpire article yet',
-        currency ? `${e.country.replace(/-/g, ' ')} release (+${currency})` : 'Currency outside the core list',
+        currency ? `${countryName(e.country)} release (+${currency})` : 'Currency outside the core list (+0)',
         classes.size ? `Moves ${[...classes].join(', ')} (+${breadth})` : 'No listed instrument in a class this event moves (+0)'
       ]
     });
