@@ -149,7 +149,14 @@ function boot(data) {
 
   // flags for the human
   const f = [];
-  for (const m of data.flags.missingReleases) f.push(`<div class="flag"><b>Check the calendar:</b> an FXEmpire article covers <b>${esc(m.release)}</b>, but it is not in the economic calendar this week. <a href="${esc(m.url)}" target="_blank">${esc(m.title)}</a></div>`);
+  // One warning per missing release, even when several articles mention it.
+  const byRelease = {};
+  for (const m of data.flags.missingReleases) (byRelease[m.release] ||= []).push(m);
+  for (const [release, arts] of Object.entries(byRelease)) {
+    const links = arts.map(m => `<a href="${esc(m.url)}" target="_blank">${esc(m.title)}</a>`).join(' &middot; ');
+    const lead = arts.length > 1 ? `${arts.length} FXEmpire articles cover` : 'an FXEmpire article covers';
+    f.push(`<div class="flag"><b>Check the calendar:</b> ${lead} <b>${esc(release)}</b>, but it is not in the economic calendar this week. ${links}</div>`);
+  }
   document.getElementById('flags').innerHTML = f.join('');
 
   // timeline: 7 days from the run date
