@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-14T17:05:14.955Z",
- "now": "2026-11-14T17:04:02.675Z",
- "nowLabel": "Sat 11-14 12:04",
+ "runAt": "2026-11-15T17:42:59.716Z",
+ "now": "2026-11-15T17:41:44.398Z",
+ "nowLabel": "Sun 11-15 12:41",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -37,11 +37,11 @@
   }
  },
  "counts": {
-  "rawRows": 839,
-  "releases": 21,
+  "rawRows": 838,
+  "releases": 20,
   "holidays": 27,
   "inWindow": 13,
-  "articles": 60
+  "articles": 46
  },
  "flags": {
   "missingReleases": [
@@ -53,11 +53,18 @@
     "url": "https://www.fxempire.com/forecasts/article/gold-slips-as-rising-real-yields-outweigh-cooler-october-cpi-1644494"
    },
    {
-    "release": "US CPI (Oct)",
-    "article_id": 1644236,
-    "evidence": "October CPI Report",
-    "title": "Gold Faces Pressure as Real Yields Climb After October CPI Report",
-    "url": "https://www.fxempire.com/forecasts/article/gold-faces-pressure-as-real-yields-climb-after-october-cpi-report-1644236"
+    "release": "US PPI",
+    "article_id": 1644459,
+    "evidence": "Tame PPI",
+    "title": "Gold News: Tame PPI Fails to Lift Prices as Rate Hike Fears Persist",
+    "url": "https://www.fxempire.com/forecasts/article/gold-news-tame-ppi-fails-to-lift-prices-as-rate-hike-fears-persist-1644459"
+   },
+   {
+    "release": "US PPI",
+    "article_id": 1644401,
+    "evidence": "Before US PPI",
+    "title": "Gold and Silver Price Forecast: Gold Hits 13-Month Low Before US PPI",
+    "url": "https://www.fxempire.com/forecasts/article/gold-and-silver-price-forecast-gold-hits-13-month-low-before-us-ppi-1644401"
    }
   ],
   "holidays": [
@@ -221,7 +228,7 @@
     "Moves forex, stocks (+2)"
    ],
    "post": true,
-   "video": true,
+   "video": false,
    "sources": []
   },
   {
@@ -276,7 +283,7 @@
    "components": [
     {
      "name": "Unemployment Rate",
-     "forecast": "4.9%",
+     "forecast": "4.7%",
      "previous": "4.7%",
      "actual": null,
      "reference": "Sep"
@@ -286,7 +293,7 @@
    "reference": "Sep",
    "at": "Tue 11-17 02:00",
    "ms": 1794898800000,
-   "forecast": "4.9%",
+   "forecast": "4.7%",
    "previous": "4.7%",
    "actual": null,
    "rank": 5,
@@ -312,7 +319,7 @@
     "Moves forex, stocks (+2)"
    ],
    "post": true,
-   "video": true,
+   "video": false,
    "sources": []
   },
   {
@@ -322,7 +329,7 @@
    "components": [
     {
      "name": "Inflation Rate YoY",
-     "forecast": "3.5%",
+     "forecast": "3.6%",
      "previous": "3.5%",
      "actual": null,
      "reference": "Oct"
@@ -332,7 +339,7 @@
    "reference": "Oct",
    "at": "Wed 11-18 02:00",
    "ms": 1794985200000,
-   "forecast": "3.5%",
+   "forecast": "3.6%",
    "previous": "3.5%",
    "actual": null,
    "rank": 6,
@@ -358,7 +365,7 @@
     "Moves forex, stocks (+2)"
    ],
    "post": true,
-   "video": false,
+   "video": true,
    "sources": []
   },
   {
@@ -403,7 +410,7 @@
     "Moves forex, stocks (+2)"
    ],
    "post": true,
-   "video": false,
+   "video": true,
    "sources": []
   },
   {
@@ -413,7 +420,7 @@
    "components": [
     {
      "name": "Retail Sales MoM",
-     "forecast": "0.1%",
+     "forecast": "0%",
      "previous": "-0.4%",
      "actual": null,
      "reference": "Oct"
@@ -423,7 +430,7 @@
    "reference": "Oct",
    "at": "Fri 11-20 02:00",
    "ms": 1795158000000,
-   "forecast": "0.1%",
+   "forecast": "0%",
    "previous": "-0.4%",
    "actual": null,
    "rank": 8,
@@ -733,13 +740,6 @@
    "score": null
   },
   {
-   "name": "PPI MoM",
-   "country": "united-states",
-   "at": "Fri 11-13 08:30",
-   "rule": "Already happened (over 24 hours ago) - too late to post",
-   "score": null
-  },
-  {
    "name": "ZEW Economic Sentiment Index",
    "country": "germany",
    "at": "Tue 11-17 05:00",
@@ -974,12 +974,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794843000000,
    "slotAt": "Mon 11-16 10:30",
    "channel": "X"
@@ -993,12 +988,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794849000000,
    "slotAt": "Mon 11-16 12:10",
    "channel": "X"
@@ -1074,20 +1064,6 @@
    "channel": "X"
   },
   {
-   "eventId": 399093,
-   "kind": "video_script",
-   "text": "HOOK\nIs the American consumer finally hitting the brakes?\n[ON SCREEN: Tiger to camera with US consumer graphic]\n\nWHAT IT IS\nAt 08:30 ET, we get the US Retail Sales report for Oct. The consensus expects 0%, down from 0.8% last month.\n[ON SCREEN: Retail Sales forecast 0% vs previous 0.8%]\n\nWHY IT MATTERS\nConsumer spending drives most of the US economy. That makes this a crucial catalyst for the US Dollar Index, EUR/USD, and the S&P 500. When shoppers pull back or keep spending, interest rate expectations can shift immediately.\n[ON SCREEN: Ticker symbols: US Dollar Index, EUR/USD, S&P 500]\n\nWHAT TO WATCH\nIf the number lands well above 0%, it signals resilience. That could lift the greenback and pressure EUR/USD. But if spending comes in below expectations, growth worries could weigh on equities while softening the dollar.\n[ON SCREEN: Bullish vs Bearish reaction scenarios]\n\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
-   "raw": "HOOK\nIs the American consumer finally hitting the brakes?\n[ON SCREEN: Tiger to camera with US consumer graphic]\n\nWHAT IT IS\nAt {time_et} ET, we get the US Retail Sales report for {reference}. The consensus expects {forecast}, down from {previous} last month.\n[ON SCREEN: Retail Sales forecast {forecast} vs previous {previous}]\n\nWHY IT MATTERS\nConsumer spending drives most of the US economy. That makes this a crucial catalyst for the US Dollar Index, EUR/USD, and the S&P 500. When shoppers pull back or keep spending, interest rate expectations can shift immediately.\n[ON SCREEN: Ticker symbols: US Dollar Index, EUR/USD, S&P 500]\n\nWHAT TO WATCH\nIf the number lands well above {forecast}, it signals resilience. That could lift the greenback and pressure EUR/USD. But if spending comes in below expectations, growth worries could weigh on equities while softening the dollar.\n[ON SCREEN: Bullish vs Bearish reaction scenarios]\n\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
-   "issues": [],
-   "model": "gemini/gemini-flash-latest",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794850200000,
-   "slotAt": "Mon 11-16 12:30",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts"
-  },
-  {
    "eventId": 401420,
    "kind": "x_pre",
    "text": "Japan releases preliminary Q3 GDP at 18:50 ET. Markets look for 0.1%, down from 0.4%. A surprise could move $USDJPY and the Nikkei 225 as traders assess growth momentum. Full analysis on FXEmpire.",
@@ -1118,8 +1094,74 @@
   {
    "eventId": 399770,
    "kind": "x_pre",
-   "text": "UK Unemployment Rate drops at 02:00 ET, with consensus at 4.9% for Sep. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
+   "text": "UK Unemployment Rate drops at 02:00 ET, with consensus at 4.7% for Sep. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
    "raw": "UK Unemployment Rate drops at {time_et} ET, with consensus at {forecast} for {reference}. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794880800000,
+   "slotAt": "Mon 11-16 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399770,
+   "kind": "x_post",
+   "text": "UK Unemployment Rate came in {direction} expectations at {actual} versus 4.7% forecast for Sep. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
+   "raw": "UK Unemployment Rate came in {direction} expectations at {actual} versus {forecast} forecast for {reference}. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "text": "UK inflation drops at 02:00 ET, with consensus expecting 3.6% versus 3.5% prior. A surprise could trigger quick moves in $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
+   "raw": "UK inflation drops at {time_et} ET, with consensus expecting {forecast} versus {previous} prior. A surprise could trigger quick moves in $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794967200000,
+   "slotAt": "Tue 11-17 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "text": "UK inflation came in {direction} expectations at {actual} for Oct, against a 3.6% forecast. Traders will watch for immediate reaction across $GBPUSD, EUR/GBP, and the FTSE 100.",
+   "raw": "UK inflation came in {direction} expectations at {actual} for {reference}, against a {forecast} forecast. Traders will watch for immediate reaction across $GBPUSD, EUR/GBP, and the FTSE 100.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795003200000,
+   "slotAt": "Wed 11-18 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "video_script",
+   "text": "HOOK\nUK inflation is on deck, and sterling traders need to pay close attention to this release.\n[ON SCREEN: UK Inflation Rate YoY preview]\nWHAT IT IS\nThe Oct UK inflation rate drops at 02:00 ET. Markets are anticipating 3.6%, compared to 3.5% in the prior reading.\n[ON SCREEN: Forecast 3.6% vs Previous 3.5%]\nWHY IT MATTERS\nThis print feeds directly into Bank of England interest rate expectations. That makes it a primary catalyst for GBP/USD, EUR/GBP, and the FTSE 100.\n[ON SCREEN: GBP/USD and FTSE 100 chart overlay]\nWHAT TO WATCH\nIf inflation comes in hotter than expected, traders could price in higher interest rates, which might lift the pound against major currencies. If the print lands below 3.6%, easing policy bets could weigh on sterling while giving the FTSE 100 room to move.\n[ON SCREEN: Market reaction scenarios]\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "raw": "HOOK\nUK inflation is on deck, and sterling traders need to pay close attention to this release.\n[ON SCREEN: UK Inflation Rate YoY preview]\nWHAT IT IS\nThe {reference} UK inflation rate drops at {time_et} ET. Markets are anticipating {forecast}, compared to {previous} in the prior reading.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\nWHY IT MATTERS\nThis print feeds directly into Bank of England interest rate expectations. That makes it a primary catalyst for GBP/USD, EUR/GBP, and the FTSE 100.\n[ON SCREEN: GBP/USD and FTSE 100 chart overlay]\nWHAT TO WATCH\nIf inflation comes in hotter than expected, traders could price in higher interest rates, which might lift the pound against major currencies. If the print lands below {forecast}, easing policy bets could weigh on sterling while giving the FTSE 100 room to move.\n[ON SCREEN: Market reaction scenarios]\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
@@ -1132,84 +1174,23 @@
    ],
    "slotMs": 1794880800000,
    "slotAt": "Mon 11-16 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 399770,
-   "kind": "x_post",
-   "text": "UK Unemployment Rate came in {direction} expectations at {actual} versus 4.9% forecast for Sep. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
-   "raw": "UK Unemployment Rate came in {direction} expectations at {actual} versus {forecast} forecast for {reference}. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794916800000,
-   "slotAt": "Tue 11-17 07:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 399770,
-   "kind": "video_script",
-   "text": "HOOK\nUK employment data is about to hit the tape, and currency traders need to pay attention.\n[ON SCREEN: GBP/USD ticker and chart]\n\nWHAT IT IS\nThe UK Unemployment Rate for Sep drops at 02:00 ET. Markets are looking for 4.9%, up from 4.7% in the previous reading.\n[ON SCREEN: \"Forecast: 4.9% | Previous: 4.7%\"]\n\nWHY IT MATTERS\nThis release is critical for the Bank of England's rate path. Any sign of a softening job market can quickly influence the British pound against the dollar and euro, while also shifting momentum in the FTSE 100.\n[ON SCREEN: Split screen showing GBP/USD, EUR/GBP, and FTSE 100]\n\nWHAT TO WATCH\nIf the reading lands above 4.9%, it could signal rising labor market slack and pressure sterling. But an unexpected drop below 4.9% might support the pound as traders trim rate cut expectations.\n[ON SCREEN: Text graphic \"Above 4.9%: Pressure on GBP | Below 4.9%: Support for GBP\"]\n\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website URL]",
-   "raw": "HOOK\nUK employment data is about to hit the tape, and currency traders need to pay attention.\n[ON SCREEN: GBP/USD ticker and chart]\n\nWHAT IT IS\nThe UK Unemployment Rate for {reference} drops at {time_et} ET. Markets are looking for {forecast}, up from {previous} in the previous reading.\n[ON SCREEN: \"Forecast: {forecast} | Previous: {previous}\"]\n\nWHY IT MATTERS\nThis release is critical for the Bank of England's rate path. Any sign of a softening job market can quickly influence the British pound against the dollar and euro, while also shifting momentum in the FTSE 100.\n[ON SCREEN: Split screen showing GBP/USD, EUR/GBP, and FTSE 100]\n\nWHAT TO WATCH\nIf the reading lands above {forecast}, it could signal rising labor market slack and pressure sterling. But an unexpected drop below {forecast} might support the pound as traders trim rate cut expectations.\n[ON SCREEN: Text graphic \"Above {forecast}: Pressure on GBP | Below {forecast}: Support for GBP\"]\n\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website URL]",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794794400000,
-   "slotAt": "Sun 11-15 21:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
-  },
-  {
-   "eventId": 399593,
-   "kind": "x_pre",
-   "text": "UK Inflation Rate YoY for Oct lands at 02:00 ET. The forecast sits at 3.5% vs 3.5% prior. A surprise could move $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
-   "raw": "UK Inflation Rate YoY for {reference} lands at {time_et} ET. The forecast sits at {forecast} vs {previous} prior. A surprise could move $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794967200000,
-   "slotAt": "Tue 11-17 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 399593,
-   "kind": "x_post",
-   "text": "UK Oct Inflation Rate YoY printed at {actual}, coming in {direction} expectations of 3.5% (previous: 3.5%). Traders will watch $GBPUSD and EUR/GBP as markets digest the inflation data.",
-   "raw": "UK Oct Inflation Rate YoY printed at {actual}, coming in {direction} expectations of {forecast} (previous: {previous}). Traders will watch $GBPUSD and EUR/GBP as markets digest the inflation data.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1795003200000,
-   "slotAt": "Wed 11-18 07:00",
-   "channel": "X"
   },
   {
    "eventId": 403527,
    "kind": "x_pre",
-   "text": "Japan Oct Inflation Rate YoY is due at 18:30 ET, forecast at 2.0% vs 2.1% prior. A reading above or below could shake $USDJPY and the Nikkei 225 as traders gauge the BoJ path. Full analysis on FXEmpire.",
-   "raw": "Japan {reference} Inflation Rate YoY is due at {time_et} ET, forecast at {forecast} vs {previous} prior. A reading above or below could shake $USDJPY and the Nikkei 225 as traders gauge the BoJ path. Full analysis on FXEmpire.",
+   "text": "Japan's inflation data for Oct drops at 18:30 ET. The consensus forecast is 2.0%, down from 2.1% previously. Traders in $USDJPY and the Nikkei 225 will watch closely for policy hints. Full analysis on FXEmpire.",
+   "raw": "Japan's inflation data for {reference} drops at {time_et} ET. The consensus forecast is {forecast}, down from {previous} previously. Traders in $USDJPY and the Nikkei 225 will watch closely for policy hints. Full analysis on FXEmpire.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795125600000,
    "slotAt": "Thu 11-19 17:00",
    "channel": "X"
@@ -1217,21 +1198,45 @@
   {
    "eventId": 403527,
    "kind": "x_post",
-   "text": "Japan Oct Inflation Rate YoY printed at {actual}, coming in {direction} the 2.0% forecast. Traders are watching $USDJPY and Nikkei 225 as the print could impact Bank of Japan policy expectations.",
-   "raw": "Japan {reference} Inflation Rate YoY printed at {actual}, coming in {direction} the {forecast} forecast. Traders are watching $USDJPY and Nikkei 225 as the print could impact Bank of Japan policy expectations.",
+   "text": "Japan's Oct inflation rate came in at {actual}, {direction} the 2.0% forecast. A reading {direction} expectations could shift Bank of Japan rate hike expectations, directly impacting $USDJPY and the Nikkei 225.",
+   "raw": "Japan's {reference} inflation rate came in at {actual}, {direction} the {forecast} forecast. A reading {direction} expectations could shift Bank of Japan rate hike expectations, directly impacting $USDJPY and the Nikkei 225.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795131600000,
    "slotAt": "Thu 11-19 18:40",
    "channel": "X"
   },
   {
+   "eventId": 403527,
+   "kind": "video_script",
+   "text": "HOOK\nJapan's latest inflation report is about to land, and it could set the tone for the yen.\n[ON SCREEN: USD/JPY chart]\nWHAT IT IS\nThe Oct inflation rate drops at 18:30 ET. Economists expect the year over year number to come in at 2.0%, down slightly from 2.1% in the prior month.\n[ON SCREEN: Forecast 2.0% vs Previous 2.1%]\nWHY IT MATTERS\nThis print matters directly for anyone trading USD/JPY or the Nikkei 225. The Bank of Japan is closely tracking price pressures to decide whether another interest rate hike is justified.\n[ON SCREEN: Bank of Japan / Nikkei 225]\nWHAT TO WATCH\nWatch the surprise factor. If inflation prints higher than 2.0%, traders could price in faster rate hikes, which might lift the yen and pressure the Nikkei. A weaker print could ease hike bets.\n[ON SCREEN: Market reaction levels]\nCLOSE\nTrack the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "raw": "HOOK\nJapan's latest inflation report is about to land, and it could set the tone for the yen.\n[ON SCREEN: USD/JPY chart]\nWHAT IT IS\nThe {reference} inflation rate drops at {time_et} ET. Economists expect the year over year number to come in at {forecast}, down slightly from {previous} in the prior month.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\nWHY IT MATTERS\nThis print matters directly for anyone trading USD/JPY or the Nikkei 225. The Bank of Japan is closely tracking price pressures to decide whether another interest rate hike is justified.\n[ON SCREEN: Bank of Japan / Nikkei 225]\nWHAT TO WATCH\nWatch the surprise factor. If inflation prints higher than {forecast}, traders could price in faster rate hikes, which might lift the yen and pressure the Nikkei. A weaker print could ease hike bets.\n[ON SCREEN: Market reaction levels]\nCLOSE\nTrack the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795053600000,
+   "slotAt": "Wed 11-18 21:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
    "eventId": 399716,
    "kind": "x_pre",
-   "text": "UK Retail Sales MoM (Oct) drops at 02:00 ET. Consensus looks for 0.1% vs -0.4% prior. A surprise could drive volatility across $GBPUSD and EUR/GBP. Full analysis on FXEmpire.",
+   "text": "UK Retail Sales MoM (Oct) drops at 02:00 ET. Consensus looks for 0% vs -0.4% prior. A surprise could drive volatility across $GBPUSD and EUR/GBP. Full analysis on FXEmpire.",
    "raw": "UK Retail Sales MoM ({reference}) drops at {time_et} ET. Consensus looks for {forecast} vs {previous} prior. A surprise could drive volatility across $GBPUSD and EUR/GBP. Full analysis on FXEmpire.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
@@ -1245,7 +1250,7 @@
   {
    "eventId": 399716,
    "kind": "x_post",
-   "text": "UK Retail Sales MoM (Oct) came in at {actual}, {direction} expectations of 0.1% (prior -0.4%). Traders are watching how $GBPUSD and EUR/GBP respond to consumer demand trends.",
+   "text": "UK Retail Sales MoM (Oct) came in at {actual}, {direction} expectations of 0% (prior -0.4%). Traders are watching how $GBPUSD and EUR/GBP respond to consumer demand trends.",
    "raw": "UK Retail Sales MoM ({reference}) came in at {actual}, {direction} expectations of {forecast} (prior {previous}). Traders are watching how $GBPUSD and EUR/GBP respond to consumer demand trends.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
@@ -1258,24 +1263,6 @@
   }
  ],
  "schedule": [
-  {
-   "eventId": 399770,
-   "kind": "record_by",
-   "channel": "Tiger (recording)",
-   "ms": 1794726000000,
-   "at": "Sun 11-15 02:00",
-   "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 399093,
-   "kind": "record_by",
-   "channel": "Tiger (recording)",
-   "ms": 1794749400000,
-   "at": "Sun 11-15 08:30",
-   "notes": [],
-   "passed": false
-  },
   {
    "eventId": 401420,
    "kind": "x_pre",
@@ -1295,14 +1282,12 @@
    "passed": false
   },
   {
-   "eventId": 399770,
-   "kind": "video",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts",
-   "ms": 1794794400000,
-   "at": "Sun 11-15 21:00",
-   "notes": [
-    "Moved from Mon 11-16 06:00 to stay inside 07:00-21:00 ET"
-   ],
+   "eventId": 399593,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794812400000,
+   "at": "Mon 11-16 02:00",
+   "notes": [],
    "passed": false
   },
   {
@@ -1324,15 +1309,6 @@
    "passed": false
   },
   {
-   "eventId": 399093,
-   "kind": "video",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts",
-   "ms": 1794850200000,
-   "at": "Mon 11-16 12:30",
-   "notes": [],
-   "passed": false
-  },
-  {
    "eventId": 390612,
    "kind": "record_by",
    "channel": "Tiger (recording)",
@@ -1349,6 +1325,17 @@
    "at": "Mon 11-16 21:00",
    "notes": [
     "Moved from Tue 11-17 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1794880800000,
+   "at": "Mon 11-16 21:00",
+   "notes": [
+    "Moved from Tue 11-17 06:00 to stay inside 07:00-21:00 ET"
    ],
    "passed": false
   },
@@ -1387,6 +1374,15 @@
    "channel": "TikTok / Instagram Reels / YouTube Shorts",
    "ms": 1794956400000,
    "at": "Tue 11-17 18:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794958200000,
+   "at": "Tue 11-17 18:30",
    "notes": [],
    "passed": false
   },
@@ -1432,6 +1428,17 @@
   },
   {
    "eventId": 403527,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795053600000,
+   "at": "Wed 11-18 21:00",
+   "notes": [
+    "Moved from Wed 11-18 22:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
    "kind": "x_pre",
    "channel": "X",
    "ms": 1795125600000,
@@ -1472,18 +1479,18 @@
   }
  ],
  "log": [
-  "2026-11-14T17:04:11.900Z Calendar: 839 high-impact rows. Articles: 60",
-  "2026-11-14T17:04:11.901Z Releases: 21. Holidays after de-dup: 27 (major markets: 3)",
-  "2026-11-14T17:04:12.085Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-14T17:04:12.085Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-14T17:04:39.562Z Using gemini: gemini-3.8-flash",
-  "2026-11-14T17:04:39.562Z Matched 0 events to articles. Releases missing from calendar: 2",
-  "2026-11-14T17:04:39.564Z Ranked 13. Posts: 8. Videos: 3",
-  "2026-11-14T17:04:52.672Z Reused earlier drafts for FOMC Minutes (united-states), numbers re-filled and re-checked",
-  "2026-11-14T17:04:52.673Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked",
-  "2026-11-14T17:04:52.673Z Reused earlier drafts for GDP Growth Rate QoQ Prel (japan), numbers re-filled and re-checked",
-  "2026-11-14T17:05:14.949Z Reused earlier drafts for Inflation Rate YoY (united-kingdom), numbers re-filled and re-checked",
-  "2026-11-14T17:05:14.950Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked",
-  "2026-11-14T17:05:14.950Z Reused earlier drafts for Retail Sales MoM (united-kingdom), numbers re-filled and re-checked"
+  "2026-11-15T17:41:55.780Z Calendar: 838 high-impact rows. Articles: 60",
+  "2026-11-15T17:41:55.781Z Releases: 20. Holidays after de-dup: 27 (major markets: 3)",
+  "2026-11-15T17:41:56.083Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-15T17:41:56.083Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-15T17:42:22.459Z Using gemini: gemini-3.8-flash",
+  "2026-11-15T17:42:22.459Z Matched 0 events to articles. Releases missing from calendar: 3",
+  "2026-11-15T17:42:22.461Z Ranked 13. Posts: 8. Videos: 3",
+  "2026-11-15T17:42:22.461Z Reused earlier drafts for Fed Chair Warsh Speech (united-states), numbers re-filled and re-checked",
+  "2026-11-15T17:42:22.462Z Reused earlier drafts for FOMC Minutes (united-states), numbers re-filled and re-checked",
+  "2026-11-15T17:42:22.462Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked",
+  "2026-11-15T17:42:22.463Z Reused earlier drafts for GDP Growth Rate QoQ Prel (japan), numbers re-filled and re-checked",
+  "2026-11-15T17:42:22.463Z Reused earlier drafts for Unemployment Rate (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-15T17:42:59.714Z Reused earlier drafts for Retail Sales MoM (united-kingdom), numbers re-filled and re-checked"
  ]
 }
