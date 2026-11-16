@@ -1,0 +1,1326 @@
+{
+ "runAt": "2026-11-16T21:01:14.220Z",
+ "now": "2026-11-16T21:00:14.323Z",
+ "nowLabel": "Mon 11-16 16:00",
+ "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
+ "timezone": "America/New_York",
+ "config": {
+  "selection": {
+   "impactGate": 3,
+   "topPosts": 8,
+   "topVideos": 3,
+   "videoMaxPerCurrency": 2,
+   "videoMaxPerDay": 2
+  },
+  "scoring": {
+   "coveragePoints": 3,
+   "currencyPoints": {
+    "united-states": 2,
+    "euro-area": 1,
+    "germany": 1,
+    "france": 1,
+    "italy": 1,
+    "spain": 1,
+    "united-kingdom": 1,
+    "japan": 1,
+    "canada": 1
+   },
+   "breadthMax": 3
+  },
+  "timing": {
+   "xPreMinutes": -90,
+   "xPostMinutes": 10,
+   "videoPublishHours": -20,
+   "recordByHours": -48,
+   "quietStart": "07:00",
+   "quietEnd": "21:00"
+  }
+ },
+ "counts": {
+  "rawRows": 504,
+  "releases": 19,
+  "holidays": 16,
+  "inWindow": 14,
+  "articles": 37
+ },
+ "flags": {
+  "missingReleases": [],
+  "holidays": [
+   {
+    "date": "2026-11-23",
+    "country": "japan",
+    "name": "Labour Thanksgiving Day",
+    "exchange": "Tokyo Stock Exchange"
+   },
+   {
+    "date": "2026-11-26",
+    "country": "united-states",
+    "name": "Thanksgiving",
+    "exchange": "New York Stock Exchange"
+   }
+  ]
+ },
+ "ranked": [
+  {
+   "id": 390612,
+   "name": "FOMC Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "FOMC Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "united-states",
+   "reference": "",
+   "at": "Wed 11-18 14:00",
+   "ms": 1795028400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 1,
+   "score": 5,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 3
+   },
+   "tier": 3,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500",
+    "Gold"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks",
+    "commodities"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "US release (+2)",
+    "Moves forex, stocks, commodities (+3)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399093,
+   "name": "Retail Sales MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Retail Sales MoM",
+     "forecast": "0.2%",
+     "previous": "0.8%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Oct",
+   "at": "Tue 11-17 08:30",
+   "ms": 1794922200000,
+   "forecast": "0.2%",
+   "previous": "0.8%",
+   "actual": null,
+   "rank": 2,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "US release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399770,
+   "name": "Unemployment Rate",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Unemployment Rate",
+     "forecast": "4.7%",
+     "previous": "4.7%",
+     "actual": null,
+     "reference": "Sep"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Sep",
+   "at": "Tue 11-17 02:00",
+   "ms": 1794898800000,
+   "forecast": "4.7%",
+   "previous": "4.7%",
+   "actual": null,
+   "rank": 3,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP",
+    "FTSE 100"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "UK release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399593,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "3.7%",
+     "previous": "3.5%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Oct",
+   "at": "Wed 11-18 02:00",
+   "ms": 1794985200000,
+   "forecast": "3.7%",
+   "previous": "3.5%",
+   "actual": null,
+   "rank": 4,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP",
+    "FTSE 100"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "UK release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 403527,
+   "name": "Inflation Rate YoY",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY",
+     "forecast": "2.0%",
+     "previous": "2.1%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "japan",
+   "reference": "Oct",
+   "at": "Thu 11-19 18:30",
+   "ms": 1795131000000,
+   "forecast": "2.0%",
+   "previous": "2.1%",
+   "actual": null,
+   "rank": 5,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/JPY",
+    "Nikkei 225"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Japan release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399716,
+   "name": "Retail Sales MoM",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Retail Sales MoM",
+     "forecast": "0%",
+     "previous": "-0.4%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Oct",
+   "at": "Fri 11-20 02:00",
+   "ms": 1795158000000,
+   "forecast": "0%",
+   "previous": "-0.4%",
+   "actual": null,
+   "rank": 6,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP",
+    "FTSE 100"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "UK release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 401353,
+   "name": "ZEW Economic Sentiment Index",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "ZEW Economic Sentiment Index",
+     "forecast": "29",
+     "previous": "28.1",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Tue 11-17 05:00",
+   "ms": 1794909600000,
+   "forecast": "29",
+   "previous": "28.1",
+   "actual": null,
+   "rank": 7,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 2
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD",
+    "DAX"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Germany release (+1)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 402633,
+   "name": "Balance of Trade",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Balance of Trade",
+     "forecast": "¥-956B",
+     "previous": "¥-536.6B",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "japan",
+   "reference": "Oct",
+   "at": "Tue 11-17 18:50",
+   "ms": 1794959400000,
+   "forecast": "¥-956B",
+   "previous": "¥-536.6B",
+   "actual": null,
+   "rank": 8,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "USD/JPY"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Japan release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 403581,
+   "name": "S&P Global Manufacturing PMI Flash",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "S&P Global Manufacturing PMI Flash",
+     "forecast": "53.8",
+     "previous": "54.2",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Mon 11-23 03:30",
+   "ms": 1795422600000,
+   "forecast": "53.8",
+   "previous": "54.2",
+   "actual": null,
+   "rank": 9,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Germany release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 399782,
+   "name": "S&P Global Services PMI Flash",
+   "alsoReleased": [
+    "S&P Global Manufacturing PMI Flash"
+   ],
+   "components": [
+    {
+     "name": "S&P Global Services PMI Flash",
+     "forecast": "52.5",
+     "previous": "52.8",
+     "actual": null,
+     "reference": "Nov"
+    },
+    {
+     "name": "S&P Global Manufacturing PMI Flash",
+     "forecast": "52.5",
+     "previous": "52.8",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Nov",
+   "at": "Mon 11-23 04:30",
+   "ms": 1795426200000,
+   "forecast": "52.5",
+   "previous": "52.8",
+   "actual": null,
+   "rank": 10,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "UK release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 394048,
+   "name": "RBA Meeting Minutes",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "RBA Meeting Minutes",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "australia",
+   "reference": "",
+   "at": "Mon 11-16 19:30",
+   "ms": 1794875400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 11,
+   "score": 1,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 1
+   },
+   "tier": 3,
+   "instruments": [
+    "AUD/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list (+0)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 429333,
+   "name": "Xi-Trump-Putin Summit",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Xi-Trump-Putin Summit",
+     "forecast": "",
+     "previous": "",
+     "actual": null,
+     "reference": ""
+    }
+   ],
+   "country": "china",
+   "reference": "",
+   "at": "Wed 11-18 19:00",
+   "ms": 1795046400000,
+   "forecast": "",
+   "previous": "",
+   "actual": null,
+   "rank": 12,
+   "score": 1,
+   "parts": {
+    "coverage": 0,
+    "currency": 0,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "AUD/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Currency outside the core list (+0)",
+    "Moves forex (+1)"
+   ],
+   "post": false,
+   "video": false,
+   "sources": []
+  }
+ ],
+ "skipped": [
+  {
+   "name": "Inflation Rate YoY",
+   "country": "canada",
+   "at": "Mon 11-16 08:30",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "score": null
+  },
+  {
+   "name": "Fed Chair Warsh Speech",
+   "country": "united-states",
+   "at": "Mon 11-16 12:00",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "score": null
+  },
+  {
+   "name": "Ifo Business Climate",
+   "country": "germany",
+   "at": "Tue 11-24 04:00",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "GDP Growth Rate QoQ 2nd Est",
+   "country": "united-states",
+   "at": "Wed 11-25 08:30",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "GfK Consumer Confidence",
+   "country": "germany",
+   "at": "Thu 11-26 02:00",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY Prel",
+   "country": "france",
+   "at": "Fri 11-27 02:45",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "NBS Manufacturing PMI",
+   "country": "china",
+   "at": "Sun 11-29 20:30",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "S&P Global Manufacturing PMI Flash",
+   "country": "germany",
+   "at": "Mon 11-23 03:30",
+   "rule": "Ranked #9, below the top 8",
+   "score": 2
+  },
+  {
+   "name": "S&P Global Services PMI Flash",
+   "country": "united-kingdom",
+   "at": "Mon 11-23 04:30",
+   "rule": "Ranked #10, below the top 8",
+   "score": 2
+  },
+  {
+   "name": "RBA Meeting Minutes",
+   "country": "australia",
+   "at": "Mon 11-16 19:30",
+   "rule": "Ranked #11, below the top 8",
+   "score": 1
+  },
+  {
+   "name": "Xi-Trump-Putin Summit",
+   "country": "china",
+   "at": "Wed 11-18 19:00",
+   "rule": "Ranked #12, below the top 8",
+   "score": 1
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "slovakia",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "czech-republic",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance day",
+   "country": "croatia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Day",
+   "country": "oman",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "morocco",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "latvia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Genghis Khan’s Birthday",
+   "country": "mongolia",
+   "at": "2026-11-21 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "lebanon",
+   "at": "2026-11-22 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "St. George's Day",
+   "country": "georgia",
+   "at": "2026-11-23 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Labour Thanksgiving Day",
+   "country": "japan",
+   "at": "2026-11-23 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Ill Full Moon Poya Day",
+   "country": "sri-lanka",
+   "at": "2026-11-24 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Statehood Day",
+   "country": "bosnia-and-herzegovina",
+   "at": "2026-11-25 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Republic Day",
+   "country": "mongolia",
+   "at": "2026-11-26 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Thanksgiving",
+   "country": "united-states",
+   "at": "2026-11-26 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Independence Day from Spain",
+   "country": "panama",
+   "at": "2026-11-28 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Liberation Day",
+   "country": "albania",
+   "at": "2026-11-29 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  }
+ ],
+ "drafts": [
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "text": "US FOMC Minutes drop at 14:00 ET. Traders are watching for clues on the future rate path and inflation concerns. A hawkish tone could lift the greenback and weigh on #Gold and $EURUSD, while dovish hints may support stocks. Full analysis on FXEmpire.",
+   "raw": "US FOMC Minutes drop at {time_et} ET. Traders are watching for clues on the future rate path and inflation concerns. A hawkish tone could lift the greenback and weigh on #Gold and $EURUSD, while dovish hints may support stocks. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795023000000,
+   "slotAt": "Wed 11-18 12:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "text": "FOMC Minutes are out. Markets are parsing the Fed's stance on inflation risks and interest rate policy. Watch the US Dollar Index and #Gold for immediate volatility, with $EURUSD and the S&P 500 reacting to any policy shifts.",
+   "raw": "FOMC Minutes are out. Markets are parsing the Fed's stance on inflation risks and interest rate policy. Watch the US Dollar Index and #Gold for immediate volatility, with $EURUSD and the S&P 500 reacting to any policy shifts.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795029000000,
+   "slotAt": "Wed 11-18 14:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "text": "US Retail Sales for Oct is out at 08:30 ET. Markets expect 0.2% versus 0.8% previously. A surprise could spark quick moves across the US Dollar Index, $EURUSD, and the S&P 500. full analysis on FXEmpire",
+   "raw": "US Retail Sales for {reference} is out at {time_et} ET. Markets expect {forecast} versus {previous} previously. A surprise could spark quick moves across the US Dollar Index, $EURUSD, and the S&P 500. full analysis on FXEmpire",
+   "issues": [],
+   "model": "gemini/gemini-flash-latest",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "text": "US Retail Sales arrived at {actual} for Oct, {direction} the 0.2% forecast. Traders are tracking the US Dollar Index and $EURUSD as fresh consumer demand data ripples through the S&P 500.",
+   "raw": "US Retail Sales arrived at {actual} for {reference}, {direction} the {forecast} forecast. Traders are tracking the US Dollar Index and $EURUSD as fresh consumer demand data ripples through the S&P 500.",
+   "issues": [],
+   "model": "gemini/gemini-flash-latest",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794922800000,
+   "slotAt": "Tue 11-17 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 399770,
+   "kind": "x_pre",
+   "text": "UK Unemployment Rate drops at 02:00 ET, with consensus at 4.7% for Sep. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
+   "raw": "UK Unemployment Rate drops at {time_et} ET, with consensus at {forecast} for {reference}. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794880800000,
+   "slotAt": "Mon 11-16 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399770,
+   "kind": "x_post",
+   "text": "UK Unemployment Rate came in {direction} expectations at {actual} versus 4.7% forecast for Sep. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
+   "raw": "UK Unemployment Rate came in {direction} expectations at {actual} versus {forecast} forecast for {reference}. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "text": "UK inflation drops at 02:00 ET, with consensus expecting 3.7% versus 3.5% prior. A surprise could trigger quick moves in $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
+   "raw": "UK inflation drops at {time_et} ET, with consensus expecting {forecast} versus {previous} prior. A surprise could trigger quick moves in $GBPUSD and the FTSE 100. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1794967200000,
+   "slotAt": "Tue 11-17 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "text": "UK inflation came in {direction} expectations at {actual} for Oct, against a 3.7% forecast. Traders will watch for immediate reaction across $GBPUSD, EUR/GBP, and the FTSE 100.",
+   "raw": "UK inflation came in {direction} expectations at {actual} for {reference}, against a {forecast} forecast. Traders will watch for immediate reaction across $GBPUSD, EUR/GBP, and the FTSE 100.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795003200000,
+   "slotAt": "Wed 11-18 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403527,
+   "kind": "x_pre",
+   "text": "Japan's inflation data for Oct drops at 18:30 ET. The consensus forecast is 2.0%, down from 2.1% previously. Traders in $USDJPY and the Nikkei 225 will watch closely for policy hints. Full analysis on FXEmpire.",
+   "raw": "Japan's inflation data for {reference} drops at {time_et} ET. The consensus forecast is {forecast}, down from {previous} previously. Traders in $USDJPY and the Nikkei 225 will watch closely for policy hints. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795125600000,
+   "slotAt": "Thu 11-19 17:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403527,
+   "kind": "x_post",
+   "text": "Japan's Oct inflation rate came in at {actual}, {direction} the 2.0% forecast. A reading {direction} expectations could shift Bank of Japan rate hike expectations, directly impacting $USDJPY and the Nikkei 225.",
+   "raw": "Japan's {reference} inflation rate came in at {actual}, {direction} the {forecast} forecast. A reading {direction} expectations could shift Bank of Japan rate hike expectations, directly impacting $USDJPY and the Nikkei 225.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795131600000,
+   "slotAt": "Thu 11-19 18:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 403527,
+   "kind": "video_script",
+   "text": "HOOK\nJapan's latest inflation report is about to land, and it could set the tone for the yen.\n[ON SCREEN: USD/JPY chart]\nWHAT IT IS\nThe Oct inflation rate drops at 18:30 ET. Economists expect the year over year number to come in at 2.0%, down slightly from 2.1% in the prior month.\n[ON SCREEN: Forecast 2.0% vs Previous 2.1%]\nWHY IT MATTERS\nThis print matters directly for anyone trading USD/JPY or the Nikkei 225. The Bank of Japan is closely tracking price pressures to decide whether another interest rate hike is justified.\n[ON SCREEN: Bank of Japan / Nikkei 225]\nWHAT TO WATCH\nWatch the surprise factor. If inflation prints higher than 2.0%, traders could price in faster rate hikes, which might lift the yen and pressure the Nikkei. A weaker print could ease hike bets.\n[ON SCREEN: Market reaction levels]\nCLOSE\nTrack the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "raw": "HOOK\nJapan's latest inflation report is about to land, and it could set the tone for the yen.\n[ON SCREEN: USD/JPY chart]\nWHAT IT IS\nThe {reference} inflation rate drops at {time_et} ET. Economists expect the year over year number to come in at {forecast}, down slightly from {previous} in the prior month.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\nWHY IT MATTERS\nThis print matters directly for anyone trading USD/JPY or the Nikkei 225. The Bank of Japan is closely tracking price pressures to decide whether another interest rate hike is justified.\n[ON SCREEN: Bank of Japan / Nikkei 225]\nWHAT TO WATCH\nWatch the surprise factor. If inflation prints higher than {forecast}, traders could price in faster rate hikes, which might lift the yen and pressure the Nikkei. A weaker print could ease hike bets.\n[ON SCREEN: Market reaction levels]\nCLOSE\nTrack the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795053600000,
+   "slotAt": "Wed 11-18 21:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_pre",
+   "text": "UK Retail Sales MoM (Oct) drops at 02:00 ET. Consensus expects 0% after -0.4% previously. A surprise print could bring quick volatility to $GBPUSD and the FTSE 100. Full analysis on FXEmpire",
+   "raw": "UK Retail Sales MoM ({reference}) drops at {time_et} ET. Consensus expects {forecast} after {previous} previously. A surprise print could bring quick volatility to $GBPUSD and the FTSE 100. Full analysis on FXEmpire",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795140000000,
+   "slotAt": "Thu 11-19 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_post",
+   "text": "UK Retail Sales MoM (Oct) came in at {actual} vs 0% expected ({direction}). Traders will watch how $GBPUSD and EUR/GBP respond to the fresh consumer spending data.",
+   "raw": "UK Retail Sales MoM ({reference}) came in at {actual} vs {forecast} expected ({direction}). Traders will watch how $GBPUSD and EUR/GBP respond to the fresh consumer spending data.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795176000000,
+   "slotAt": "Fri 11-20 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399716,
+   "kind": "video_script",
+   "text": "HOOK\nUK consumer spending is on the line, and sterling traders need to pay attention.\n[ON SCREEN: GBP/USD ticker graphic]\nWHAT IT IS\nAt 02:00 ET, the UK drops its latest Retail Sales data for Oct. The consensus expects 0%, up from -0.4% in the prior month.\n[ON SCREEN: UK Retail Sales | Forecast: 0% | Previous: -0.4%]\nWHY IT MATTERS\nThis release gives a fresh pulse check on the British consumer. Retail numbers can quickly sway expectations around Bank of England policy, driving direct volatility into GBP/USD, EUR/GBP, and the FTSE 100.\n[ON SCREEN: GBP/USD and FTSE 100 split chart]\nWHAT TO WATCH\nTraders will watch the gap against expectations. A print coming in above forecast could lift the pound if markets price in higher yields, while a miss below forecast could drag sterling down and shift focus back to economic slowdown risks.\n[ON SCREEN: Bullish vs Bearish Sterling scenarios]\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "raw": "HOOK\nUK consumer spending is on the line, and sterling traders need to pay attention.\n[ON SCREEN: GBP/USD ticker graphic]\nWHAT IT IS\nAt {time_et} ET, the UK drops its latest Retail Sales data for {reference}. The consensus expects {forecast}, up from {previous} in the prior month.\n[ON SCREEN: UK Retail Sales | Forecast: {forecast} | Previous: {previous}]\nWHY IT MATTERS\nThis release gives a fresh pulse check on the British consumer. Retail numbers can quickly sway expectations around Bank of England policy, driving direct volatility into GBP/USD, EUR/GBP, and the FTSE 100.\n[ON SCREEN: GBP/USD and FTSE 100 split chart]\nWHAT TO WATCH\nTraders will watch the gap against expectations. A print coming in above forecast could lift the pound if markets price in higher yields, while a miss below forecast could drag sterling down and shift focus back to economic slowdown risks.\n[ON SCREEN: Bullish vs Bearish Sterling scenarios]\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795053600000,
+   "slotAt": "Wed 11-18 21:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 401353,
+   "kind": "x_pre",
+   "text": "Germany ZEW Economic Sentiment (Nov) is out at 05:00 ET. Consensus is 29 vs 28.1 prior. A surprise could drive $EURUSD and the #DAX as traders gauge German growth expectations. Full analysis on FXEmpire.",
+   "raw": "Germany ZEW Economic Sentiment ({reference}) is out at {time_et} ET. Consensus is {forecast} vs {previous} prior. A surprise could drive $EURUSD and the #DAX as traders gauge German growth expectations. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794880800000,
+   "slotAt": "Mon 11-16 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 401353,
+   "kind": "x_post",
+   "text": "Germany ZEW Economic Sentiment (Nov) arrived at {actual}, {direction} the 29 forecast. Traders in $EURUSD and the #DAX are watching to see how the print impacts euro area sentiment.",
+   "raw": "Germany ZEW Economic Sentiment ({reference}) arrived at {actual}, {direction} the {forecast} forecast. Traders in $EURUSD and the #DAX are watching to see how the print impacts euro area sentiment.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794916800000,
+   "slotAt": "Tue 11-17 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402633,
+   "kind": "x_pre",
+   "text": "Japan Oct Balance of Trade lands at 18:50 ET. Forecast stands at ¥-956B (prior: ¥-536.6B). A wider trade deficit could weigh on the yen, keeping $USDJPY traders on alert. Full analysis on FXEmpire.",
+   "raw": "Japan {reference} Balance of Trade lands at {time_et} ET. Forecast stands at {forecast} (prior: {previous}). A wider trade deficit could weigh on the yen, keeping $USDJPY traders on alert. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794954000000,
+   "slotAt": "Tue 11-17 17:20",
+   "channel": "X"
+  },
+  {
+   "eventId": 402633,
+   "kind": "x_post",
+   "text": "Japan Oct Balance of Trade came in {direction} expectations at {actual} vs ¥-956B forecast. $USDJPY traders will watch how the shift in trade figures impacts yen sentiment.",
+   "raw": "Japan {reference} Balance of Trade came in {direction} expectations at {actual} vs {forecast} forecast. $USDJPY traders will watch how the shift in trade figures impacts yen sentiment.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1794960000000,
+   "slotAt": "Tue 11-17 19:00",
+   "channel": "X"
+  }
+ ],
+ "schedule": [
+  {
+   "eventId": 399770,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794880800000,
+   "at": "Mon 11-16 21:00",
+   "notes": [
+    "Moved from Tue 11-17 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 401353,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794880800000,
+   "at": "Mon 11-16 21:00",
+   "notes": [
+    "Moved from Tue 11-17 03:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794916800000,
+   "at": "Tue 11-17 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399770,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794916800000,
+   "at": "Tue 11-17 07:00",
+   "notes": [
+    "Moved from Tue 11-17 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 401353,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794916800000,
+   "at": "Tue 11-17 07:00",
+   "notes": [
+    "Moved from Tue 11-17 05:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399093,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794922800000,
+   "at": "Tue 11-17 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402633,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794954000000,
+   "at": "Tue 11-17 17:20",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794958200000,
+   "at": "Tue 11-17 18:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402633,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1794960000000,
+   "at": "Tue 11-17 19:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1794967200000,
+   "at": "Tue 11-17 21:00",
+   "notes": [
+    "Moved from Wed 11-18 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1794985200000,
+   "at": "Wed 11-18 02:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399593,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795003200000,
+   "at": "Wed 11-18 07:00",
+   "notes": [
+    "Moved from Wed 11-18 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795023000000,
+   "at": "Wed 11-18 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 390612,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795029000000,
+   "at": "Wed 11-18 14:10",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795053600000,
+   "at": "Wed 11-18 21:00",
+   "notes": [
+    "Moved from Wed 11-18 22:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795053600000,
+   "at": "Wed 11-18 21:00",
+   "notes": [
+    "Moved from Thu 11-19 06:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795125600000,
+   "at": "Thu 11-19 17:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403527,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795131600000,
+   "at": "Thu 11-19 18:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795140000000,
+   "at": "Thu 11-19 21:00",
+   "notes": [
+    "Moved from Fri 11-20 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399716,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795176000000,
+   "at": "Fri 11-20 07:00",
+   "notes": [
+    "Moved from Fri 11-20 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1795249800000,
+   "at": "Sat 11-21 03:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795350600000,
+   "at": "Sun 11-22 07:30",
+   "notes": [],
+   "passed": false
+  }
+ ],
+ "log": [
+  "2026-11-16T21:00:25.675Z Calendar: 504 high-impact rows. Articles: 60",
+  "2026-11-16T21:00:25.676Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-16T21:00:25.858Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-16T21:00:25.858Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-16T21:00:47.164Z Using gemini: gemini-3.8-flash",
+  "2026-11-16T21:00:47.164Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-16T21:00:47.168Z Ranked 12. Posts: 8. Videos: 3",
+  "2026-11-16T21:00:47.169Z Reused earlier drafts for FOMC Minutes (united-states), numbers re-filled and re-checked",
+  "2026-11-16T21:00:47.170Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked",
+  "2026-11-16T21:00:47.170Z Reused earlier drafts for Unemployment Rate (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-16T21:00:47.171Z Reused earlier drafts for Inflation Rate YoY (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-16T21:00:47.172Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked"
+ ]
+}
