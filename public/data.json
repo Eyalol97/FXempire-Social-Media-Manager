@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-16T21:01:14.220Z",
- "now": "2026-11-16T21:00:14.323Z",
- "nowLabel": "Mon 11-16 16:00",
+ "runAt": "2026-11-17T19:51:40.243Z",
+ "now": "2026-11-17T19:50:19.205Z",
+ "nowLabel": "Tue 11-17 14:50",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -40,8 +40,8 @@
   "rawRows": 504,
   "releases": 19,
   "holidays": 16,
-  "inWindow": 14,
-  "articles": 37
+  "inWindow": 13,
+  "articles": 57
  },
  "flags": {
   "missingReleases": [],
@@ -82,124 +82,34 @@
    "previous": "",
    "actual": null,
    "rank": 1,
-   "score": 5,
+   "score": 7,
    "parts": {
-    "coverage": 0,
+    "coverage": 3,
     "currency": 2,
-    "breadth": 3
+    "breadth": 2
    },
    "tier": 3,
    "instruments": [
-    "US Dollar Index",
-    "EUR/USD",
-    "S&P 500",
-    "Gold"
+    "Gold",
+    "US Dollar Index"
    ],
    "assetClasses": [
-    "forex",
-    "stocks",
-    "commodities"
+    "commodities",
+    "forex"
    ],
    "why": [
-    "No FXEmpire article yet",
+    "Covered by 1 FXEmpire article(s)",
     "US release (+2)",
-    "Moves forex, stocks, commodities (+3)"
+    "Moves commodities, forex (+2)"
    ],
    "post": true,
    "video": false,
-   "sources": []
-  },
-  {
-   "id": 399093,
-   "name": "Retail Sales MoM",
-   "alsoReleased": [],
-   "components": [
+   "sources": [
     {
-     "name": "Retail Sales MoM",
-     "forecast": "0.2%",
-     "previous": "0.8%",
-     "actual": null,
-     "reference": "Oct"
+     "title": "Platinum Price Forecast: Strong Dollar Caps Rebound Before Fed Minutes",
+     "url": "https://www.fxempire.com/forecasts/article/platinum-price-forecast-strong-dollar-caps-rebound-before-fed-minutes-1645078"
     }
-   ],
-   "country": "united-states",
-   "reference": "Oct",
-   "at": "Tue 11-17 08:30",
-   "ms": 1794922200000,
-   "forecast": "0.2%",
-   "previous": "0.8%",
-   "actual": null,
-   "rank": 2,
-   "score": 4,
-   "parts": {
-    "coverage": 0,
-    "currency": 2,
-    "breadth": 2
-   },
-   "tier": 2,
-   "instruments": [
-    "US Dollar Index",
-    "EUR/USD",
-    "S&P 500"
-   ],
-   "assetClasses": [
-    "forex",
-    "stocks"
-   ],
-   "why": [
-    "No FXEmpire article yet",
-    "US release (+2)",
-    "Moves forex, stocks (+2)"
-   ],
-   "post": true,
-   "video": false,
-   "sources": []
-  },
-  {
-   "id": 399770,
-   "name": "Unemployment Rate",
-   "alsoReleased": [],
-   "components": [
-    {
-     "name": "Unemployment Rate",
-     "forecast": "4.7%",
-     "previous": "4.7%",
-     "actual": null,
-     "reference": "Sep"
-    }
-   ],
-   "country": "united-kingdom",
-   "reference": "Sep",
-   "at": "Tue 11-17 02:00",
-   "ms": 1794898800000,
-   "forecast": "4.7%",
-   "previous": "4.7%",
-   "actual": null,
-   "rank": 3,
-   "score": 3,
-   "parts": {
-    "coverage": 0,
-    "currency": 1,
-    "breadth": 2
-   },
-   "tier": 2,
-   "instruments": [
-    "GBP/USD",
-    "EUR/GBP",
-    "FTSE 100"
-   ],
-   "assetClasses": [
-    "forex",
-    "stocks"
-   ],
-   "why": [
-    "No FXEmpire article yet",
-    "UK release (+1)",
-    "Moves forex, stocks (+2)"
-   ],
-   "post": true,
-   "video": false,
-   "sources": []
+   ]
   },
   {
    "id": 399593,
@@ -221,7 +131,7 @@
    "forecast": "3.7%",
    "previous": "3.5%",
    "actual": null,
-   "rank": 4,
+   "rank": 2,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -267,7 +177,7 @@
    "forecast": "2.0%",
    "previous": "2.1%",
    "actual": null,
-   "rank": 5,
+   "rank": 3,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -312,7 +222,7 @@
    "forecast": "0%",
    "previous": "-0.4%",
    "actual": null,
-   "rank": 6,
+   "rank": 4,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -339,51 +249,6 @@
    "sources": []
   },
   {
-   "id": 401353,
-   "name": "ZEW Economic Sentiment Index",
-   "alsoReleased": [],
-   "components": [
-    {
-     "name": "ZEW Economic Sentiment Index",
-     "forecast": "29",
-     "previous": "28.1",
-     "actual": null,
-     "reference": "Nov"
-    }
-   ],
-   "country": "germany",
-   "reference": "Nov",
-   "at": "Tue 11-17 05:00",
-   "ms": 1794909600000,
-   "forecast": "29",
-   "previous": "28.1",
-   "actual": null,
-   "rank": 7,
-   "score": 3,
-   "parts": {
-    "coverage": 0,
-    "currency": 1,
-    "breadth": 2
-   },
-   "tier": 1,
-   "instruments": [
-    "EUR/USD",
-    "DAX"
-   ],
-   "assetClasses": [
-    "forex",
-    "stocks"
-   ],
-   "why": [
-    "No FXEmpire article yet",
-    "Germany release (+1)",
-    "Moves forex, stocks (+2)"
-   ],
-   "post": true,
-   "video": false,
-   "sources": []
-  },
-  {
    "id": 402633,
    "name": "Balance of Trade",
    "alsoReleased": [],
@@ -403,7 +268,7 @@
    "forecast": "¥-956B",
    "previous": "¥-536.6B",
    "actual": null,
-   "rank": 8,
+   "rank": 5,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -446,7 +311,7 @@
    "forecast": "53.8",
    "previous": "54.2",
    "actual": null,
-   "rank": 9,
+   "rank": 6,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -465,7 +330,7 @@
     "Germany release (+1)",
     "Moves forex (+1)"
    ],
-   "post": false,
+   "post": true,
    "video": true,
    "sources": []
   },
@@ -498,7 +363,7 @@
    "forecast": "52.5",
    "previous": "52.8",
    "actual": null,
-   "rank": 10,
+   "rank": 7,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -518,50 +383,50 @@
     "UK release (+1)",
     "Moves forex (+1)"
    ],
-   "post": false,
+   "post": true,
    "video": false,
    "sources": []
   },
   {
-   "id": 394048,
-   "name": "RBA Meeting Minutes",
+   "id": 402073,
+   "name": "Ifo Business Climate",
    "alsoReleased": [],
    "components": [
     {
-     "name": "RBA Meeting Minutes",
-     "forecast": "",
-     "previous": "",
+     "name": "Ifo Business Climate",
+     "forecast": "90.1",
+     "previous": "90.2",
      "actual": null,
-     "reference": ""
+     "reference": "Nov"
     }
    ],
-   "country": "australia",
-   "reference": "",
-   "at": "Mon 11-16 19:30",
-   "ms": 1794875400000,
-   "forecast": "",
-   "previous": "",
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Tue 11-24 04:00",
+   "ms": 1795510800000,
+   "forecast": "90.1",
+   "previous": "90.2",
    "actual": null,
-   "rank": 11,
-   "score": 1,
+   "rank": 8,
+   "score": 2,
    "parts": {
     "coverage": 0,
-    "currency": 0,
+    "currency": 1,
     "breadth": 1
    },
-   "tier": 3,
+   "tier": 1,
    "instruments": [
-    "AUD/USD"
+    "EUR/USD"
    ],
    "assetClasses": [
     "forex"
    ],
    "why": [
     "No FXEmpire article yet",
-    "Currency outside the core list (+0)",
+    "Germany release (+1)",
     "Moves forex (+1)"
    ],
-   "post": false,
+   "post": true,
    "video": false,
    "sources": []
   },
@@ -585,7 +450,7 @@
    "forecast": "",
    "previous": "",
    "actual": null,
-   "rank": 12,
+   "rank": 9,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -614,21 +479,42 @@
    "name": "Inflation Rate YoY",
    "country": "canada",
    "at": "Mon 11-16 08:30",
-   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
    "score": null
   },
   {
    "name": "Fed Chair Warsh Speech",
    "country": "united-states",
    "at": "Mon 11-16 12:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "RBA Meeting Minutes",
+   "country": "australia",
+   "at": "Mon 11-16 19:30",
    "rule": "Already happened, and the after-release post time has passed - nothing left to post",
    "score": null
   },
   {
-   "name": "Ifo Business Climate",
+   "name": "Unemployment Rate",
+   "country": "united-kingdom",
+   "at": "Tue 11-17 02:00",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "score": null
+  },
+  {
+   "name": "ZEW Economic Sentiment Index",
    "country": "germany",
-   "at": "Tue 11-24 04:00",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "at": "Tue 11-17 05:00",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "score": null
+  },
+  {
+   "name": "Retail Sales MoM",
+   "country": "united-states",
+   "at": "Tue 11-17 08:30",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
    "score": null
   },
   {
@@ -660,31 +546,10 @@
    "score": null
   },
   {
-   "name": "S&P Global Manufacturing PMI Flash",
-   "country": "germany",
-   "at": "Mon 11-23 03:30",
-   "rule": "Ranked #9, below the top 8",
-   "score": 2
-  },
-  {
-   "name": "S&P Global Services PMI Flash",
-   "country": "united-kingdom",
-   "at": "Mon 11-23 04:30",
-   "rule": "Ranked #10, below the top 8",
-   "score": 2
-  },
-  {
-   "name": "RBA Meeting Minutes",
-   "country": "australia",
-   "at": "Mon 11-16 19:30",
-   "rule": "Ranked #11, below the top 8",
-   "score": 1
-  },
-  {
    "name": "Xi-Trump-Putin Summit",
    "country": "china",
    "at": "Wed 11-18 19:00",
-   "rule": "Ranked #12, below the top 8",
+   "rule": "Ranked #9, below the top 8",
    "score": 1
   },
   {
@@ -804,13 +669,23 @@
   {
    "eventId": 390612,
    "kind": "x_pre",
-   "text": "US FOMC Minutes drop at 14:00 ET. Traders are watching for clues on the future rate path and inflation concerns. A hawkish tone could lift the greenback and weigh on #Gold and $EURUSD, while dovish hints may support stocks. Full analysis on FXEmpire.",
-   "raw": "US FOMC Minutes drop at {time_et} ET. Traders are watching for clues on the future rate path and inflation concerns. A hawkish tone could lift the greenback and weigh on #Gold and $EURUSD, while dovish hints may support stocks. Full analysis on FXEmpire.",
+   "text": "US FOMC Minutes drop at 14:00 ET. Traders will watch for signals on interest rate expectations. Any hawkish or dovish shift could sway the US Dollar Index and #Gold. Full analysis on FXEmpire",
+   "raw": "US FOMC Minutes drop at {time_et} ET. Traders will watch for signals on interest rate expectations. Any hawkish or dovish shift could sway the US Dollar Index and #Gold. Full analysis on FXEmpire",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
+   "sources": [
+    {
+     "title": "Platinum Price Forecast: Strong Dollar Caps Rebound Before Fed Minutes",
+     "url": "https://www.fxempire.com/forecasts/article/platinum-price-forecast-strong-dollar-caps-rebound-before-fed-minutes-1645078"
+    }
+   ],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795023000000,
    "slotAt": "Wed 11-18 12:30",
    "channel": "X"
@@ -818,71 +693,25 @@
   {
    "eventId": 390612,
    "kind": "x_post",
-   "text": "FOMC Minutes are out. Markets are parsing the Fed's stance on inflation risks and interest rate policy. Watch the US Dollar Index and #Gold for immediate volatility, with $EURUSD and the S&P 500 reacting to any policy shifts.",
-   "raw": "FOMC Minutes are out. Markets are parsing the Fed's stance on inflation risks and interest rate policy. Watch the US Dollar Index and #Gold for immediate volatility, with $EURUSD and the S&P 500 reacting to any policy shifts.",
+   "text": "FOMC Minutes are out. Traders are dissecting the text for hints on future interest rates. A hawkish tone could bolster the US Dollar Index, while dovish language may lift #Gold.",
+   "raw": "FOMC Minutes are out. Traders are dissecting the text for hints on future interest rates. A hawkish tone could bolster the US Dollar Index, while dovish language may lift #Gold.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
+   "sources": [
+    {
+     "title": "Platinum Price Forecast: Strong Dollar Caps Rebound Before Fed Minutes",
+     "url": "https://www.fxempire.com/forecasts/article/platinum-price-forecast-strong-dollar-caps-rebound-before-fed-minutes-1645078"
+    }
+   ],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795029000000,
    "slotAt": "Wed 11-18 14:10",
-   "channel": "X"
-  },
-  {
-   "eventId": 399093,
-   "kind": "x_pre",
-   "text": "US Retail Sales for Oct is out at 08:30 ET. Markets expect 0.2% versus 0.8% previously. A surprise could spark quick moves across the US Dollar Index, $EURUSD, and the S&P 500. full analysis on FXEmpire",
-   "raw": "US Retail Sales for {reference} is out at {time_et} ET. Markets expect {forecast} versus {previous} previously. A surprise could spark quick moves across the US Dollar Index, $EURUSD, and the S&P 500. full analysis on FXEmpire",
-   "issues": [],
-   "model": "gemini/gemini-flash-latest",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794916800000,
-   "slotAt": "Tue 11-17 07:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 399093,
-   "kind": "x_post",
-   "text": "US Retail Sales arrived at {actual} for Oct, {direction} the 0.2% forecast. Traders are tracking the US Dollar Index and $EURUSD as fresh consumer demand data ripples through the S&P 500.",
-   "raw": "US Retail Sales arrived at {actual} for {reference}, {direction} the {forecast} forecast. Traders are tracking the US Dollar Index and $EURUSD as fresh consumer demand data ripples through the S&P 500.",
-   "issues": [],
-   "model": "gemini/gemini-flash-latest",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794922800000,
-   "slotAt": "Tue 11-17 08:40",
-   "channel": "X"
-  },
-  {
-   "eventId": 399770,
-   "kind": "x_pre",
-   "text": "UK Unemployment Rate drops at 02:00 ET, with consensus at 4.7% for Sep. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
-   "raw": "UK Unemployment Rate drops at {time_et} ET, with consensus at {forecast} for {reference}. A shift in labor market slack could move $GBPUSD and the FTSE 100 as rate expectations adjust. Full analysis on FXEmpire.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794880800000,
-   "slotAt": "Mon 11-16 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 399770,
-   "kind": "x_post",
-   "text": "UK Unemployment Rate came in {direction} expectations at {actual} versus 4.7% forecast for Sep. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
-   "raw": "UK Unemployment Rate came in {direction} expectations at {actual} versus {forecast} forecast for {reference}. Watch for volatility across $GBPUSD, EUR/GBP, and the FTSE 100 as traders assess the impact on Bank of England policy.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1794916800000,
-   "slotAt": "Tue 11-17 07:00",
    "channel": "X"
   },
   {
@@ -964,12 +793,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795140000000,
    "slotAt": "Thu 11-19 21:00",
    "channel": "X"
@@ -983,12 +807,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795176000000,
    "slotAt": "Fri 11-20 07:00",
    "channel": "X"
@@ -1002,53 +821,10 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795053600000,
    "slotAt": "Wed 11-18 21:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
-  },
-  {
-   "eventId": 401353,
-   "kind": "x_pre",
-   "text": "Germany ZEW Economic Sentiment (Nov) is out at 05:00 ET. Consensus is 29 vs 28.1 prior. A surprise could drive $EURUSD and the #DAX as traders gauge German growth expectations. Full analysis on FXEmpire.",
-   "raw": "Germany ZEW Economic Sentiment ({reference}) is out at {time_et} ET. Consensus is {forecast} vs {previous} prior. A surprise could drive $EURUSD and the #DAX as traders gauge German growth expectations. Full analysis on FXEmpire.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794880800000,
-   "slotAt": "Mon 11-16 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 401353,
-   "kind": "x_post",
-   "text": "Germany ZEW Economic Sentiment (Nov) arrived at {actual}, {direction} the 29 forecast. Traders in $EURUSD and the #DAX are watching to see how the print impacts euro area sentiment.",
-   "raw": "Germany ZEW Economic Sentiment ({reference}) arrived at {actual}, {direction} the {forecast} forecast. Traders in $EURUSD and the #DAX are watching to see how the print impacts euro area sentiment.",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1794916800000,
-   "slotAt": "Tue 11-17 07:00",
-   "channel": "X"
   },
   {
    "eventId": 402633,
@@ -1059,12 +835,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1794954000000,
    "slotAt": "Tue 11-17 17:20",
    "channel": "X"
@@ -1078,80 +849,146 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
+   "attempts": [],
+   "slotMs": 1794960000000,
+   "slotAt": "Tue 11-17 19:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_pre",
+   "text": "Germany Flash Manufacturing PMI lands at 03:30 ET for Nov. Consensus sits at 53.8 vs previous 54.2. A print below forecast could weigh on the euro, while a beat may offer support. Full analysis on FXEmpire. $EURUSD",
+   "raw": "Germany Flash Manufacturing PMI lands at {time_et} ET for {reference}. Consensus sits at {forecast} vs previous {previous}. A print below forecast could weigh on the euro, while a beat may offer support. Full analysis on FXEmpire. $EURUSD",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
    "attempts": [
     {
      "attempt": 1,
      "problems": []
     }
    ],
-   "slotMs": 1794960000000,
-   "slotAt": "Tue 11-17 19:00",
+   "slotMs": 1795399200000,
+   "slotAt": "Sun 11-22 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_post",
+   "text": "Germany Flash Manufacturing PMI came in at {actual} for Nov, {direction} the 53.8 forecast and vs 54.2 prior. Traders are tracking $EURUSD as the data could shift sentiment around European growth momentum.",
+   "raw": "Germany Flash Manufacturing PMI came in at {actual} for {reference}, {direction} the {forecast} forecast and vs {previous} prior. Traders are tracking $EURUSD as the data could shift sentiment around European growth momentum.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795435200000,
+   "slotAt": "Mon 11-23 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403581,
+   "kind": "video_script",
+   "text": "HOOK\nGermany's factory sector is back in focus, and euro traders need to pay close attention right now.\n[ON SCREEN: German flag and EUR/USD ticker]\nWHAT IT IS\nThe German Flash Manufacturing PMI for Nov drops at 03:30 ET. Consensus expects a reading of 53.8, slightly down from 54.2 in the prior month.\n[ON SCREEN: Flash PMI: Forecast 53.8 vs Previous 54.2]\nWHY IT MATTERS\nGermany is Europe's powerhouse economy, so its factory health sets the tone for the entire eurozone. For traders, this release can quickly steer intraday momentum across EUR/USD.\n[ON SCREEN: EUR/USD chart with volatility indicators]\nWHAT TO WATCH\nTraders will watch how the actual figure compares to expectations. A surprise beat above 53.8 could lift the euro on signs of resilience. A clear miss below 53.8 could deepen growth worries and pressure EUR/USD.\n[ON SCREEN: Above 53.8 = Euro Support | Below 53.8 = Downside Risk]\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
+   "raw": "HOOK\nGermany's factory sector is back in focus, and euro traders need to pay close attention right now.\n[ON SCREEN: German flag and EUR/USD ticker]\nWHAT IT IS\nThe German Flash Manufacturing PMI for {reference} drops at {time_et} ET. Consensus expects a reading of {forecast}, slightly down from {previous} in the prior month.\n[ON SCREEN: Flash PMI: Forecast {forecast} vs Previous {previous}]\nWHY IT MATTERS\nGermany is Europe's powerhouse economy, so its factory health sets the tone for the entire eurozone. For traders, this release can quickly steer intraday momentum across EUR/USD.\n[ON SCREEN: EUR/USD chart with volatility indicators]\nWHAT TO WATCH\nTraders will watch how the actual figure compares to expectations. A surprise beat above {forecast} could lift the euro on signs of resilience. A clear miss below {forecast} could deepen growth worries and pressure EUR/USD.\n[ON SCREEN: Above {forecast} = Euro Support | Below {forecast} = Downside Risk]\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795350600000,
+   "slotAt": "Sun 11-22 07:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_pre",
+   "text": "UK S&P Global Services PMI Flash (Nov) drops at 04:30 ET. Consensus stands at 52.5 vs 52.8 prior. A surprise could drive volatility across $GBPUSD and $EURGBP. Full analysis on FXEmpire.",
+   "raw": "UK S&P Global Services PMI Flash ({reference}) drops at {time_et} ET. Consensus stands at {forecast} vs {previous} prior. A surprise could drive volatility across $GBPUSD and $EURGBP. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795399200000,
+   "slotAt": "Sun 11-22 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_post",
+   "text": "UK Services PMI Flash (Nov) is out at {actual}, coming in {direction} expectations of 52.5. Traders will watch $GBPUSD and $EURGBP for potential momentum shifts following the data.",
+   "raw": "UK Services PMI Flash ({reference}) is out at {actual}, coming in {direction} expectations of {forecast}. Traders will watch $GBPUSD and $EURGBP for potential momentum shifts following the data.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795435200000,
+   "slotAt": "Mon 11-23 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_pre",
+   "text": "Germany Ifo Business Climate (Nov) is due at 04:00 ET. Consensus stands at 90.1 vs 90.2 prior. A surprise could drive $EURUSD volatility as traders gauge German sentiment. Full analysis on FXEmpire.",
+   "raw": "Germany Ifo Business Climate ({reference}) is due at {time_et} ET. Consensus stands at {forecast} vs {previous} prior. A surprise could drive $EURUSD volatility as traders gauge German sentiment. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795485600000,
+   "slotAt": "Mon 11-23 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_post",
+   "text": "Germany Ifo Business Climate (Nov) came in at {actual}, {direction} expectations of 90.1 (prior: 90.2). Traders are watching $EURUSD as sentiment data impacts euro positioning.",
+   "raw": "Germany Ifo Business Climate ({reference}) came in at {actual}, {direction} expectations of {forecast} (prior: {previous}). Traders are watching $EURUSD as sentiment data impacts euro positioning.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795521600000,
+   "slotAt": "Tue 11-24 07:00",
    "channel": "X"
   }
  ],
  "schedule": [
-  {
-   "eventId": 399770,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1794880800000,
-   "at": "Mon 11-16 21:00",
-   "notes": [
-    "Moved from Tue 11-17 00:30 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 401353,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1794880800000,
-   "at": "Mon 11-16 21:00",
-   "notes": [
-    "Moved from Tue 11-17 03:30 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 399093,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1794916800000,
-   "at": "Tue 11-17 07:00",
-   "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 399770,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1794916800000,
-   "at": "Tue 11-17 07:00",
-   "notes": [
-    "Moved from Tue 11-17 02:10 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 401353,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1794916800000,
-   "at": "Tue 11-17 07:00",
-   "notes": [
-    "Moved from Tue 11-17 05:10 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 399093,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1794922800000,
-   "at": "Tue 11-17 08:40",
-   "notes": [],
-   "passed": false
-  },
   {
    "eventId": 402633,
    "kind": "x_pre",
@@ -1307,20 +1144,85 @@
    "at": "Sun 11-22 07:30",
    "notes": [],
    "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795399200000,
+   "at": "Sun 11-22 21:00",
+   "notes": [
+    "Moved from Mon 11-23 02:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795399200000,
+   "at": "Sun 11-22 21:00",
+   "notes": [
+    "Moved from Mon 11-23 03:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795435200000,
+   "at": "Mon 11-23 07:00",
+   "notes": [
+    "Moved from Mon 11-23 03:40 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795435200000,
+   "at": "Mon 11-23 07:00",
+   "notes": [
+    "Moved from Mon 11-23 04:40 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795485600000,
+   "at": "Mon 11-23 21:00",
+   "notes": [
+    "Moved from Tue 11-24 02:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795521600000,
+   "at": "Tue 11-24 07:00",
+   "notes": [
+    "Moved from Tue 11-24 04:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
   }
  ],
  "log": [
-  "2026-11-16T21:00:25.675Z Calendar: 504 high-impact rows. Articles: 60",
-  "2026-11-16T21:00:25.676Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
-  "2026-11-16T21:00:25.858Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-16T21:00:25.858Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-16T21:00:47.164Z Using gemini: gemini-3.8-flash",
-  "2026-11-16T21:00:47.164Z Matched 0 events to articles. Releases missing from calendar: 0",
-  "2026-11-16T21:00:47.168Z Ranked 12. Posts: 8. Videos: 3",
-  "2026-11-16T21:00:47.169Z Reused earlier drafts for FOMC Minutes (united-states), numbers re-filled and re-checked",
-  "2026-11-16T21:00:47.170Z Reused earlier drafts for Retail Sales MoM (united-states), numbers re-filled and re-checked",
-  "2026-11-16T21:00:47.170Z Reused earlier drafts for Unemployment Rate (united-kingdom), numbers re-filled and re-checked",
-  "2026-11-16T21:00:47.171Z Reused earlier drafts for Inflation Rate YoY (united-kingdom), numbers re-filled and re-checked",
-  "2026-11-16T21:00:47.172Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked"
+  "2026-11-17T19:50:31.015Z Calendar: 504 high-impact rows. Articles: 60",
+  "2026-11-17T19:50:31.016Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-17T19:50:31.245Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-17T19:50:31.245Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-17T19:50:51.235Z Using gemini: gemini-3.8-flash",
+  "2026-11-17T19:50:51.235Z Matched 1 events to articles. Releases missing from calendar: 0",
+  "2026-11-17T19:50:51.238Z Ranked 9. Posts: 8. Videos: 3",
+  "2026-11-17T19:51:05.479Z Reused earlier drafts for Inflation Rate YoY (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-17T19:51:05.480Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked",
+  "2026-11-17T19:51:05.481Z Reused earlier drafts for Retail Sales MoM (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-17T19:51:05.481Z Reused earlier drafts for Balance of Trade (japan), numbers re-filled and re-checked"
  ]
 }
