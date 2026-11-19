@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-18T19:25:50.184Z",
- "now": "2026-11-18T19:24:15.167Z",
- "nowLabel": "Wed 11-18 14:24",
+ "runAt": "2026-11-19T19:29:20.585Z",
+ "now": "2026-11-19T19:28:31.747Z",
+ "nowLabel": "Thu 11-19 14:28",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -40,7 +40,7 @@
   "rawRows": 504,
   "releases": 19,
   "holidays": 16,
-  "inWindow": 10,
+  "inWindow": 8,
   "articles": 60
  },
  "flags": {
@@ -371,42 +371,42 @@
    "sources": []
   },
   {
-   "id": 429333,
-   "name": "Xi-Trump-Putin Summit",
+   "id": 402038,
+   "name": "GfK Consumer Confidence",
    "alsoReleased": [],
    "components": [
     {
-     "name": "Xi-Trump-Putin Summit",
-     "forecast": "",
-     "previous": "",
+     "name": "GfK Consumer Confidence",
+     "forecast": "-30",
+     "previous": "-30.8",
      "actual": null,
-     "reference": ""
+     "reference": "Dec"
     }
    ],
-   "country": "china",
-   "reference": "",
-   "at": "Wed 11-18 19:00",
-   "ms": 1795046400000,
-   "forecast": "",
-   "previous": "",
+   "country": "germany",
+   "reference": "Dec",
+   "at": "Thu 11-26 02:00",
+   "ms": 1795676400000,
+   "forecast": "-30",
+   "previous": "-30.8",
    "actual": null,
    "rank": 7,
-   "score": 1,
+   "score": 2,
    "parts": {
     "coverage": 0,
-    "currency": 0,
+    "currency": 1,
     "breadth": 1
    },
    "tier": 1,
    "instruments": [
-    "AUD/USD"
+    "EUR/USD"
    ],
    "assetClasses": [
     "forex"
    ],
    "why": [
     "No FXEmpire article yet",
-    "Currency outside the core list (+0)",
+    "Germany release (+1)",
     "Moves forex (+1)"
    ],
    "post": true,
@@ -461,28 +461,28 @@
    "name": "Balance of Trade",
    "country": "japan",
    "at": "Tue 11-17 18:50",
-   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
    "score": null
   },
   {
    "name": "Inflation Rate YoY",
    "country": "united-kingdom",
    "at": "Wed 11-18 02:00",
-   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
    "score": null
   },
   {
    "name": "FOMC Minutes",
    "country": "united-states",
    "at": "Wed 11-18 14:00",
-   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
    "score": null
   },
   {
-   "name": "GfK Consumer Confidence",
-   "country": "germany",
-   "at": "Thu 11-26 02:00",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "name": "Xi-Trump-Putin Summit",
+   "country": "china",
+   "at": "Wed 11-18 19:00",
+   "rule": "Already happened, and the after-release post time has passed - nothing left to post",
    "score": null
   },
   {
@@ -622,12 +622,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795608000000,
    "slotAt": "Wed 11-25 07:00",
    "channel": "X"
@@ -641,12 +636,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795614000000,
    "slotAt": "Wed 11-25 08:40",
    "channel": "X"
@@ -660,12 +650,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795541400000,
    "slotAt": "Tue 11-24 12:30",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -777,12 +762,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795399200000,
    "slotAt": "Sun 11-22 21:00",
    "channel": "X"
@@ -796,12 +776,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795435200000,
    "slotAt": "Mon 11-23 07:00",
    "channel": "X"
@@ -815,12 +790,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795354200000,
    "slotAt": "Sun 11-22 08:30",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -854,10 +824,10 @@
    "channel": "X"
   },
   {
-   "eventId": 429333,
+   "eventId": 402038,
    "kind": "x_pre",
-   "text": "China Xi-Trump-Putin Summit is scheduled for 19:00 ET. Traders will watch for geopolitical commentary and foreign policy cues that could sway risk sentiment across $AUDUSD. Full analysis on FXEmpire.",
-   "raw": "China Xi-Trump-Putin Summit is scheduled for {time_et} ET. Traders will watch for geopolitical commentary and foreign policy cues that could sway risk sentiment across $AUDUSD. Full analysis on FXEmpire.",
+   "text": "Germany GfK Consumer Confidence for Dec drops at 02:00 ET. Consensus sits at -30 vs -30.8 prior. A surprise could move $EURUSD as traders gauge German consumer health. Full analysis on FXEmpire.",
+   "raw": "Germany GfK Consumer Confidence for {reference} drops at {time_et} ET. Consensus sits at {forecast} vs {previous} prior. A surprise could move $EURUSD as traders gauge German consumer health. Full analysis on FXEmpire.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
@@ -868,18 +838,18 @@
      "problems": []
     }
    ],
-   "slotMs": 1795041000000,
-   "slotAt": "Wed 11-18 17:30",
+   "slotMs": 1795658400000,
+   "slotAt": "Wed 11-25 21:00",
    "channel": "X"
   },
   {
-   "eventId": 429333,
+   "eventId": 402038,
    "kind": "x_post",
-   "text": "Headlines cross from the China Xi-Trump-Putin Summit. Traders are monitoring statements on trade and diplomatic ties, which could steer broader risk appetite and drive moves in $AUDUSD.",
-   "raw": "Headlines cross from the China Xi-Trump-Putin Summit. Traders are monitoring statements on trade and diplomatic ties, which could steer broader risk appetite and drive moves in $AUDUSD.",
+   "text": "Germany GfK Consumer Confidence for Dec printed at {actual}, coming in {direction} expectations of -30. Traders watching $EURUSD will monitor how the data shifts sentiment around European growth.",
+   "raw": "Germany GfK Consumer Confidence for {reference} printed at {actual}, coming in {direction} expectations of {forecast}. Traders watching $EURUSD will monitor how the data shifts sentiment around European growth.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
+   "status": "waiting_for_actual",
    "sources": [],
    "attempts": [
     {
@@ -887,30 +857,12 @@
      "problems": []
     }
    ],
-   "slotMs": 1795047000000,
-   "slotAt": "Wed 11-18 19:10",
+   "slotMs": 1795694400000,
+   "slotAt": "Thu 11-26 07:00",
    "channel": "X"
   }
  ],
  "schedule": [
-  {
-   "eventId": 429333,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1795041000000,
-   "at": "Wed 11-18 17:30",
-   "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 429333,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1795047000000,
-   "at": "Wed 11-18 19:10",
-   "notes": [],
-   "passed": false
-  },
   {
    "eventId": 403527,
    "kind": "x_pre",
@@ -1088,19 +1040,43 @@
    "at": "Wed 11-25 08:40",
    "notes": [],
    "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795658400000,
+   "at": "Wed 11-25 21:00",
+   "notes": [
+    "Moved from Thu 11-26 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795694400000,
+   "at": "Thu 11-26 07:00",
+   "notes": [
+    "Moved from Thu 11-26 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
   }
  ],
  "log": [
-  "2026-11-18T19:24:24.656Z Calendar: 504 high-impact rows. Articles: 60",
-  "2026-11-18T19:24:24.657Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
-  "2026-11-18T19:24:24.830Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-18T19:24:24.830Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-18T19:24:35.904Z Using gemini: gemini-3.8-flash",
-  "2026-11-18T19:24:35.904Z Matched 1 events to articles. Releases missing from calendar: 0",
-  "2026-11-18T19:24:35.906Z Ranked 7. Posts: 7. Videos: 3",
-  "2026-11-18T19:25:14.350Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked",
-  "2026-11-18T19:25:14.351Z Reused earlier drafts for Retail Sales MoM (united-kingdom), numbers re-filled and re-checked",
-  "2026-11-18T19:25:14.352Z Reused earlier drafts for S&P Global Manufacturing PMI Flash (germany), numbers re-filled and re-checked",
-  "2026-11-18T19:25:36.706Z Reused earlier drafts for Ifo Business Climate (germany), numbers re-filled and re-checked"
+  "2026-11-19T19:28:40.387Z Calendar: 504 high-impact rows. Articles: 60",
+  "2026-11-19T19:28:40.388Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-19T19:28:40.693Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-19T19:28:40.694Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-19T19:29:12.500Z Using gemini: gemini-3.8-flash",
+  "2026-11-19T19:29:12.500Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-19T19:29:12.502Z Ranked 7. Posts: 7. Videos: 3",
+  "2026-11-19T19:29:12.503Z Reused earlier drafts for GDP Growth Rate QoQ 2nd Est (united-states), numbers re-filled and re-checked",
+  "2026-11-19T19:29:12.504Z Reused earlier drafts for Inflation Rate YoY (japan), numbers re-filled and re-checked",
+  "2026-11-19T19:29:12.504Z Reused earlier drafts for Retail Sales MoM (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-19T19:29:12.505Z Reused earlier drafts for S&P Global Manufacturing PMI Flash (germany), numbers re-filled and re-checked",
+  "2026-11-19T19:29:12.505Z Reused earlier drafts for S&P Global Services PMI Flash (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-19T19:29:12.505Z Reused earlier drafts for Ifo Business Climate (germany), numbers re-filled and re-checked"
  ]
 }
