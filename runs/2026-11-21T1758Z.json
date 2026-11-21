@@ -1,0 +1,1011 @@
+{
+ "runAt": "2026-11-21T17:58:16.147Z",
+ "now": "2026-11-21T17:57:11.876Z",
+ "nowLabel": "Sat 11-21 12:57",
+ "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
+ "timezone": "America/New_York",
+ "config": {
+  "selection": {
+   "impactGate": 3,
+   "topPosts": 8,
+   "topVideos": 3,
+   "videoMaxPerCurrency": 2,
+   "videoMaxPerDay": 2
+  },
+  "scoring": {
+   "coveragePoints": 3,
+   "currencyPoints": {
+    "united-states": 2,
+    "euro-area": 1,
+    "germany": 1,
+    "france": 1,
+    "italy": 1,
+    "spain": 1,
+    "united-kingdom": 1,
+    "japan": 1,
+    "canada": 1
+   },
+   "breadthMax": 3
+  },
+  "timing": {
+   "xPreMinutes": -90,
+   "xPostMinutes": 10,
+   "videoPublishHours": -20,
+   "recordByHours": -48,
+   "quietStart": "07:00",
+   "quietEnd": "21:00"
+  }
+ },
+ "counts": {
+  "rawRows": 504,
+  "releases": 19,
+  "holidays": 16,
+  "inWindow": 6,
+  "articles": 60
+ },
+ "flags": {
+  "missingReleases": [],
+  "holidays": [
+   {
+    "date": "2026-11-23",
+    "country": "japan",
+    "name": "Labour Thanksgiving Day",
+    "exchange": "Tokyo Stock Exchange"
+   },
+   {
+    "date": "2026-11-26",
+    "country": "united-states",
+    "name": "Thanksgiving",
+    "exchange": "New York Stock Exchange"
+   }
+  ]
+ },
+ "ranked": [
+  {
+   "id": 398069,
+   "name": "GDP Growth Rate QoQ 2nd Est",
+   "alsoReleased": [
+    "Personal Spending MoM",
+    "Personal Income MoM",
+    "Core PCE Price Index MoM",
+    "Durable Goods Orders MoM"
+   ],
+   "components": [
+    {
+     "name": "GDP Growth Rate QoQ 2nd Est",
+     "forecast": "3.5%",
+     "previous": "2.2%",
+     "actual": null,
+     "reference": "Q3"
+    },
+    {
+     "name": "Personal Spending MoM",
+     "forecast": "0.4%",
+     "previous": "0.5%",
+     "actual": null,
+     "reference": "Oct"
+    },
+    {
+     "name": "Personal Income MoM",
+     "forecast": "0.3%",
+     "previous": "0.2%",
+     "actual": null,
+     "reference": "Oct"
+    },
+    {
+     "name": "Core PCE Price Index MoM",
+     "forecast": "0.3%",
+     "previous": "0.3%",
+     "actual": null,
+     "reference": "Oct"
+    },
+    {
+     "name": "Durable Goods Orders MoM",
+     "forecast": "0.5%",
+     "previous": "1.9%",
+     "actual": null,
+     "reference": "Oct"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Q3",
+   "at": "Wed 11-25 08:30",
+   "ms": 1795613400000,
+   "forecast": "3.5%",
+   "previous": "2.2%",
+   "actual": null,
+   "rank": 1,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "US release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 403581,
+   "name": "S&P Global Manufacturing PMI Flash",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "S&P Global Manufacturing PMI Flash",
+     "forecast": "54.1",
+     "previous": "54.2",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Mon 11-23 03:30",
+   "ms": 1795422600000,
+   "forecast": "54.1",
+   "previous": "54.2",
+   "actual": null,
+   "rank": 2,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Germany release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 399782,
+   "name": "S&P Global Services PMI Flash",
+   "alsoReleased": [
+    "S&P Global Manufacturing PMI Flash"
+   ],
+   "components": [
+    {
+     "name": "S&P Global Services PMI Flash",
+     "forecast": "53",
+     "previous": "52.8",
+     "actual": null,
+     "reference": "Nov"
+    },
+    {
+     "name": "S&P Global Manufacturing PMI Flash",
+     "forecast": "53",
+     "previous": "52.8",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "united-kingdom",
+   "reference": "Nov",
+   "at": "Mon 11-23 04:30",
+   "ms": 1795426200000,
+   "forecast": "53",
+   "previous": "52.8",
+   "actual": null,
+   "rank": 3,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "GBP/USD",
+    "EUR/GBP"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "UK release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 402073,
+   "name": "Ifo Business Climate",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Ifo Business Climate",
+     "forecast": "90.8",
+     "previous": "90.2",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "germany",
+   "reference": "Nov",
+   "at": "Tue 11-24 04:00",
+   "ms": 1795510800000,
+   "forecast": "90.8",
+   "previous": "90.2",
+   "actual": null,
+   "rank": 4,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Germany release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 402038,
+   "name": "GfK Consumer Confidence",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "GfK Consumer Confidence",
+     "forecast": "-28.5",
+     "previous": "-30.8",
+     "actual": null,
+     "reference": "Dec"
+    }
+   ],
+   "country": "germany",
+   "reference": "Dec",
+   "at": "Thu 11-26 02:00",
+   "ms": 1795676400000,
+   "forecast": "-28.5",
+   "previous": "-30.8",
+   "actual": null,
+   "rank": 5,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "EUR/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Germany release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
+  {
+   "id": 403212,
+   "name": "Inflation Rate YoY Prel",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Inflation Rate YoY Prel",
+     "forecast": "3.8%",
+     "previous": "3.4%",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "france",
+   "reference": "Nov",
+   "at": "Fri 11-27 02:45",
+   "ms": 1795765500000,
+   "forecast": "3.8%",
+   "previous": "3.4%",
+   "actual": null,
+   "rank": 6,
+   "score": 1,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 0
+   },
+   "tier": 2,
+   "instruments": [],
+   "assetClasses": [],
+   "why": [
+    "No FXEmpire article yet",
+    "France release (+1)",
+    "No listed instrument in a class this event moves (+0)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  }
+ ],
+ "skipped": [
+  {
+   "name": "Inflation Rate YoY",
+   "country": "canada",
+   "at": "Mon 11-16 08:30",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Fed Chair Warsh Speech",
+   "country": "united-states",
+   "at": "Mon 11-16 12:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "RBA Meeting Minutes",
+   "country": "australia",
+   "at": "Mon 11-16 19:30",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Unemployment Rate",
+   "country": "united-kingdom",
+   "at": "Tue 11-17 02:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "ZEW Economic Sentiment Index",
+   "country": "germany",
+   "at": "Tue 11-17 05:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Retail Sales MoM",
+   "country": "united-states",
+   "at": "Tue 11-17 08:30",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Balance of Trade",
+   "country": "japan",
+   "at": "Tue 11-17 18:50",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY",
+   "country": "united-kingdom",
+   "at": "Wed 11-18 02:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "FOMC Minutes",
+   "country": "united-states",
+   "at": "Wed 11-18 14:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Xi-Trump-Putin Summit",
+   "country": "china",
+   "at": "Wed 11-18 19:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY",
+   "country": "japan",
+   "at": "Thu 11-19 18:30",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Retail Sales MoM",
+   "country": "united-kingdom",
+   "at": "Fri 11-20 02:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "NBS Manufacturing PMI",
+   "country": "china",
+   "at": "Sun 11-29 20:30",
+   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "slovakia",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Freedom and Democracy Day",
+   "country": "czech-republic",
+   "at": "2026-11-17 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Remembrance day",
+   "country": "croatia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "National Day",
+   "country": "oman",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "morocco",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "latvia",
+   "at": "2026-11-18 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Genghis Khan’s Birthday",
+   "country": "mongolia",
+   "at": "2026-11-21 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Independence Day",
+   "country": "lebanon",
+   "at": "2026-11-22 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "St. George's Day",
+   "country": "georgia",
+   "at": "2026-11-23 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Labour Thanksgiving Day",
+   "country": "japan",
+   "at": "2026-11-23 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Ill Full Moon Poya Day",
+   "country": "sri-lanka",
+   "at": "2026-11-24 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Statehood Day",
+   "country": "bosnia-and-herzegovina",
+   "at": "2026-11-25 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Republic Day",
+   "country": "mongolia",
+   "at": "2026-11-26 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Thanksgiving",
+   "country": "united-states",
+   "at": "2026-11-26 (all day)",
+   "rule": "Market holiday (used as a schedule flag, not content)",
+   "score": null
+  },
+  {
+   "name": "Independence Day from Spain",
+   "country": "panama",
+   "at": "2026-11-28 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  },
+  {
+   "name": "Liberation Day",
+   "country": "albania",
+   "at": "2026-11-29 (all day)",
+   "rule": "Market holiday outside major markets",
+   "score": null
+  }
+ ],
+ "drafts": [
+  {
+   "eventId": 398069,
+   "kind": "x_pre",
+   "text": "US Q3 GDP 2nd Est lands at 08:30 ET. Markets forecast growth at 3.5% vs 2.2% prior. Watch the US Dollar Index, $EURUSD, and the S&P 500 for volatility. Full analysis on FXEmpire.",
+   "raw": "US Q3 GDP 2nd Est lands at {time_et} ET. Markets forecast growth at {forecast} vs {previous} prior. Watch the US Dollar Index, $EURUSD, and the S&P 500 for volatility. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795608000000,
+   "slotAt": "Wed 11-25 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 398069,
+   "kind": "x_post",
+   "text": "US Q3 GDP came in at {actual}, {direction} the 3.5% forecast. The US Dollar Index and $EURUSD are on the move as traders evaluate economic momentum, with the S&P 500 reacting to shifting rate expectations.",
+   "raw": "US Q3 GDP came in at {actual}, {direction} the {forecast} forecast. The US Dollar Index and $EURUSD are on the move as traders evaluate economic momentum, with the S&P 500 reacting to shifting rate expectations.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795614000000,
+   "slotAt": "Wed 11-25 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 398069,
+   "kind": "video_script",
+   "text": "HOOK\nMajor US growth data is dropping today, and active traders need to be ready.\n[ON SCREEN: Tiger to camera, graphic headline US Q3 GDP]\n\nWHAT IT IS\nAt 08:30 ET, the second estimate for US Q3 GDP hits the tape. Markets are looking for 3.5%, following 2.2% in the initial reading.\n[ON SCREEN: Forecast 3.5% vs Previous 2.2%]\n\nWHY IT MATTERS\nThis release provides a crucial health check on the world's largest economy. That momentum directly drives the US Dollar Index, EUR/USD, and broad equity markets like the S&P 500.\n[ON SCREEN: US Dollar Index, EUR/USD, S&P 500 tickers]\n\nWHAT TO WATCH\nA print coming in above 3.5% could lift the greenback as traders scale back rate cut bets. On the flip side, a surprise drop below forecast could pressure the dollar, giving EUR/USD room to rally while stocks reassess growth risks.\n[ON SCREEN: Bullish Dollar vs Bearish Dollar scenarios]\n\nCLOSE\nFor complete market coverage, get the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and site link]",
+   "raw": "HOOK\nMajor US growth data is dropping today, and active traders need to be ready.\n[ON SCREEN: Tiger to camera, graphic headline US Q3 GDP]\n\nWHAT IT IS\nAt {time_et} ET, the second estimate for US Q3 GDP hits the tape. Markets are looking for {forecast}, following {previous} in the initial reading.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\n\nWHY IT MATTERS\nThis release provides a crucial health check on the world's largest economy. That momentum directly drives the US Dollar Index, EUR/USD, and broad equity markets like the S&P 500.\n[ON SCREEN: US Dollar Index, EUR/USD, S&P 500 tickers]\n\nWHAT TO WATCH\nA print coming in above {forecast} could lift the greenback as traders scale back rate cut bets. On the flip side, a surprise drop below forecast could pressure the dollar, giving EUR/USD room to rally while stocks reassess growth risks.\n[ON SCREEN: Bullish Dollar vs Bearish Dollar scenarios]\n\nCLOSE\nFor complete market coverage, get the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and site link]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795541400000,
+   "slotAt": "Tue 11-24 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_pre",
+   "text": "Germany Flash Manufacturing PMI lands at 03:30 ET for Nov. Consensus sits at 54.1 vs previous 54.2. A print below forecast could weigh on the euro, while a beat may offer support. Full analysis on FXEmpire. $EURUSD",
+   "raw": "Germany Flash Manufacturing PMI lands at {time_et} ET for {reference}. Consensus sits at {forecast} vs previous {previous}. A print below forecast could weigh on the euro, while a beat may offer support. Full analysis on FXEmpire. $EURUSD",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795399200000,
+   "slotAt": "Sun 11-22 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_post",
+   "text": "Germany Flash Manufacturing PMI came in at {actual} for Nov, {direction} the 54.1 forecast and vs 54.2 prior. Traders are tracking $EURUSD as the data could shift sentiment around European growth momentum.",
+   "raw": "Germany Flash Manufacturing PMI came in at {actual} for {reference}, {direction} the {forecast} forecast and vs {previous} prior. Traders are tracking $EURUSD as the data could shift sentiment around European growth momentum.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795435200000,
+   "slotAt": "Mon 11-23 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_pre",
+   "text": "UK S&P Global Services PMI Flash for Nov lands at 04:30 ET. Markets expect 53 against 52.8 previously. Sterling pairs like $GBPUSD and $EURGBP could see volatility if growth momentum shifts. Full analysis on FXEmpire.",
+   "raw": "UK S&P Global Services PMI Flash for {reference} lands at {time_et} ET. Markets expect {forecast} against {previous} previously. Sterling pairs like $GBPUSD and $EURGBP could see volatility if growth momentum shifts. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795399200000,
+   "slotAt": "Sun 11-22 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_post",
+   "text": "UK Services PMI Flash hit {actual} for Nov, coming in {direction} the forecast of 53. With previous at 52.8, traders will watch if $GBPUSD gains traction or if $EURGBP pushes higher on the surprise.",
+   "raw": "UK Services PMI Flash hit {actual} for {reference}, coming in {direction} the forecast of {forecast}. With previous at {previous}, traders will watch if $GBPUSD gains traction or if $EURGBP pushes higher on the surprise.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795435200000,
+   "slotAt": "Mon 11-23 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_pre",
+   "text": "Germany Ifo Business Climate is out at 04:00 ET. Markets forecast 90.8 for Nov, against 90.2 prior. Traders will watch $EURUSD for reactions to German economic sentiment. Full analysis on FXEmpire",
+   "raw": "Germany Ifo Business Climate is out at {time_et} ET. Markets forecast {forecast} for {reference}, against {previous} prior. Traders will watch $EURUSD for reactions to German economic sentiment. Full analysis on FXEmpire",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795485600000,
+   "slotAt": "Mon 11-23 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_post",
+   "text": "Germany Ifo Business Climate for Nov came in at {actual}, {direction} the 90.8 forecast and previous 90.2. The {direction}-consensus print could trigger fresh volatility in $EURUSD as markets adjust.",
+   "raw": "Germany Ifo Business Climate for {reference} came in at {actual}, {direction} the {forecast} forecast and previous {previous}. The {direction}-consensus print could trigger fresh volatility in $EURUSD as markets adjust.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795521600000,
+   "slotAt": "Tue 11-24 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402073,
+   "kind": "video_script",
+   "text": "HOOK\nGerman business sentiment is about to move currency markets.\n[ON SCREEN: Tiger to camera, graphic: Germany Ifo Business Climate]\n\nWHAT IT IS\nAt 04:00 ET, Germany releases the Ifo Business Climate index for Nov. The market forecast is 90.8, compared with 90.2 previously. This release tracks how German enterprises view current business conditions and the near-term outlook.\n[ON SCREEN: Forecast 90.8 vs Previous 90.2]\n\nWHY IT MATTERS\nGermany is the economic engine of the eurozone. A shift in corporate sentiment directly influences expectations for regional growth, making this release a key catalyst for EUR/USD traders.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against 90.8. A surprise above forecast could support EUR/USD on hopes of economic recovery. A print below expectations could weigh on the euro as growth concerns linger.\n[ON SCREEN: Bullish vs Bearish EUR/USD scenarios]\n\nCLOSE\nYou can find the full breakdown and live market analysis on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
+   "raw": "HOOK\nGerman business sentiment is about to move currency markets.\n[ON SCREEN: Tiger to camera, graphic: Germany Ifo Business Climate]\n\nWHAT IT IS\nAt {time_et} ET, Germany releases the Ifo Business Climate index for {reference}. The market forecast is {forecast}, compared with {previous} previously. This release tracks how German enterprises view current business conditions and the near-term outlook.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\n\nWHY IT MATTERS\nGermany is the economic engine of the eurozone. A shift in corporate sentiment directly influences expectations for regional growth, making this release a key catalyst for EUR/USD traders.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against {forecast}. A surprise above forecast could support EUR/USD on hopes of economic recovery. A print below expectations could weigh on the euro as growth concerns linger.\n[ON SCREEN: Bullish vs Bearish EUR/USD scenarios]\n\nCLOSE\nYou can find the full breakdown and live market analysis on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795438800000,
+   "slotAt": "Mon 11-23 08:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_pre",
+   "text": "Germany GfK Consumer Confidence for Dec drops at 02:00 ET. Consensus is -28.5 vs -30.8 previously. A surprise could move $EURUSD early in the European session. Full analysis on FXEmpire.",
+   "raw": "Germany GfK Consumer Confidence for {reference} drops at {time_et} ET. Consensus is {forecast} vs {previous} previously. A surprise could move $EURUSD early in the European session. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795658400000,
+   "slotAt": "Wed 11-25 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_post",
+   "text": "Germany GfK Consumer Confidence for Dec came in at {actual}, {direction} the forecast of -28.5 and vs -30.8 prior. Traders are watching $EURUSD as sentiment data sets the morning tone.",
+   "raw": "Germany GfK Consumer Confidence for {reference} came in at {actual}, {direction} the forecast of {forecast} and vs {previous} prior. Traders are watching $EURUSD as sentiment data sets the morning tone.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795694400000,
+   "slotAt": "Thu 11-26 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 402038,
+   "kind": "video_script",
+   "text": "HOOK\nIs German consumer sentiment finally turning the corner ahead of the new month?\n[ON SCREEN: Germany GfK Consumer Confidence / EUR/USD]\n\nWHAT IT IS\nGermany releases its GfK Consumer Confidence survey for Dec at 02:00 ET. Markets are looking for a print of -28.5, compared to -30.8 in the prior reading.\n[ON SCREEN: Forecast -28.5 vs Previous -30.8]\n\nWHY IT MATTERS\nGermany is the powerhouse of the eurozone. When German households feel cautious, consumer spending slows. Currency traders follow this closely because consumer sentiment can weigh on economic growth and steer pairs like EUR/USD.\n[ON SCREEN: EUR/USD Chart]\n\nWHAT TO WATCH\nA result coming in better than -28.5 could give EUR/USD a lift early in the session. But if the data misses, traders will watch for renewed pressure on the euro.\n[ON SCREEN: Scenarios: Above -28.5 vs Below -28.5]\n\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: Full analysis on FXEmpire]",
+   "raw": "HOOK\nIs German consumer sentiment finally turning the corner ahead of the new month?\n[ON SCREEN: Germany GfK Consumer Confidence / EUR/USD]\n\nWHAT IT IS\nGermany releases its GfK Consumer Confidence survey for {reference} at {time_et} ET. Markets are looking for a print of {forecast}, compared to {previous} in the prior reading.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\n\nWHY IT MATTERS\nGermany is the powerhouse of the eurozone. When German households feel cautious, consumer spending slows. Currency traders follow this closely because consumer sentiment can weigh on economic growth and steer pairs like EUR/USD.\n[ON SCREEN: EUR/USD Chart]\n\nWHAT TO WATCH\nA result coming in better than {forecast} could give EUR/USD a lift early in the session. But if the data misses, traders will watch for renewed pressure on the euro.\n[ON SCREEN: Scenarios: Above {forecast} vs Below {forecast}]\n\nCLOSE\nGet the full breakdown on FXEmpire.\n[ON SCREEN: Full analysis on FXEmpire]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795572000000,
+   "slotAt": "Tue 11-24 21:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
+   "eventId": 403212,
+   "kind": "x_pre",
+   "text": "France prelim YoY inflation for Nov is due at 02:45 ET. Consensus forecasts 3.8% against 3.4% previously. An upside surprise could impact $EURUSD rate expectations. Full analysis on FXEmpire",
+   "raw": "France prelim YoY inflation for {reference} is due at {time_et} ET. Consensus forecasts {forecast} against {previous} previously. An upside surprise could impact $EURUSD rate expectations. Full analysis on FXEmpire",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795744800000,
+   "slotAt": "Thu 11-26 21:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 403212,
+   "kind": "x_post",
+   "text": "France prelim YoY inflation for Nov came in at {actual}, {direction} expectations of 3.8% (prior: 3.4%). Traders are watching $EURUSD as markets digest the latest price pressure data.",
+   "raw": "France prelim YoY inflation for {reference} came in at {actual}, {direction} expectations of {forecast} (prior: {previous}). Traders are watching $EURUSD as markets digest the latest price pressure data.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [],
+   "slotMs": 1795780800000,
+   "slotAt": "Fri 11-27 07:00",
+   "channel": "X"
+  }
+ ],
+ "schedule": [
+  {
+   "eventId": 402073,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1795338000000,
+   "at": "Sun 11-22 04:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795399200000,
+   "at": "Sun 11-22 21:00",
+   "notes": [
+    "Moved from Mon 11-23 02:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795399200000,
+   "at": "Sun 11-22 21:00",
+   "notes": [
+    "Moved from Mon 11-23 03:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403581,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795435200000,
+   "at": "Mon 11-23 07:00",
+   "notes": [
+    "Moved from Mon 11-23 03:40 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 399782,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795435200000,
+   "at": "Mon 11-23 07:00",
+   "notes": [
+    "Moved from Mon 11-23 04:40 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402073,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795438800000,
+   "at": "Mon 11-23 08:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398069,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1795440600000,
+   "at": "Mon 11-23 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795485600000,
+   "at": "Mon 11-23 21:00",
+   "notes": [
+    "Moved from Tue 11-24 02:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1795503600000,
+   "at": "Tue 11-24 02:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402073,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795521600000,
+   "at": "Tue 11-24 07:00",
+   "notes": [
+    "Moved from Tue 11-24 04:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 398069,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795541400000,
+   "at": "Tue 11-24 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795572000000,
+   "at": "Tue 11-24 21:00",
+   "notes": [
+    "Moved from Wed 11-25 06:00 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 398069,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795608000000,
+   "at": "Wed 11-25 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 398069,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795614000000,
+   "at": "Wed 11-25 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795658400000,
+   "at": "Wed 11-25 21:00",
+   "notes": [
+    "Moved from Thu 11-26 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 402038,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795694400000,
+   "at": "Thu 11-26 07:00",
+   "notes": [
+    "Moved from Thu 11-26 02:10 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403212,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1795744800000,
+   "at": "Thu 11-26 21:00",
+   "notes": [
+    "Moved from Fri 11-27 01:15 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403212,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1795780800000,
+   "at": "Fri 11-27 07:00",
+   "notes": [
+    "Moved from Fri 11-27 02:55 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  }
+ ],
+ "log": [
+  "2026-11-21T17:57:20.604Z Calendar: 504 high-impact rows. Articles: 60",
+  "2026-11-21T17:57:20.606Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-21T17:57:20.720Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-21T17:57:20.720Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-21T17:57:34.399Z Using gemini: gemini-3.8-flash",
+  "2026-11-21T17:57:34.399Z Matched 0 events to articles. Releases missing from calendar: 0",
+  "2026-11-21T17:57:34.402Z Ranked 6. Posts: 6. Videos: 3",
+  "2026-11-21T17:57:34.404Z Reused earlier drafts for GDP Growth Rate QoQ 2nd Est (united-states), numbers re-filled and re-checked",
+  "2026-11-21T17:57:34.404Z Reused earlier drafts for S&P Global Manufacturing PMI Flash (germany), numbers re-filled and re-checked",
+  "2026-11-21T17:57:34.405Z Reused earlier drafts for S&P Global Services PMI Flash (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-21T17:58:16.141Z Reused earlier drafts for Inflation Rate YoY Prel (france), numbers re-filled and re-checked"
+ ]
+}
