@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-21T17:58:16.147Z",
- "now": "2026-11-21T17:57:11.876Z",
- "nowLabel": "Sat 11-21 12:57",
+ "runAt": "2026-11-22T18:30:06.119Z",
+ "now": "2026-11-22T18:29:22.008Z",
+ "nowLabel": "Sun 11-22 13:29",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -41,10 +41,18 @@
   "releases": 19,
   "holidays": 16,
   "inWindow": 6,
-  "articles": 60
+  "articles": 49
  },
  "flags": {
-  "missingReleases": [],
+  "missingReleases": [
+   {
+    "release": "US PCE",
+    "article_id": 1646337,
+    "evidence": "PCE in Focus",
+    "title": "The Week Ahead: PCE in Focus After AI Sell-Off in Holiday-Shortened Week",
+    "url": "https://www.fxempire.com/forecasts/article/the-week-ahead-pce-in-focus-after-ai-sell-off-in-holiday-shortened-week-1646337"
+   }
+  ],
   "holidays": [
    {
     "date": "2026-11-23",
@@ -276,7 +284,7 @@
     "Moves forex (+1)"
    ],
    "post": true,
-   "video": true,
+   "video": false,
    "sources": []
   },
   {
@@ -358,7 +366,7 @@
     "No listed instrument in a class this event moves (+0)"
    ],
    "post": true,
-   "video": false,
+   "video": true,
    "sources": []
   }
  ],
@@ -675,12 +683,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795485600000,
    "slotAt": "Mon 11-23 21:00",
    "channel": "X"
@@ -694,34 +697,10 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795521600000,
    "slotAt": "Tue 11-24 07:00",
    "channel": "X"
-  },
-  {
-   "eventId": 402073,
-   "kind": "video_script",
-   "text": "HOOK\nGerman business sentiment is about to move currency markets.\n[ON SCREEN: Tiger to camera, graphic: Germany Ifo Business Climate]\n\nWHAT IT IS\nAt 04:00 ET, Germany releases the Ifo Business Climate index for Nov. The market forecast is 90.8, compared with 90.2 previously. This release tracks how German enterprises view current business conditions and the near-term outlook.\n[ON SCREEN: Forecast 90.8 vs Previous 90.2]\n\nWHY IT MATTERS\nGermany is the economic engine of the eurozone. A shift in corporate sentiment directly influences expectations for regional growth, making this release a key catalyst for EUR/USD traders.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against 90.8. A surprise above forecast could support EUR/USD on hopes of economic recovery. A print below expectations could weigh on the euro as growth concerns linger.\n[ON SCREEN: Bullish vs Bearish EUR/USD scenarios]\n\nCLOSE\nYou can find the full breakdown and live market analysis on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
-   "raw": "HOOK\nGerman business sentiment is about to move currency markets.\n[ON SCREEN: Tiger to camera, graphic: Germany Ifo Business Climate]\n\nWHAT IT IS\nAt {time_et} ET, Germany releases the Ifo Business Climate index for {reference}. The market forecast is {forecast}, compared with {previous} previously. This release tracks how German enterprises view current business conditions and the near-term outlook.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\n\nWHY IT MATTERS\nGermany is the economic engine of the eurozone. A shift in corporate sentiment directly influences expectations for regional growth, making this release a key catalyst for EUR/USD traders.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against {forecast}. A surprise above forecast could support EUR/USD on hopes of economic recovery. A print below expectations could weigh on the euro as growth concerns linger.\n[ON SCREEN: Bullish vs Bearish EUR/USD scenarios]\n\nCLOSE\nYou can find the full breakdown and live market analysis on FXEmpire.\n[ON SCREEN: FXEmpire logo and website]",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
-   "slotMs": 1795438800000,
-   "slotAt": "Mon 11-23 08:00",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts"
   },
   {
    "eventId": 402038,
@@ -732,12 +711,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795658400000,
    "slotAt": "Wed 11-25 21:00",
    "channel": "X"
@@ -751,12 +725,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795694400000,
    "slotAt": "Thu 11-26 07:00",
    "channel": "X"
@@ -770,12 +739,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1795572000000,
    "slotAt": "Tue 11-24 21:00",
    "channel": "TikTok / Instagram Reels / YouTube Shorts"
@@ -783,13 +747,18 @@
   {
    "eventId": 403212,
    "kind": "x_pre",
-   "text": "France prelim YoY inflation for Nov is due at 02:45 ET. Consensus forecasts 3.8% against 3.4% previously. An upside surprise could impact $EURUSD rate expectations. Full analysis on FXEmpire",
-   "raw": "France prelim YoY inflation for {reference} is due at {time_et} ET. Consensus forecasts {forecast} against {previous} previously. An upside surprise could impact $EURUSD rate expectations. Full analysis on FXEmpire",
+   "text": "France preliminary inflation for Nov lands at 02:45 ET. Markets forecast 3.8%, compared to 3.4% previously. A surprise here could shake euro pairs before broader eurozone data. Full analysis on FXEmpire. $EURUSD",
+   "raw": "France preliminary inflation for {reference} lands at {time_et} ET. Markets forecast {forecast}, compared to {previous} previously. A surprise here could shake euro pairs before broader eurozone data. Full analysis on FXEmpire. $EURUSD",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795744800000,
    "slotAt": "Thu 11-26 21:00",
    "channel": "X"
@@ -797,28 +766,43 @@
   {
    "eventId": 403212,
    "kind": "x_post",
-   "text": "France prelim YoY inflation for Nov came in at {actual}, {direction} expectations of 3.8% (prior: 3.4%). Traders are watching $EURUSD as markets digest the latest price pressure data.",
-   "raw": "France prelim YoY inflation for {reference} came in at {actual}, {direction} expectations of {forecast} (prior: {previous}). Traders are watching $EURUSD as markets digest the latest price pressure data.",
+   "text": "France Nov prelim inflation came in {direction} expectations at {actual} versus 3.8% forecast and 3.4% prior. Euro traders are watching how this print could shift ECB rate expectations. $EURUSD",
+   "raw": "France {reference} prelim inflation came in {direction} expectations at {actual} versus {forecast} forecast and {previous} prior. Euro traders are watching how this print could shift ECB rate expectations. $EURUSD",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
    "slotMs": 1795780800000,
    "slotAt": "Fri 11-27 07:00",
    "channel": "X"
+  },
+  {
+   "eventId": 403212,
+   "kind": "video_script",
+   "text": "HOOK\nEuro traders, French inflation data is about to drop.\n[ON SCREEN: France Inflation / EURUSD ticker]\n\nWHAT IT IS\nAt 02:45 ET, France releases its preliminary year-over-year inflation rate for Nov. Markets are looking for 3.8%, compared to 3.4% in the prior reading.\n[ON SCREEN: Forecast 3.8% vs Previous 3.4%]\n\nWHY IT MATTERS\nFrance is the second-largest economy in the eurozone. Its price pressures give an early signal for European Central Bank policy. Euro pairs often move quickly as traders adjust their rate expectations.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against estimates. If inflation prints above 3.8%, the euro could gain ground on bets of tighter policy. A figure below expectations could pressure the currency if markets look toward easing.\n[ON SCREEN: Up arrow above 3.8% / Down arrow below]\n\nCLOSE\nGet the full analysis and live updates on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "raw": "HOOK\nEuro traders, French inflation data is about to drop.\n[ON SCREEN: France Inflation / EURUSD ticker]\n\nWHAT IT IS\nAt {time_et} ET, France releases its preliminary year-over-year inflation rate for {reference}. Markets are looking for {forecast}, compared to {previous} in the prior reading.\n[ON SCREEN: Forecast {forecast} vs Previous {previous}]\n\nWHY IT MATTERS\nFrance is the second-largest economy in the eurozone. Its price pressures give an early signal for European Central Bank policy. Euro pairs often move quickly as traders adjust their rate expectations.\n[ON SCREEN: EUR/USD chart]\n\nWHAT TO WATCH\nTraders will watch the gap against estimates. If inflation prints above {forecast}, the euro could gain ground on bets of tighter policy. A figure below expectations could pressure the currency if markets look toward easing.\n[ON SCREEN: Up arrow above {forecast} / Down arrow below]\n\nCLOSE\nGet the full analysis and live updates on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1795658400000,
+   "slotAt": "Wed 11-25 21:00",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
   }
  ],
  "schedule": [
-  {
-   "eventId": 402073,
-   "kind": "record_by",
-   "channel": "Tiger (recording)",
-   "ms": 1795338000000,
-   "at": "Sun 11-22 04:00",
-   "notes": [],
-   "passed": false
-  },
   {
    "eventId": 403581,
    "kind": "x_pre",
@@ -861,15 +845,6 @@
    "notes": [
     "Moved from Mon 11-23 04:40 to stay inside 07:00-21:00 ET"
    ],
-   "passed": false
-  },
-  {
-   "eventId": 402073,
-   "kind": "video",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts",
-   "ms": 1795438800000,
-   "at": "Mon 11-23 08:00",
-   "notes": [],
    "passed": false
   },
   {
@@ -933,6 +908,15 @@
    "passed": false
   },
   {
+   "eventId": 403212,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1795592700000,
+   "at": "Wed 11-25 02:45",
+   "notes": [],
+   "passed": false
+  },
+  {
    "eventId": 398069,
    "kind": "x_pre",
    "channel": "X",
@@ -958,6 +942,17 @@
    "at": "Wed 11-25 21:00",
    "notes": [
     "Moved from Thu 11-26 00:30 to stay inside 07:00-21:00 ET"
+   ],
+   "passed": false
+  },
+  {
+   "eventId": 403212,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1795658400000,
+   "at": "Wed 11-25 21:00",
+   "notes": [
+    "Moved from Thu 11-26 06:45 to stay inside 07:00-21:00 ET"
    ],
    "passed": false
   },
@@ -996,16 +991,17 @@
   }
  ],
  "log": [
-  "2026-11-21T17:57:20.604Z Calendar: 504 high-impact rows. Articles: 60",
-  "2026-11-21T17:57:20.606Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
-  "2026-11-21T17:57:20.720Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-21T17:57:20.720Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-21T17:57:34.399Z Using gemini: gemini-3.8-flash",
-  "2026-11-21T17:57:34.399Z Matched 0 events to articles. Releases missing from calendar: 0",
-  "2026-11-21T17:57:34.402Z Ranked 6. Posts: 6. Videos: 3",
-  "2026-11-21T17:57:34.404Z Reused earlier drafts for GDP Growth Rate QoQ 2nd Est (united-states), numbers re-filled and re-checked",
-  "2026-11-21T17:57:34.404Z Reused earlier drafts for S&P Global Manufacturing PMI Flash (germany), numbers re-filled and re-checked",
-  "2026-11-21T17:57:34.405Z Reused earlier drafts for S&P Global Services PMI Flash (united-kingdom), numbers re-filled and re-checked",
-  "2026-11-21T17:58:16.141Z Reused earlier drafts for Inflation Rate YoY Prel (france), numbers re-filled and re-checked"
+  "2026-11-22T18:29:31.126Z Calendar: 504 high-impact rows. Articles: 60",
+  "2026-11-22T18:29:31.127Z Releases: 19. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-22T18:29:31.282Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-22T18:29:31.282Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-22T18:29:48.017Z Using gemini: gemini-3.8-flash",
+  "2026-11-22T18:29:48.017Z Matched 0 events to articles. Releases missing from calendar: 1",
+  "2026-11-22T18:29:48.020Z Ranked 6. Posts: 6. Videos: 3",
+  "2026-11-22T18:29:48.021Z Reused earlier drafts for GDP Growth Rate QoQ 2nd Est (united-states), numbers re-filled and re-checked",
+  "2026-11-22T18:29:48.021Z Reused earlier drafts for S&P Global Manufacturing PMI Flash (germany), numbers re-filled and re-checked",
+  "2026-11-22T18:29:48.021Z Reused earlier drafts for S&P Global Services PMI Flash (united-kingdom), numbers re-filled and re-checked",
+  "2026-11-22T18:29:48.022Z Reused earlier drafts for Ifo Business Climate (germany), numbers re-filled and re-checked",
+  "2026-11-22T18:29:48.022Z Reused earlier drafts for GfK Consumer Confidence (germany), numbers re-filled and re-checked"
  ]
 }
