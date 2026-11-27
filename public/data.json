@@ -1,7 +1,7 @@
 {
- "runAt": "2026-11-26T20:10:45.671Z",
- "now": "2026-11-26T20:09:51.406Z",
- "nowLabel": "Thu 11-26 15:09",
+ "runAt": "2026-11-27T19:58:59.108Z",
+ "now": "2026-11-27T19:56:33.689Z",
+ "nowLabel": "Fri 11-27 14:56",
  "mode": "live: FXEmpire API + gemini/gemini-3.8-flash",
  "timezone": "America/New_York",
  "config": {
@@ -40,31 +40,17 @@
   "rawRows": 510,
   "releases": 22,
   "holidays": 16,
-  "inWindow": 14,
-  "articles": 60
+  "inWindow": 17,
+  "articles": 61
  },
  "flags": {
   "missingReleases": [
    {
-    "release": "US PCE Inflation",
-    "article_id": 1647087,
-    "evidence": "PCE Inflation Forecast Puts Fed Rate Outlook in Focus",
-    "title": "Nasdaq 100 and S&P500: PCE Inflation Forecast Puts Fed Rate Outlook in Focus",
-    "url": "https://www.fxempire.com/forecasts/article/nasdaq-100-and-sp500-pce-inflation-forecast-puts-fed-rate-outlook-in-focus-1647087"
-   },
-   {
-    "release": "US PCE Price Index",
-    "article_id": 1647429,
-    "evidence": "Hot PCE Keeps Fed Hikes in Play",
-    "title": "Gold (XAUUSD) & Silver Price Forecast: Hot PCE Keeps Fed Hikes in Play, Can $3,595 Hold?",
-    "url": "https://www.fxempire.com/forecasts/article/gold-xauusd-silver-price-forecast-hot-pce-keeps-fed-hikes-in-play-can-3595-hold-1647429"
-   },
-   {
-    "release": "US PCE Price Index",
-    "article_id": 1647073,
-    "evidence": "Dollar Steadies Before PCE",
-    "title": "US Dollar Price Forecast: Dollar Steadies Before PCE, DXY Holds 103.80 as EUR/USD, GBP/USD Stall Below Pivots",
-    "url": "https://www.fxempire.com/forecasts/article/us-dollar-price-forecast-dollar-steadies-before-pce-dxy-holds-103-80-as-eur-usd-gbp-usd-stall-below-pivots-1647073"
+    "release": "US Jobs Report",
+    "article_id": 1647835,
+    "evidence": "US Jobs Data",
+    "title": "Gold Weekly Price Forecast: $3,500 Support Faces a Test from US Jobs Data",
+    "url": "https://www.fxempire.com/forecasts/article/gold-weekly-price-forecast-3500-support-faces-a-test-from-us-jobs-data-1647835"
    }
   ],
   "holidays": [
@@ -83,6 +69,61 @@
   ]
  },
  "ranked": [
+  {
+   "id": 397490,
+   "name": "Unemployment Rate",
+   "alsoReleased": [
+    "Non Farm Payrolls"
+   ],
+   "components": [
+    {
+     "name": "Unemployment Rate",
+     "forecast": "4.1%",
+     "previous": "4.1%",
+     "actual": null,
+     "reference": "Nov"
+    },
+    {
+     "name": "Non Farm Payrolls",
+     "forecast": "90K",
+     "previous": "165K",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Nov",
+   "at": "Fri 12-04 08:30",
+   "ms": 1796391000000,
+   "forecast": "4.1%",
+   "previous": "4.1%",
+   "actual": null,
+   "rank": 1,
+   "score": 4,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 2
+   },
+   "tier": 2,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD",
+    "S&P 500"
+   ],
+   "assetClasses": [
+    "forex",
+    "stocks"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "US release (+2)",
+    "Moves forex, stocks (+2)"
+   ],
+   "post": true,
+   "video": true,
+   "sources": []
+  },
   {
    "id": 402193,
    "name": "Inflation Rate YoY Prel",
@@ -103,7 +144,7 @@
    "forecast": "3.0%",
    "previous": "2.8%",
    "actual": null,
-   "rank": 1,
+   "rank": 2,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -148,7 +189,7 @@
    "forecast": "3.9%",
    "previous": "4%",
    "actual": null,
-   "rank": 2,
+   "rank": 3,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -202,7 +243,7 @@
    "forecast": "55.2",
    "previous": "55.5",
    "actual": null,
-   "rank": 3,
+   "rank": 4,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -223,7 +264,7 @@
     "Moves forex (+1)"
    ],
    "post": true,
-   "video": true,
+   "video": false,
    "sources": []
   },
   {
@@ -246,7 +287,51 @@
    "forecast": "54.5",
    "previous": "54.5",
    "actual": null,
-   "rank": 4,
+   "rank": 5,
+   "score": 3,
+   "parts": {
+    "coverage": 0,
+    "currency": 2,
+    "breadth": 1
+   },
+   "tier": 1,
+   "instruments": [
+    "US Dollar Index",
+    "EUR/USD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "US release (+2)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 397588,
+   "name": "Michigan Consumer Sentiment Prel",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Michigan Consumer Sentiment Prel",
+     "forecast": "51.8",
+     "previous": "51.5",
+     "actual": null,
+     "reference": "Dec"
+    }
+   ],
+   "country": "united-states",
+   "reference": "Dec",
+   "at": "Fri 12-04 10:00",
+   "ms": 1796396400000,
+   "forecast": "51.8",
+   "previous": "51.5",
+   "actual": null,
+   "rank": 6,
    "score": 3,
    "parts": {
     "coverage": 0,
@@ -299,7 +384,50 @@
    "forecast": "0.3%",
    "previous": "0.8%",
    "actual": null,
-   "rank": 5,
+   "rank": 7,
+   "score": 2,
+   "parts": {
+    "coverage": 0,
+    "currency": 1,
+    "breadth": 1
+   },
+   "tier": 2,
+   "instruments": [
+    "USD/CAD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
+   "why": [
+    "No FXEmpire article yet",
+    "Canada release (+1)",
+    "Moves forex (+1)"
+   ],
+   "post": true,
+   "video": false,
+   "sources": []
+  },
+  {
+   "id": 409786,
+   "name": "Unemployment Rate",
+   "alsoReleased": [],
+   "components": [
+    {
+     "name": "Unemployment Rate",
+     "forecast": "6.7%",
+     "previous": "6.7%",
+     "actual": null,
+     "reference": "Nov"
+    }
+   ],
+   "country": "canada",
+   "reference": "Nov",
+   "at": "Fri 12-04 08:30",
+   "ms": 1796391000000,
+   "forecast": "6.7%",
+   "previous": "6.7%",
+   "actual": null,
+   "rank": 8,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -342,7 +470,7 @@
    "forecast": "35.3",
    "previous": "35.0",
    "actual": null,
-   "rank": 6,
+   "rank": 9,
    "score": 2,
    "parts": {
     "coverage": 0,
@@ -361,46 +489,50 @@
     "Japan release (+1)",
     "Moves forex (+1)"
    ],
-   "post": true,
+   "post": false,
    "video": false,
    "sources": []
   },
   {
-   "id": 403212,
-   "name": "Inflation Rate YoY Prel",
+   "id": 411414,
+   "name": "Ivey PMI s.a",
    "alsoReleased": [],
    "components": [
     {
-     "name": "Inflation Rate YoY Prel",
-     "forecast": "3.2%",
-     "previous": "3.4%",
+     "name": "Ivey PMI s.a",
+     "forecast": "58.5",
+     "previous": "58.3",
      "actual": null,
      "reference": "Nov"
     }
    ],
-   "country": "france",
+   "country": "canada",
    "reference": "Nov",
-   "at": "Fri 11-27 02:45",
-   "ms": 1795765500000,
-   "forecast": "3.2%",
-   "previous": "3.4%",
+   "at": "Fri 12-04 10:00",
+   "ms": 1796396400000,
+   "forecast": "58.5",
+   "previous": "58.3",
    "actual": null,
-   "rank": 7,
-   "score": 1,
+   "rank": 10,
+   "score": 2,
    "parts": {
     "coverage": 0,
     "currency": 1,
-    "breadth": 0
+    "breadth": 1
    },
-   "tier": 2,
-   "instruments": [],
-   "assetClasses": [],
+   "tier": 1,
+   "instruments": [
+    "USD/CAD"
+   ],
+   "assetClasses": [
+    "forex"
+   ],
    "why": [
     "No FXEmpire article yet",
-    "France release (+1)",
-    "No listed instrument in a class this event moves (+0)"
+    "Canada release (+1)",
+    "Moves forex (+1)"
    ],
-   "post": true,
+   "post": false,
    "video": false,
    "sources": []
   },
@@ -424,7 +556,7 @@
    "forecast": "5.3%",
    "previous": "5.5%",
    "actual": null,
-   "rank": 8,
+   "rank": 11,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -439,7 +571,7 @@
     "Italy release (+1)",
     "No listed instrument in a class this event moves (+0)"
    ],
-   "post": true,
+   "post": false,
    "video": false,
    "sources": []
   },
@@ -463,7 +595,7 @@
    "forecast": "0.5%",
    "previous": "0.4%",
    "actual": null,
-   "rank": 9,
+   "rank": 12,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -506,7 +638,7 @@
    "forecast": "49.5",
    "previous": "49.3",
    "actual": null,
-   "rank": 10,
+   "rank": 13,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -549,7 +681,7 @@
    "forecast": "52.3",
    "previous": "52.0",
    "actual": null,
-   "rank": 11,
+   "rank": 14,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -592,7 +724,7 @@
    "forecast": "A$2.2B",
    "previous": "A$2.826B",
    "actual": null,
-   "rank": 12,
+   "rank": 15,
    "score": 1,
    "parts": {
     "coverage": 0,
@@ -635,7 +767,7 @@
    "forecast": "7.6%",
    "previous": "7.8%",
    "actual": null,
-   "rank": 13,
+   "rank": 16,
    "score": 0,
    "parts": {
     "coverage": 0,
@@ -688,70 +820,70 @@
    "name": "GfK Consumer Confidence",
    "country": "germany",
    "at": "Thu 11-26 02:00",
+   "rule": "Already happened (over 24 hours ago) - too late to post",
+   "score": null
+  },
+  {
+   "name": "Inflation Rate YoY Prel",
+   "country": "france",
+   "at": "Fri 11-27 02:45",
    "rule": "Already happened, and the after-release post time has passed - nothing left to post",
    "score": null
   },
   {
-   "name": "Unemployment Rate",
-   "country": "united-states",
-   "at": "Fri 12-04 08:30",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
-   "score": null
-  },
-  {
-   "name": "Unemployment Rate",
-   "country": "canada",
-   "at": "Fri 12-04 08:30",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
-   "score": null
-  },
-  {
-   "name": "Michigan Consumer Sentiment Prel",
-   "country": "united-states",
-   "at": "Fri 12-04 10:00",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
-   "score": null
+   "name": "Consumer Confidence",
+   "country": "japan",
+   "at": "Wed 12-02 00:00",
+   "rule": "Ranked #9, below the top 8",
+   "score": 2
   },
   {
    "name": "Ivey PMI s.a",
    "country": "canada",
    "at": "Fri 12-04 10:00",
-   "rule": "Too far ahead (over 7 days away) - a later run will cover it",
-   "score": null
+   "rule": "Ranked #10, below the top 8",
+   "score": 2
+  },
+  {
+   "name": "Inflation Rate YoY Prel",
+   "country": "italy",
+   "at": "Mon 11-30 05:00",
+   "rule": "Ranked #11, below the top 8",
+   "score": 1
   },
   {
    "name": "GDP Growth Rate QoQ",
    "country": "australia",
    "at": "Tue 12-01 19:30",
-   "rule": "Ranked #9, below the top 8",
+   "rule": "Ranked #12, below the top 8",
    "score": 1
   },
   {
    "name": "NBS Manufacturing PMI",
    "country": "china",
    "at": "Sun 11-29 20:30",
-   "rule": "Ranked #10, below the top 8",
+   "rule": "Ranked #13, below the top 8",
    "score": 1
   },
   {
    "name": "RatingDog Manufacturing PMI",
    "country": "china",
    "at": "Mon 11-30 20:45",
-   "rule": "Ranked #11, below the top 8",
+   "rule": "Ranked #14, below the top 8",
    "score": 1
   },
   {
    "name": "Balance of Trade",
    "country": "australia",
    "at": "Wed 12-02 19:30",
-   "rule": "Ranked #12, below the top 8",
+   "rule": "Ranked #15, below the top 8",
    "score": 1
   },
   {
    "name": "GDP Growth Rate YoY",
    "country": "india",
    "at": "Mon 11-30 05:30",
-   "rule": "Ranked #13, below the top 8",
+   "rule": "Ranked #16, below the top 8",
    "score": 0
   },
   {
@@ -869,6 +1001,63 @@
  ],
  "drafts": [
   {
+   "eventId": 397490,
+   "kind": "x_pre",
+   "text": "US Unemployment Rate for Nov drops at 08:30 ET. Consensus sees 4.1%, matching the previous 4.1%. Watch $EURUSD and the US Dollar Index for fast volatility if the labor market prints a surprise. Full analysis on FXEmpire.",
+   "raw": "US Unemployment Rate for {reference} drops at {time_et} ET. Consensus sees {forecast}, matching the previous {previous}. Watch $EURUSD and the US Dollar Index for fast volatility if the labor market prints a surprise. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796385600000,
+   "slotAt": "Fri 12-04 07:00",
+   "channel": "X"
+  },
+  {
+   "eventId": 397490,
+   "kind": "x_post",
+   "text": "US Unemployment Rate for Nov came in at {actual}, {direction} expectations of 4.1% (previous: 4.1%). A print {direction} forecast could drive sharp repricing across the US Dollar Index, $EURUSD, and the S&P 500.",
+   "raw": "US Unemployment Rate for {reference} came in at {actual}, {direction} expectations of {forecast} (previous: {previous}). A print {direction} forecast could drive sharp repricing across the US Dollar Index, $EURUSD, and the S&P 500.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796391600000,
+   "slotAt": "Fri 12-04 08:40",
+   "channel": "X"
+  },
+  {
+   "eventId": 397490,
+   "kind": "video_script",
+   "text": "HOOK\nBig volatility is heading to the dollar and stocks this morning.\n[ON SCREEN: Fast-moving US Dollar Index chart]\n\nWHAT IT IS\nThe US Unemployment Rate for Nov drops at 08:30 ET. Markets expect 4.1%, unchanged from 4.1%.\n[ON SCREEN: Text \"US Unemployment: Forecast 4.1% vs Previous 4.1%\"]\n\nWHY IT MATTERS\nThe Federal Reserve is watching the labor market closely to steer interest rates. That makes this print critical for the US Dollar Index, EUR/USD, and the S&P 500.\n[ON SCREEN: Split screen showing EUR/USD and S&P 500 tickers]\n\nWHAT TO WATCH\nIf unemployment prints above 4.1%, it signals cooling employment conditions. That could weigh on the greenback and lift equity sentiment on rate-cut bets. But if the rate drops below 4.1%, showing unexpected labor resilience, traders will watch for dollar strength and renewed pressure across major equities.\n[ON SCREEN: \"Above 4.1% = Dollar pressure / Below 4.1% = Dollar strength\"]\n\nCLOSE\nFor live reaction and daily setups, get the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website URL]",
+   "raw": "HOOK\nBig volatility is heading to the dollar and stocks this morning.\n[ON SCREEN: Fast-moving US Dollar Index chart]\n\nWHAT IT IS\nThe US Unemployment Rate for {reference} drops at {time_et} ET. Markets expect {forecast}, unchanged from {previous}.\n[ON SCREEN: Text \"US Unemployment: Forecast {forecast} vs Previous {previous}\"]\n\nWHY IT MATTERS\nThe Federal Reserve is watching the labor market closely to steer interest rates. That makes this print critical for the US Dollar Index, EUR/USD, and the S&P 500.\n[ON SCREEN: Split screen showing EUR/USD and S&P 500 tickers]\n\nWHAT TO WATCH\nIf unemployment prints above {forecast}, it signals cooling employment conditions. That could weigh on the greenback and lift equity sentiment on rate-cut bets. But if the rate drops below {forecast}, showing unexpected labor resilience, traders will watch for dollar strength and renewed pressure across major equities.\n[ON SCREEN: \"Above {forecast} = Dollar pressure / Below {forecast} = Dollar strength\"]\n\nCLOSE\nFor live reaction and daily setups, get the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo and website URL]",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796319000000,
+   "slotAt": "Thu 12-03 12:30",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts"
+  },
+  {
    "eventId": 402193,
    "kind": "x_pre",
    "text": "Germany prelim inflation for Nov drops at 08:00 ET. Forecast sits at 3.0% versus 2.8% previously. A surprise could shake up $EURUSD and the #DAX. Full analysis on FXEmpire.",
@@ -981,20 +1170,6 @@
    "channel": "X"
   },
   {
-   "eventId": 397438,
-   "kind": "video_script",
-   "text": "HOOK\nFactory data is about to cross the tape, and forex traders need to pay close attention right now.\n[ON SCREEN: Fast-moving charts of US Dollar Index and EUR/USD]\nWHAT IT IS\nThe US ISM Manufacturing PMI for Nov drops at 10:00 ET. Markets are looking for 55.2, compared to 55.5 last month.\n[ON SCREEN: Graphic displaying \"ISM Manufacturing PMI - Forecast 55.2 vs Prev 55.5\"]\nWHY IT MATTERS\nThis report gauges overall American factory health and shapes market expectations around growth. That means we could see immediate volatility across the US Dollar Index and EUR/USD the second the figures hit.\n[ON SCREEN: Split screen EUR/USD and DXY tick charts]\nWHAT TO WATCH\nWatch for a surprise against consensus. A print above 55.2 could support the greenback and pull EUR/USD lower. If data falls below 55.2, the US dollar could slide on cooling economic momentum.\n[ON SCREEN: Text overlay \"Above 55.2: USD strength | Below 55.2: USD weakness\"]\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
-   "raw": "HOOK\nFactory data is about to cross the tape, and forex traders need to pay close attention right now.\n[ON SCREEN: Fast-moving charts of US Dollar Index and EUR/USD]\nWHAT IT IS\nThe US ISM Manufacturing PMI for {reference} drops at {time_et} ET. Markets are looking for {forecast}, compared to {previous} last month.\n[ON SCREEN: Graphic displaying \"ISM Manufacturing PMI - Forecast {forecast} vs Prev {previous}\"]\nWHY IT MATTERS\nThis report gauges overall American factory health and shapes market expectations around growth. That means we could see immediate volatility across the US Dollar Index and EUR/USD the second the figures hit.\n[ON SCREEN: Split screen EUR/USD and DXY tick charts]\nWHAT TO WATCH\nWatch for a surprise against consensus. A print above {forecast} could support the greenback and pull EUR/USD lower. If data falls below {forecast}, the US dollar could slide on cooling economic momentum.\n[ON SCREEN: Text overlay \"Above {forecast}: USD strength | Below {forecast}: USD weakness\"]\nCLOSE\nCheck out the full breakdown on FXEmpire.\n[ON SCREEN: FXEmpire logo]",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1796065200000,
-   "slotAt": "Mon 11-30 14:00",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts"
-  },
-  {
    "eventId": 397478,
    "kind": "x_pre",
    "text": "US ISM Services PMI (Nov) drops at 10:00 ET. Consensus is 54.5. A surprise could drive volatility across the US Dollar Index and $EURUSD as traders gauge economic momentum. Full analysis on FXEmpire.",
@@ -1003,12 +1178,7 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [
-    {
-     "attempt": 1,
-     "problems": []
-    }
-   ],
+   "attempts": [],
    "slotMs": 1796304600000,
    "slotAt": "Thu 12-03 08:30",
    "channel": "X"
@@ -1022,14 +1192,47 @@
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
+   "attempts": [],
+   "slotMs": 1796310600000,
+   "slotAt": "Thu 12-03 10:10",
+   "channel": "X"
+  },
+  {
+   "eventId": 397588,
+   "kind": "x_pre",
+   "text": "US Michigan Consumer Sentiment Prel (Dec) drops at 10:00 ET. Consensus stands at 51.8 vs 51.5 prior. A surprise could shift the US Dollar Index and $EURUSD as traders assess consumer confidence. Full analysis on FXEmpire.",
+   "raw": "US Michigan Consumer Sentiment Prel ({reference}) drops at {time_et} ET. Consensus stands at {forecast} vs {previous} prior. A surprise could shift the US Dollar Index and $EURUSD as traders assess consumer confidence. Full analysis on FXEmpire.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "ready_for_review",
+   "sources": [],
    "attempts": [
     {
      "attempt": 1,
      "problems": []
     }
    ],
-   "slotMs": 1796310600000,
-   "slotAt": "Thu 12-03 10:10",
+   "slotMs": 1796391000000,
+   "slotAt": "Fri 12-04 08:30",
+   "channel": "X"
+  },
+  {
+   "eventId": 397588,
+   "kind": "x_post",
+   "text": "US Michigan Consumer Sentiment Prel (Dec) came in at {actual}, {direction} the 51.8 forecast. Traders will watch for immediate reactions across the US Dollar Index and $EURUSD as markets adjust to the data.",
+   "raw": "US Michigan Consumer Sentiment Prel ({reference}) came in at {actual}, {direction} the {forecast} forecast. Traders will watch for immediate reactions across the US Dollar Index and $EURUSD as markets adjust to the data.",
+   "issues": [],
+   "model": "gemini/gemini-3.8-flash",
+   "status": "waiting_for_actual",
+   "sources": [],
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796397000000,
+   "slotAt": "Fri 12-04 10:10",
    "channel": "X"
   },
   {
@@ -1061,113 +1264,45 @@
    "channel": "X"
   },
   {
-   "eventId": 402380,
+   "eventId": 409786,
    "kind": "x_pre",
-   "text": "Japan Consumer Confidence for Nov is due at 00:00 ET, with consensus at 35.3. A beat could support the yen, while a soft print could lift $USDJPY if rate expectations ease. Full analysis on FXEmpire.",
-   "raw": "Japan Consumer Confidence for {reference} is due at {time_et} ET, with consensus at {forecast}. A beat could support the yen, while a soft print could lift $USDJPY if rate expectations ease. Full analysis on FXEmpire.",
+   "text": "Canada Unemployment Rate for Nov is out at 08:30 ET. Consensus is 6.7% (prior: 6.7%). Any deviation could shift labor market expectations and drive $USDCAD volatility. Full analysis on FXEmpire.",
+   "raw": "Canada Unemployment Rate for {reference} is out at {time_et} ET. Consensus is {forecast} (prior: {previous}). Any deviation could shift labor market expectations and drive $USDCAD volatility. Full analysis on FXEmpire.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "ready_for_review",
    "sources": [],
-   "attempts": [],
-   "slotMs": 1796176800000,
-   "slotAt": "Tue 12-01 21:00",
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796385600000,
+   "slotAt": "Fri 12-04 07:00",
    "channel": "X"
   },
   {
-   "eventId": 402380,
+   "eventId": 409786,
    "kind": "x_post",
-   "text": "Japan Consumer Confidence for Nov arrived at {actual}, {direction} the forecast of 35.3. Traders will watch how the sentiment data impacts BoJ rate outlooks and drives $USDJPY.",
-   "raw": "Japan Consumer Confidence for {reference} arrived at {actual}, {direction} the forecast of {forecast}. Traders will watch how the sentiment data impacts BoJ rate outlooks and drives $USDJPY.",
+   "text": "Canada Nov Unemployment Rate came in at {actual}, {direction} the 6.7% forecast (prior: 6.7%). The result could impact Bank of Canada rate expectations, driving immediate reaction in $USDCAD.",
+   "raw": "Canada {reference} Unemployment Rate came in at {actual}, {direction} the {forecast} forecast (prior: {previous}). The result could impact Bank of Canada rate expectations, driving immediate reaction in $USDCAD.",
    "issues": [],
    "model": "gemini/gemini-3.8-flash",
    "status": "waiting_for_actual",
    "sources": [],
-   "attempts": [],
-   "slotMs": 1796212800000,
-   "slotAt": "Wed 12-02 07:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 403212,
-   "kind": "x_pre",
-   "text": "France preliminary inflation for Nov lands at 02:45 ET. Markets forecast 3.2%, compared to 3.4% previously. A surprise here could shake euro pairs before broader eurozone data. Full analysis on FXEmpire. $EURUSD",
-   "raw": "France preliminary inflation for {reference} lands at {time_et} ET. Markets forecast {forecast}, compared to {previous} previously. A surprise here could shake euro pairs before broader eurozone data. Full analysis on FXEmpire. $EURUSD",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1795744800000,
-   "slotAt": "Thu 11-26 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 403212,
-   "kind": "x_post",
-   "text": "France Nov prelim inflation came in {direction} expectations at {actual} versus 3.2% forecast and 3.4% prior. Euro traders are watching how this print could shift ECB rate expectations. $EURUSD",
-   "raw": "France {reference} prelim inflation came in {direction} expectations at {actual} versus {forecast} forecast and {previous} prior. Euro traders are watching how this print could shift ECB rate expectations. $EURUSD",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "waiting_for_actual",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1795780800000,
-   "slotAt": "Fri 11-27 07:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 412515,
-   "kind": "x_pre",
-   "text": "Italy Nov preliminary inflation is due at 05:00 ET. Traders will watch for price trends that could offer hints about the next ECB rate move. $EURUSD full analysis on FXEmpire",
-   "raw": "Italy {reference} preliminary inflation is due at {time_et} ET. Traders will watch for price trends that could offer hints about the next ECB rate move. $EURUSD full analysis on FXEmpire",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1796004000000,
-   "slotAt": "Sun 11-29 21:00",
-   "channel": "X"
-  },
-  {
-   "eventId": 412515,
-   "kind": "x_post",
-   "text": "Italy Nov preliminary inflation is out. Traders will watch the print for hints about the next ECB rate move as European price pressures remain in focus. $EURUSD",
-   "raw": "Italy {reference} preliminary inflation is out. Traders will watch the print for hints about the next ECB rate move as European price pressures remain in focus. $EURUSD",
-   "issues": [],
-   "model": "gemini/gemini-3.8-flash",
-   "status": "ready_for_review",
-   "sources": [],
-   "attempts": [],
-   "slotMs": 1796040000000,
-   "slotAt": "Mon 11-30 07:00",
+   "attempts": [
+    {
+     "attempt": 1,
+     "problems": []
+    }
+   ],
+   "slotMs": 1796391600000,
+   "slotAt": "Fri 12-04 08:40",
    "channel": "X"
   }
  ],
  "schedule": [
-  {
-   "eventId": 403212,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1795744800000,
-   "at": "Thu 11-26 21:00",
-   "notes": [
-    "Moved from Fri 11-27 01:15 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 403212,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1795780800000,
-   "at": "Fri 11-27 07:00",
-   "notes": [
-    "Moved from Fri 11-27 02:55 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
   {
    "eventId": 402193,
    "kind": "record_by",
@@ -1183,15 +1318,6 @@
    "channel": "Tiger (recording)",
    "ms": 1795946400000,
    "at": "Sun 11-29 05:00",
-   "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 397438,
-   "kind": "record_by",
-   "channel": "Tiger (recording)",
-   "ms": 1795964400000,
-   "at": "Sun 11-29 10:00",
    "notes": [],
    "passed": false
   },
@@ -1216,34 +1342,12 @@
    "passed": false
   },
   {
-   "eventId": 412515,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1796004000000,
-   "at": "Sun 11-29 21:00",
-   "notes": [
-    "Moved from Mon 11-30 03:30 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
    "eventId": 414334,
    "kind": "x_pre",
    "channel": "X",
    "ms": 1796040000000,
    "at": "Mon 11-30 07:00",
    "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 412515,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1796040000000,
-   "at": "Mon 11-30 07:00",
-   "notes": [
-    "Moved from Mon 11-30 05:10 to stay inside 07:00-21:00 ET"
-   ],
    "passed": false
   },
   {
@@ -1270,15 +1374,6 @@
    "channel": "TikTok / Instagram Reels / YouTube Shorts",
    "ms": 1796047200000,
    "at": "Mon 11-30 09:00",
-   "notes": [],
-   "passed": false
-  },
-  {
-   "eventId": 397438,
-   "kind": "video",
-   "channel": "TikTok / Instagram Reels / YouTube Shorts",
-   "ms": 1796065200000,
-   "at": "Mon 11-30 14:00",
    "notes": [],
    "passed": false
   },
@@ -1323,25 +1418,12 @@
    "passed": false
   },
   {
-   "eventId": 402380,
-   "kind": "x_pre",
-   "channel": "X",
-   "ms": 1796176800000,
-   "at": "Tue 12-01 21:00",
-   "notes": [
-    "Moved from Tue 12-01 22:30 to stay inside 07:00-21:00 ET"
-   ],
-   "passed": false
-  },
-  {
-   "eventId": 402380,
-   "kind": "x_post",
-   "channel": "X",
-   "ms": 1796212800000,
-   "at": "Wed 12-02 07:00",
-   "notes": [
-    "Moved from Wed 12-02 00:10 to stay inside 07:00-21:00 ET"
-   ],
+   "eventId": 397490,
+   "kind": "record_by",
+   "channel": "Tiger (recording)",
+   "ms": 1796218200000,
+   "at": "Wed 12-02 08:30",
+   "notes": [],
    "passed": false
   },
   {
@@ -1361,22 +1443,83 @@
    "at": "Thu 12-03 10:10",
    "notes": [],
    "passed": false
+  },
+  {
+   "eventId": 397490,
+   "kind": "video",
+   "channel": "TikTok / Instagram Reels / YouTube Shorts",
+   "ms": 1796319000000,
+   "at": "Thu 12-03 12:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 397490,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1796385600000,
+   "at": "Fri 12-04 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 409786,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1796385600000,
+   "at": "Fri 12-04 07:00",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 397588,
+   "kind": "x_pre",
+   "channel": "X",
+   "ms": 1796391000000,
+   "at": "Fri 12-04 08:30",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 397490,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1796391600000,
+   "at": "Fri 12-04 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 409786,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1796391600000,
+   "at": "Fri 12-04 08:40",
+   "notes": [],
+   "passed": false
+  },
+  {
+   "eventId": 397588,
+   "kind": "x_post",
+   "channel": "X",
+   "ms": 1796397000000,
+   "at": "Fri 12-04 10:10",
+   "notes": [],
+   "passed": false
   }
  ],
  "log": [
-  "2026-11-26T20:10:02.247Z Calendar: 510 high-impact rows. Articles: 60",
-  "2026-11-26T20:10:02.249Z Releases: 22. Holidays after de-dup: 16 (major markets: 2)",
-  "2026-11-26T20:10:02.411Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
-  "2026-11-26T20:10:02.411Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
-  "2026-11-26T20:10:34.553Z Using gemini: gemini-3.8-flash",
-  "2026-11-26T20:10:34.553Z Matched 0 events to articles. Releases missing from calendar: 3",
-  "2026-11-26T20:10:34.556Z Ranked 13. Posts: 8. Videos: 3",
-  "2026-11-26T20:10:34.558Z Reused earlier drafts for Inflation Rate YoY Prel (germany), numbers re-filled and re-checked",
-  "2026-11-26T20:10:34.558Z Reused earlier drafts for Inflation Rate YoY Flash (euro-area), numbers re-filled and re-checked",
-  "2026-11-26T20:10:34.559Z Reused earlier drafts for ISM Manufacturing PMI (united-states), numbers re-filled and re-checked",
-  "2026-11-26T20:10:45.665Z Reused earlier drafts for GDP Growth Rate QoQ (canada), numbers re-filled and re-checked",
-  "2026-11-26T20:10:45.665Z Reused earlier drafts for Consumer Confidence (japan), numbers re-filled and re-checked",
-  "2026-11-26T20:10:45.666Z Reused earlier drafts for Inflation Rate YoY Prel (france), numbers re-filled and re-checked",
-  "2026-11-26T20:10:45.666Z Reused earlier drafts for Inflation Rate YoY Prel (italy), numbers re-filled and re-checked"
+  "2026-11-27T19:56:41.463Z Calendar: 510 high-impact rows. Articles: 61",
+  "2026-11-27T19:56:41.465Z Releases: 22. Holidays after de-dup: 16 (major markets: 2)",
+  "2026-11-27T19:56:41.575Z Models available to this key (in fallback order): gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest, gemini-3.7-flash",
+  "2026-11-27T19:56:41.575Z AI providers in order: gemini [gemini-3.8-flash, gemini-omni-1.2-flash, gemini-omni-1.1-flash, gemini-flash-latest]",
+  "2026-11-27T19:58:04.580Z Using gemini: gemini-3.8-flash",
+  "2026-11-27T19:58:04.581Z Matched 0 events to articles. Releases missing from calendar: 1",
+  "2026-11-27T19:58:04.584Z Ranked 16. Posts: 8. Videos: 3",
+  "2026-11-27T19:58:42.968Z Reused earlier drafts for Inflation Rate YoY Prel (germany), numbers re-filled and re-checked",
+  "2026-11-27T19:58:42.969Z Reused earlier drafts for Inflation Rate YoY Flash (euro-area), numbers re-filled and re-checked",
+  "2026-11-27T19:58:42.969Z Reused earlier drafts for ISM Manufacturing PMI (united-states), numbers re-filled and re-checked",
+  "2026-11-27T19:58:42.970Z Reused earlier drafts for ISM Services PMI (united-states), numbers re-filled and re-checked",
+  "2026-11-27T19:58:51.319Z Reused earlier drafts for GDP Growth Rate QoQ (canada), numbers re-filled and re-checked"
  ]
 }
